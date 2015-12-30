@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <remote  name="rockchip-linux"
+           fetch=".."
+           review="https://github.com/rockchip-linux/" />
+  <default revision="master"
+           remote="rockchip-linux"
+           sync-j="4" />
+
+  <project path="kernel" name="kernel" groups="notdefault,tradefed" />
+  <project path="u-boot" name="u-boot" groups="notdefault,motodev" />
+  <project path="rkbin" name="rkbin" groups="notdefault,tools" />
+
+</manifest>
