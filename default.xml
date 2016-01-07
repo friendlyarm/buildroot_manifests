@@ -8,9 +8,9 @@
            remote="rockchip-linux"
            sync-j="4" />
 
-  <project path="kernel" name="kernel" revision="develop4.4"/>
+  <project path="kernel" name="kernel" revision="kylin-develop4.4"/>
   <project path="u-boot" name="u-boot" revision="android"/>
   <project path="rkbin" name="rkbin" />
   <project path="rkflashtool" name="rkflashtool" />
-
+  <project path="build" name="build" />
 </manifest>
