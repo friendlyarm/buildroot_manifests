@@ -9,7 +9,7 @@
            sync-j="4" />
 
   <project path="kernel" name="kernel" revision="kylin-develop4.4"/>
-  <project path="u-boot" name="u-boot" revision="android"/>
+  <project path="u-boot" name="u-boot" revision="rk3036"/>
   <project path="rkbin" name="rkbin" />
   <project path="rkflashtool" name="rkflashtool" />
   <project path="build" name="build" />
