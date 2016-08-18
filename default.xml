@@ -8,9 +8,8 @@
            remote="rockchip-linux"
            sync-j="4" />
 
-  <project path="kernel" name="kernel" revision="kylin-develop4.4"/>
-  <project path="u-boot" name="u-boot" revision="rk3036"/>
-  <project path="rkbin" name="rkbin" />
-  <project path="rkflashtool" name="rkflashtool" />
-  <project path="build" name="build" />
+  <project path="kernel" name="kernel" revision="release-20160818"/>
+  <project path="u-boot" name="u-boot" revision="release-20160816"/>
+  <project path="rootfs" name="rk-rootfs-build" />
+  <project path="tools"  name="rk-tools" />
 </manifest>
