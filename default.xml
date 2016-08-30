@@ -11,7 +11,8 @@
   <project path="kernel" name="kernel" revision="release-20160818"/>
   <project path="u-boot" name="u-boot" revision="release-20160816"/>
   <project path="rootfs" name="rk-rootfs-build" />
-  <project path="tools" name="rk-tools" />
+  <project path="rkbin" name="rkbin" />
+  <project path="rkflashtool" name="rkflashtool" />
   <project path="packages/xserver" name="xserver" revision="rockchip-1.18"/>
   <project path="packages/linux-adb" name="linux-adb" />
   <project path="packages/libvdpau-rockchip" name="libvdpau-rockchip" />
