@@ -8,7 +8,7 @@
            remote="rockchip-linux"
            sync-j="4" />
 
-  <project path="kernel" name="kernel" revision="release-20160818"/>
+  <project path="kernel" name="kernel" revision="release-20160920"/>
   <project path="u-boot" name="u-boot" revision="release-20160816"/>
   <project path="rootfs" name="rk-rootfs-build" />
   <project path="rkbin" name="rkbin" />
