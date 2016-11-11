@@ -15,7 +15,6 @@
   <project path="rkflashtool" name="rkflashtool" />
   <project path="packages/xserver" name="xserver" revision="rockchip-1.18"/>
   <project path="packages/linux-adb" name="linux-adb" />
-  <project path="packages/libvdpau-rockchip" name="libvdpau-rockchip" />
   <project path="packages/rockchip-va-driver" name="rockchip-va-driver" />
   <project path="packages/libmali" name="libmali" />
 </manifest>
