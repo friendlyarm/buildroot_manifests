@@ -1,4 +1,4 @@
-# manifests
+# Rockchip Debian SDK
 
 To initialize Linux source tree  
 $ repo init -u https://github.com/rockchip-linux/manifests
