@@ -8,6 +8,7 @@
            remote="rockchip-linux"
            sync-j="4" />
 
+  <project path="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" name="gcc-prebuilts" revision="aarch64-linux-android-4.9"/>
   <project path="kernel" name="kernel" revision="release-4.4"/>
   <project path="u-boot" name="u-boot" revision="rkproduct"/>
   <project path="rootfs" name="rk-rootfs-build" />
@@ -19,10 +20,6 @@
   <project path="external/io" name="io" revision="master"/>
   <project path="external/gstreamer-rockchip" name="gstreamer-rockchip" revision="rkvideo"/>
   <project path="external/mpp" name="mpp" revision="rk3288_linux"/>
-
-  <project path="build" name="build" revision="debian">
-          <copyfile dest="README.md" src="README.md"/>
-  </project>
 
   <project path="device/rockchip/rk3399" name="device-custom" revision="rk3399">
 	  <copyfile dest="mkfirmware.sh" src="mkfirmware.sh"/>
