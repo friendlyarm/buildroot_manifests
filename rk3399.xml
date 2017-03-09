@@ -13,7 +13,6 @@
   <project path="u-boot" name="u-boot" revision="rkproduct"/>
   <project path="rootfs" name="rk-rootfs-build" />
   <project path="buildroot" name="buildroot" revision="2016.08.x"/>
-  <project path="rkbin" name="rkbin" />
   <project path="tools" name="tools" revision="rk3399"/>
   <project path="docs" name="docs" revision="rk3399"/>
   <project path="app/carmachine" name="carmachine" revision="master"/>
