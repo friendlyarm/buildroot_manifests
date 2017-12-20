@@ -9,7 +9,7 @@
            sync-j="4" />
 
   <project path="kernel" name="kernel" upstream="release-4.4" revision="refs/tags/release-20171213"/>
-  <project path="u-boot" name="u-boot" upstream="release" revision="refs/tags/release-20171107"/>
+  <project path="u-boot" name="u-boot" upstream="release" revision="refs/tags/release-20171218"/>
   <project path="rootfs" name="rk-rootfs-build" />
   <project path="rkbin" name="rkbin" />
 
