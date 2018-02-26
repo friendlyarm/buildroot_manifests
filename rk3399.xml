@@ -18,7 +18,7 @@
   <project path="app/carmachine" name="carmachine" revision="master"/>
   <project path="external/io" name="io" revision="master"/>
   <project path="external/gstreamer-rockchip" name="gstreamer-rockchip" revision="rkvideo"/>
-  <project path="external/mpp" name="mpp" revision="rk3288_linux"/>
+  <project path="external/mpp" name="mpp" revision="release"/>
 
   <project path="device/rockchip/rk3399" name="device-custom" revision="rk3399">
 	  <copyfile dest="mkfirmware.sh" src="mkfirmware.sh"/>
