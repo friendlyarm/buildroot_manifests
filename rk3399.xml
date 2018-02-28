@@ -9,6 +9,8 @@
            sync-j="4" />
 
   <project path="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" name="gcc-prebuilts" revision="aarch64-linux-android-4.9"/>
+  <project path="build" name="build" revision="debian"/>
+  <copyfile dest="README.md" src="README.md"/>
   <project path="kernel" name="kernel" revision="release-4.4"/>
   <project path="u-boot" name="u-boot" revision="rkproduct"/>
   <project path="rootfs" name="rk-rootfs-build" />
