@@ -9,6 +9,7 @@
            sync-j="4" />
 
   <project path="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" name="gcc-prebuilts" revision="aarch64-linux-android-4.9"/>
+  <project path="prebuilts/gcc/linux-x86/aarch64/gcc-linaro-6.3.1-2017.05-x86_64_aarch64-linux-gnu" name="gcc-linaro-6.3.1-2017.05-x86_64_aarch64-linux-gnu" revision="master"/>
   <project path="build" name="build" revision="debian"/>
   <copyfile dest="README.md" src="README.md"/>
   <project path="kernel" name="kernel" revision="release-4.4"/>
