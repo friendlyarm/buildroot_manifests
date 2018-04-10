@@ -21,6 +21,6 @@ $ repo sync
 
 The RK3399 chips:
 
-$ repo init -u https://github.com/rockchip-linux/manifests -m rk3399.xml
+$ repo init -u https://github.com/rockchip-linux/manifests -m rk3399_linux.xml
 
 $ repo sync
