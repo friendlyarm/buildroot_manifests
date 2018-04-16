@@ -23,7 +23,7 @@
   <project path="app/carmachine" name="carmachine" revision="master"/>
   <project path="app/gallery" name="gallery" revision="master"/>
   <project path="app/music" name="music" revision="master"/>
-  <project path="app/Qlauncher" name="Qlauncher" revision="master"/>
+  <project path="app/QLauncher" name="QLauncher" revision="master"/>
   <project path="app/settings" name="settings" revision="master"/>
   <project path="app/video" name="video" revision="master"/>
   <project path="external/xserver" name="xserver" revision="rockchip-1.18"/>
