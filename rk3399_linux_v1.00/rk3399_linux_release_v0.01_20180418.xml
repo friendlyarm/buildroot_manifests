@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote fetch="." name="rockchip-linux" review="https://github.com/rockchip-linux/"/>
+  
+  <default remote="rockchip-linux" revision="master" sync-j="4"/>
+  
+  <project name="QLauncher" path="app/QLauncher" revision="a553ab5b52e3c85fca65f35f4c8450faa57b045b" upstream="master"/>
+  <project name="audioservice" path="external/audioservice" revision="ec7efbf4cbb023a655228a1260fb83258fd667c1" upstream="master"/>
+  <project name="build" revision="c0e74d6850a283af704b606655287f58319aa1f7" upstream="debian"/>
+  <project name="buildroot" revision="8c8402adea1a19b2c52c33a5ac850012b54e83cc" upstream="2016.08.x"/>
+  <project name="camera" path="app/camera" revision="e7c3343b25f451c7d8585152eae2970deeccfdbb" upstream="master"/>
+  <project name="carmachine" path="app/carmachine" revision="ad43b7aff40d21729657ea38897340c202fcce81" upstream="master"/>
+  <project name="device-custom" path="device/rockchip/rk3399" revision="bf82a4203f41e44d1509b8c1f685198fd1621ee1" upstream="rk3399">
+    <copyfile dest="mkfirmware.sh" src="mkfirmware.sh"/>
+    <copyfile dest="build_all.sh" src="build_all.sh"/>
+    <copyfile dest="envsetup.sh" src="envsetup.sh"/>
+    <copyfile dest="mkdebian_firmware.sh" src="mkdebian_firmware.sh"/>
+  </project>
+  <project name="docs" revision="3a78fbcd540a1fb85556b080d885c48e647b2824" upstream="rk3399"/>
+  <project name="gallery" path="app/gallery" revision="76f55041d097fcabc018fc84a6ff8886e21f3ab1" upstream="master"/>
+  <project name="gcc-linaro-6.3.1-2017.05-x86_64_aarch64-linux-gnu" path="prebuilts/gcc/linux-x86/aarch64/gcc-linaro-6.3.1-2017.05-x86_64_aarch64-linux-gnu" revision="f96f76d6be89a6e28d4dac1f233f9aca9921f69b" upstream="master"/>
+  <project name="gcc-prebuilts" path="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" revision="4b341df712969ca2ac0c3cf6294260d406b9d9be" upstream="aarch64-linux-android-4.9"/>
+  <project name="gstreamer-rockchip" path="external/gstreamer-rockchip" revision="81ea87fd6edecd88cd28d21885a757e2f440aabe" upstream="rkvideo"/>
+  <project name="io" path="external/io" revision="383715c4ee644a7c9cfc7c3ef21013237d37ad8f" upstream="master"/>
+  <project name="kernel" revision="2b3fe0f3500bd62ea6ba3a2da177edda27a8d6ea" upstream="release-4.4"/>
+  <project name="libdrm-rockchip" path="external/libdrm-rockchip" revision="ea6c1f85b8691f0c2ecda16fb9919eeec3dafd48" upstream="rockchip-2.4.68"/>
+  <project name="libmali" path="external/libmali" revision="41a3e9ae1369e2e497e5c11c4c31c8fe7f4afafc" upstream="29mirror"/>
+  <project name="linux-adb" path="external/linux-adb" revision="4704805987b12f6b69ecc3c648106bcf74d6d914" upstream="master"/>
+  <project name="mpp" path="external/mpp" revision="77b58369658b739e5c99b6a6876809e073086dcf" upstream="release"/>
+  <project name="music" path="app/music" revision="2b40e799f2d45ae900c3279c9cd90c8d93689393" upstream="master"/>
+  <project name="powermanager" path="external/powermanager" revision="5f449bc1cdbf4760ef5540ae58d78572828e4916" upstream="master"/>
+  <project name="rk-rootfs-build" path="rootfs" revision="274d45c14a4cb4fc97996f1c1e849ed12060a5db" upstream="master"/>
+  <project name="rkbin" revision="8ba01f48b68f523e0354ecf3cc6055c6f2fb6e06" upstream="29mirror"/>
+  <project name="settings" path="app/settings" revision="e6bf157031a71b565da07f27bdc7e313b3d13acd" upstream="master"/>
+  <project name="tools" revision="bbeadf27596716433892eeaead7988ab97f8b867" upstream="rk3399"/>
+  <project name="u-boot" revision="c9fcc189ba0788413c687b81e5178c90e391871a" upstream="release"/>
+  <project name="video" path="app/video" revision="b60a6d64e90296fd8d1d886fa96afa454fb1773c" upstream="master"/>
+  <project name="xserver" path="external/xserver" revision="6f770de04d50422af48f83e17de7197ed0a76fdb" upstream="rockchip-1.18"/>
+</manifest>

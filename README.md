@@ -1,4 +1,4 @@
-# Rockchip Debian SDK
+# Rockchip Debian/Buildroot SDK
 
 The Default:
 
@@ -12,15 +12,18 @@ $ repo sync
 
 --
 
-The RK3036G chips:
+The RK3399 chips:
 
-$ repo init -u https://github.com/rockchip-linux/manifests -m rk3036.xml
+There are two ways to get the code:
+
+(1) Sync to the lastest TOT code:
+
+$ repo init -u https://github.com/rockchip-linux/manifests -m rk3399_linux.xml
 
 $ repo sync
 
+(2) Sync to the lastest release code:
 
-The RK3399 chips:
-
-$ repo init -u https://github.com/rockchip-linux/manifests -m rk3399_linux.xml
+$ repo init -u https://github.com/rockchip-linux/manifests -m rk3399_linux_release.xml
 
 $ repo sync
