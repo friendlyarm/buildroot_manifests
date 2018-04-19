@@ -31,7 +31,7 @@
   <project name="rkbin" revision="8ba01f48b68f523e0354ecf3cc6055c6f2fb6e06" upstream="29mirror"/>
   <project name="settings" path="app/settings" revision="e6bf157031a71b565da07f27bdc7e313b3d13acd" upstream="master"/>
   <project name="tools" revision="059959f378d1e9d8c1c19d3a1128db7bc6d74dd7" upstream="rk3399"/>
-  <project name="u-boot" revision="c9fcc189ba0788413c687b81e5178c90e391871a" upstream="release"/>
+  <project name="u-boot" revision="4bafc2da2ded5e0dcfd8c097a501e301c8eeea9f" upstream="release"/>
   <project name="video" path="app/video" revision="b60a6d64e90296fd8d1d886fa96afa454fb1773c" upstream="master"/>
   <project name="xserver" path="external/xserver" revision="6f770de04d50422af48f83e17de7197ed0a76fdb" upstream="rockchip-1.18"/>
 </manifest>
