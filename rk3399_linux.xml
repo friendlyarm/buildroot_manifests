@@ -38,7 +38,6 @@
 	  <copyfile dest="mkfirmware.sh" src="mkfirmware.sh"/>
           <copyfile dest="build_all.sh" src="build_all.sh"/>
           <copyfile dest="envsetup.sh" src="envsetup.sh"/>
-          <copyfile dest="mkdebian_firmware.sh" src="mkdebian_firmware.sh"/>
   </project>
 
 </manifest>
