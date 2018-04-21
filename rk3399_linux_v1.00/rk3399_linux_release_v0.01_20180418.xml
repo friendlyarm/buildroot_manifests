@@ -9,7 +9,7 @@
   <project name="buildroot" revision="4b727d8c0be192f4a87d551338939bd0bbc4bdac" upstream="2016.08.x"/>
   <project name="camera" path="app/camera" revision="e7c3343b25f451c7d8585152eae2970deeccfdbb" upstream="master"/>
   <project name="carmachine" path="app/carmachine" revision="ad43b7aff40d21729657ea38897340c202fcce81" upstream="master"/>
-  <project name="device-custom" path="device/rockchip/rk3399" revision="d6e6d5f25102b107708f408383c9886406fa055c" upstream="rk3399">
+  <project name="device-custom" path="device/rockchip/rk3399" revision="3694e94570a28a66bfe46ed1f3c7e09fe74b6e5e" upstream="rk3399">
     <copyfile dest="mkfirmware.sh" src="mkfirmware.sh"/>
     <copyfile dest="build_all.sh" src="build_all.sh"/>
     <copyfile dest="envsetup.sh" src="envsetup.sh"/>
