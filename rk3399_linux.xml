@@ -30,7 +30,7 @@
   <project path="external/libmali" name="libmali" revision="29mirror"/>
   <project path="external/libdrm-rockchip" name="libdrm-rockchip" revision="rockchip-2.4.68" />
   <project path="external/mpp" name="mpp" revision="release"/>
-  <project path="external/gstreamer-rockchip" name="gstreamer-rockchip" revision="rkvideo"/>
+  <project path="external/gstreamer-rockchip" name="gstreamer-rockchip" revision="master"/>
   <project path="external/io" name="io" revision="master"/>
   <project path="external/audioservice" name="audioservice" revision="master"/>
   <project path="external/powermanager" name="powermanager" revision="master"/>

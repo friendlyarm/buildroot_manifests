@@ -18,7 +18,7 @@
   <project name="gallery" path="app/gallery" revision="76f55041d097fcabc018fc84a6ff8886e21f3ab1" upstream="master"/>
   <project name="gcc-linaro-6.3.1-2017.05-x86_64_aarch64-linux-gnu" path="prebuilts/gcc/linux-x86/aarch64/gcc-linaro-6.3.1-2017.05-x86_64_aarch64-linux-gnu" revision="f96f76d6be89a6e28d4dac1f233f9aca9921f69b" upstream="master"/>
   <project name="gcc-prebuilts" path="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" revision="4b341df712969ca2ac0c3cf6294260d406b9d9be" upstream="aarch64-linux-android-4.9"/>
-  <project name="gstreamer-rockchip" path="external/gstreamer-rockchip" revision="81ea87fd6edecd88cd28d21885a757e2f440aabe" upstream="rkvideo"/>
+  <project name="gstreamer-rockchip" path="external/gstreamer-rockchip" revision="ab044195bfb472423c3465bfc26f9fd67fe7383b" upstream="master"/>
   <project name="io" path="external/io" revision="56e9d7661f2e7ae9818e6fc22f38a222867f2076" upstream="master"/>
   <project name="kernel" revision="2b3fe0f3500bd62ea6ba3a2da177edda27a8d6ea" upstream="release-4.4"/>
   <project name="libdrm-rockchip" path="external/libdrm-rockchip" revision="ea6c1f85b8691f0c2ecda16fb9919eeec3dafd48" upstream="rockchip-2.4.68"/>
