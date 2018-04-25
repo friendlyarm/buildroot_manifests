@@ -5,7 +5,7 @@
 
   <project name="gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf" path="prebuilts/gcc/linux-x86/arm/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf" revision="dd4df7dff4f1df65d78939a958b760a79e3650a1" upstream="master"/>
   <project name="kernel" revision="bea3565063cf544a38733648618c9f4adb890653" upstream="release-4.4"/>
-  <project name="u-boot" revision="4bafc2da2ded5e0dcfd8c097a501e301c8eeea9f" upstream="release"/>
+  <project name="u-boot" revision="3a06149e72bece72a6fae0ffd48b1832bc05feb9" upstream="release"/>
   <project name="rk-rootfs-build" path="rootfs" revision="274d45c14a4cb4fc97996f1c1e849ed12060a5db" upstream="master"/>
   <project name="rkbin" revision="4009b1dfea46b3d804eb581c900e63a06533ddcc" upstream="29mirror"/>
   <project name="docs" revision="190567fb2653915c47c2d36373cc80cad54103e4" upstream="rk3288"/>
