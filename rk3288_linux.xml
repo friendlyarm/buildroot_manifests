@@ -26,13 +26,17 @@
   <project path="app/video" name="video" revision="master"/>
   <project path="external/xserver" name="xserver" revision="rockchip-1.18"/>
   <project path="external/linux-adb" name="linux-adb" revision="master"/>
+  <project path="external/linux-rga" name="linux-rga" revision="master"/>
   <project path="external/libmali" name="libmali" revision="29mirror"/>
   <project path="external/libdrm-rockchip" name="libdrm-rockchip" revision="rockchip-2.4.68" />
   <project path="external/mpp" name="mpp" revision="release"/>
   <project path="external/gstreamer-rockchip" name="gstreamer-rockchip" revision="master"/>
+  <project path="external/gstreamer-rockchip-extra" name="gstreamer-rockchip-extra" revision="master"/>
   <project path="external/io" name="io" revision="master"/>
   <project path="external/audioservice" name="audioservice" revision="master"/>
+  <project path="external/byte-unixbench" name="byte-unixbench" revision="master"/>
   <project path="external/powermanager" name="powermanager" revision="master"/>
+  <project path="external/punybench" name="punybench" revision="master"/>
   <project path="device/rockchip/rk3288" name="device-custom" revision="rk3288">
 	  <copyfile dest="mkfirmware.sh" src="mkfirmware.sh"/>
           <copyfile dest="build_all.sh" src="build_all.sh"/>
