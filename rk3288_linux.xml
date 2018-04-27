@@ -9,7 +9,6 @@
            sync-j="4" />
 
   <project name="gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf" path="prebuilts/gcc/linux-x86/arm/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf"  upstream="master"/>
-  <copyfile dest="README.md" src="README.md"/>
   <project path="kernel" name="kernel" revision="release-4.4"/>
   <project path="u-boot" name="u-boot" revision="release"/>
   <project path="rootfs" name="rk-rootfs-build" />
