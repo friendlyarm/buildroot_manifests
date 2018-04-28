@@ -24,7 +24,7 @@
   <project name="libdrm-rockchip" path="external/libdrm-rockchip" revision="ea6c1f85b8691f0c2ecda16fb9919eeec3dafd48" upstream="rockchip-2.4.68"/>
   <project name="libmali" path="external/libmali" revision="41a3e9ae1369e2e497e5c11c4c31c8fe7f4afafc" upstream="29mirror"/>
   <project name="linux-adb" path="external/linux-adb" revision="4704805987b12f6b69ecc3c648106bcf74d6d914" upstream="master"/>
-  <project name="mpp" path="external/mpp" revision="77b58369658b739e5c99b6a6876809e073086dcf" upstream="release"/>
+  <project name="mpp" path="external/mpp" revision="7716b36af8137a1de7523c70d59e77c263484fda" upstream="release"/>
   <project name="music" path="app/music" revision="2b40e799f2d45ae900c3279c9cd90c8d93689393" upstream="master"/>
   <project name="powermanager" path="external/powermanager" revision="5f449bc1cdbf4760ef5540ae58d78572828e4916" upstream="master"/>
   <project name="rk-rootfs-build" path="rootfs" revision="274d45c14a4cb4fc97996f1c1e849ed12060a5db" upstream="master"/>
