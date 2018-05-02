@@ -31,7 +31,7 @@
   <project path="external/libdrm-rockchip" name="libdrm-rockchip" revision="ea6c1f85b8691f0c2ecda16fb9919eeec3dafd48" upstream="rockchip-2.4.68" />
   <project path="external/linux-adb" name="linux-adb" revision="4704805987b12f6b69ecc3c648106bcf74d6d914" upstream="master"/>
   <project path="external/linux-rga" name="linux-rga" revision="b586e307e4c9336f52bc987c6b09e20c2a1ad295" upstream="master"/>
-  <project path="external/mpp" name="mpp" revision="db932a84de4a578efb597497c57542d4f3c27894" upstream="release"/>
+  <project path="external/mpp" name="mpp" revision="7716b36af8137a1de7523c70d59e77c263484fda" upstream="release"/>
   <project path="external/powermanager" name="powermanager" revision="5f449bc1cdbf4760ef5540ae58d78572828e4916" upstream="master"/>
   <project path="external/punybench" name="punybench" revision="c050715684a5dde3a4fc818f3de816a407fdb2de" upstream="master"/>
   <project path="external/xserver" name="xserver" revision="2baabe700b59f5a2681558c6a764155102325974" upstream="rockchip-1.18"/>
