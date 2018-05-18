@@ -11,7 +11,7 @@
   <project path="prebuilts/gcc/linux-x86/aarch64/gcc-linaro-6.3.1-2017.05-x86_64_aarch64-linux-gnu" name="gcc-linaro-6.3.1-2017.05-x86_64_aarch64-linux-gnu" revision="master"/>
 
   <project path="u-boot" name="u-boot" revision="release"/>
-  <project path="rkbin" name="rkbin" revision="master"/>
+  <project path="rkbin" name="rkbin" revision="29mirror"/>
   <project path="kernel" name="kernel" revision="release-4.4"/>
   <project path="tools" name="tools" revision="master">
     <linkfile dest="tools/windows/AndroidTool/AndroidTool_Release/config.cfg" src="windows/AndroidTool/AndroidTool_Release/rk3399-config.cfg"/>
