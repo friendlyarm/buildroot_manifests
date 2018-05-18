@@ -1,43 +1,57 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <manifest>
-
-  <remote  name="rockchip-linux"
-           fetch="."
-           review="https://github.com/rockchip-linux/" />
-  <default revision="master"
-           remote="rockchip-linux"
-           sync-j="4" />
+<remote name="rockchip-linux"
+	fetch="."
+	review="https://github.com/rockchip-linux/" />
+<default revision="master"
+	remote="rockchip-linux"
+	sync-j="4" />
 
   <project path="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" name="gcc-prebuilts" revision="aarch64-linux-android-4.9"/>
   <project path="prebuilts/gcc/linux-x86/aarch64/gcc-linaro-6.3.1-2017.05-x86_64_aarch64-linux-gnu" name="gcc-linaro-6.3.1-2017.05-x86_64_aarch64-linux-gnu" revision="master"/>
-  <copyfile dest="README.md" src="README.md"/>
-  <project path="kernel" name="kernel" revision="release-4.4"/>
+
   <project path="u-boot" name="u-boot" revision="release"/>
-  <project path="rootfs" name="rk-rootfs-build" />
-  <project path="buildroot" name="buildroot" revision="2016.08.x"/>
-  <project path="rkbin" name="rkbin" revision="29mirror"/>
-  <project path="tools" name="tools" revision="rk3399" />
+  <project path="rkbin" name="rkbin" revision="master"/>
+  <project path="kernel" name="kernel" revision="release-4.4"/>
+  <project path="tools" name="tools" revision="master">
+    <linkfile dest="tools/windows/AndroidTool/AndroidTool_Release/config.cfg" src="windows/AndroidTool/AndroidTool_Release/rk3399-config.cfg"/>
+    <linkfile dest="tools/windows/AndroidTool/rockdev/package-file" src="windows/AndroidTool/rockdev/rk3399-package-file"/>
+    <linkfile dest="tools/windows/AndroidTool/rockdev/mkupdate.bat" src="windows/AndroidTool/rockdev/rk3399-mkupdate.bat"/>
+    <linkfile dest="tools/linux/Linux_Pack_Firmware/rockdev/mkupdate.sh" src="linux/Linux_Pack_Firmware/rockdev/rk3399-mkupdate.sh"/>
+    <linkfile dest="tools/linux/Linux_Pack_Firmware/rockdev/package-file" src="linux/Linux_Pack_Firmware/rockdev/rk3399-package-file"/>
+  </project>
   <project path="docs" name="docs" revision="rk3399"/>
+  <project path="buildroot" name="buildroot" revision="2016.08.x"/>
+  <project path="buildroot/download" name="download" revision="master"/>
+  <project path="rootfs" name="rk-rootfs-build" revision="master"/>
+  <project path="external/recovery" name="recovery" revision="develop"/>
+  <project path="app/carmachine" name="carmachine" revision="rk3399"/>
   <project path="app/camera" name="camera" revision="master"/>
-  <project path="app/carmachine" name="carmachine" revision="master"/>
   <project path="app/gallery" name="gallery" revision="master"/>
   <project path="app/music" name="music" revision="master"/>
   <project path="app/QLauncher" name="QLauncher" revision="master"/>
   <project path="app/settings" name="settings" revision="master"/>
   <project path="app/video" name="video" revision="master"/>
-  <project path="external/xserver" name="xserver" revision="rockchip-1.18"/>
-  <project path="external/linux-adb" name="linux-adb" revision="master"/>
+  <project path="external/liblog" name="liblog" revision="master"/>
+  <project path="external/libcutils" name="libcutils" revision="arm64"/>
+  <project path="external/audioservice" name="audioservice" revision="master"/>
+  <project path="external/byte-unixbench" name="byte-unixbench" revision="master"/>
+  <project path="external/io" name="io"  revision="master"/>
+  <project path="external/gstreamer-rockchip" name="gstreamer-rockchip" revision="master"/>
+  <project path="external/gstreamer-rockchip-extra" name="gstreamer-rockchip-extra" revision="master"/>
   <project path="external/libmali" name="libmali" revision="29mirror"/>
   <project path="external/libdrm-rockchip" name="libdrm-rockchip" revision="rockchip-2.4.68" />
+  <project path="external/linux-adb" name="linux-adb" revision="master"/>
+  <project path="external/linux-rga" name="linux-rga" revision="master"/>
   <project path="external/mpp" name="mpp" revision="release"/>
-  <project path="external/gstreamer-rockchip" name="gstreamer-rockchip" revision="master"/>
-  <project path="external/io" name="io" revision="master"/>
-  <project path="external/audioservice" name="audioservice" revision="master"/>
+  <project path="external/rkupdate" name="rkupdate" revision="master"/>
+  <project path="external/xserver" name="xserver" revision="rockchip-1.18"/>
   <project path="external/powermanager" name="powermanager" revision="master"/>
+  <project path="external/punybench" name="punybench" revision="master"/>
+  <project path="external/mkbootfs" name="mkbootfs" revision="master"/>
   <project path="device/rockchip/rk3399" name="device-custom" revision="rk3399">
-	  <copyfile dest="mkfirmware.sh" src="mkfirmware.sh"/>
-          <copyfile dest="build_all.sh" src="build_all.sh"/>
-          <copyfile dest="envsetup.sh" src="envsetup.sh"/>
+    <linkfile dest="mkfirmware.sh" src="mkfirmware.sh"/>
+    <linkfile dest="build_all.sh" src="build_all.sh"/>
+    <linkfile dest="envsetup.sh" src="envsetup.sh"/>
   </project>
-
 </manifest>
