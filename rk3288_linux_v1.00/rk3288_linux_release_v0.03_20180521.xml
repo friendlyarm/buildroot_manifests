@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote fetch="." name="rockchip-linux" review="https://github.com/rockchip-linux/"/>
+  <default remote="rockchip-linux" revision="master" sync-j="4"/>
+
+  <project path="buildroot" name="buildroot" revision="d074bd85f0086eb221cd4073bd0bd017e64a72da" upstream="2016.08.x"/>
+  <project name="docs" revision="adc19d6ca65fa3c4c80bdf65ffafa68430229832" upstream="rk3288"/>
+  <project name="device-custom" path="device/rockchip/rk3288" revision="f3a617daeed5a6c20eff536b43ed704563728aa1" upstream="rk3288">
+    <copyfile dest="mkfirmware.sh" src="mkfirmware.sh"/>
+    <copyfile dest="build_all.sh" src="build_all.sh"/>
+    <copyfile dest="envsetup.sh" src="envsetup.sh"/>
+  </project>
+  <project name="gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf" path="prebuilts/gcc/linux-x86/arm/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf" revision="dd4df7dff4f1df65d78939a958b760a79e3650a1" upstream="master"/>
+  <project name="kernel" revision="3dd9af3221d2a4ea4caf2865bac5fe9aaf2e2643" upstream="release-4.4"/>
+  <project name="rkbin" revision="2a2ab345a98c7f41cd3fcb09f820828326fca596" upstream="29mirror"/>
+  <project name="rk-rootfs-build" path="rootfs" revision="274d45c14a4cb4fc97996f1c1e849ed12060a5db" upstream="master"/>
+  <project name="tools" revision="d76d9bd2f9d5f1c6775776cd96c1ed3c008a75dd" upstream="rk3288"/>
+  <project name="u-boot" revision="328b7e77a21a34b046eaf9a7cf41c7d7c1a82047" upstream="release"/>
+  <project path="app/camera" name="camera" revision="e7c3343b25f451c7d8585152eae2970deeccfdbb" upstream="master"/>
+  <project path="app/gallery" name="gallery" revision="76f55041d097fcabc018fc84a6ff8886e21f3ab1" upstream="master"/>
+  <project path="app/music" name="music" revision="2b40e799f2d45ae900c3279c9cd90c8d93689393" upstream="master"/>
+  <project path="app/QLauncher" name="QLauncher" revision="a553ab5b52e3c85fca65f35f4c8450faa57b045b" upstream="master"/>
+  <project path="app/settings" name="settings" revision="e6bf157031a71b565da07f27bdc7e313b3d13acd" upstream="master"/>
+  <project path="app/video" name="video" revision="b60a6d64e90296fd8d1d886fa96afa454fb1773c" upstream="master"/>
+  <project path="external/audioservice" name="audioservice" revision="ec7efbf4cbb023a655228a1260fb83258fd667c1" upstream="master"/>
+  <project path="external/byte-unixbench" name="byte-unixbench" revision="05b1bd94e070d300f90e7112ef3fb4427cefac89" upstream="master"/>
+  <project path="external/gstreamer-rockchip" name="gstreamer-rockchip" revision="bb0aefd0990467824de321d98035ee87822ba720" upstream="master"/>
+  <project path="external/gstreamer-rockchip-extra" name="gstreamer-rockchip-extra" revision="ab5f747dcb82ee37e6d2cc370c5e53a39d8ddacc" upstream="master"/>
+  <project path="external/io" name="io" revision="56e9d7661f2e7ae9818e6fc22f38a222867f2076" upstream="master"/>
+  <project path="external/libmali" name="libmali" revision="45ddd098c54af32eb31b20b969260492730f5cf3" upstream="rockchip-header"/>
+  <project path="external/libdrm-rockchip" name="libdrm-rockchip" revision="ea6c1f85b8691f0c2ecda16fb9919eeec3dafd48" upstream="rockchip-2.4.68" />
+  <project path="external/linux-adb" name="linux-adb" revision="4704805987b12f6b69ecc3c648106bcf74d6d914" upstream="master"/>
+  <project path="external/linux-rga" name="linux-rga" revision="b586e307e4c9336f52bc987c6b09e20c2a1ad295" upstream="master"/>
+  <project path="external/mpp" name="mpp" revision="7716b36af8137a1de7523c70d59e77c263484fda" upstream="release"/>
+  <project path="external/powermanager" name="powermanager" revision="5f449bc1cdbf4760ef5540ae58d78572828e4916" upstream="master"/>
+  <project path="external/punybench" name="punybench" revision="c050715684a5dde3a4fc818f3de816a407fdb2de" upstream="master"/>
+  <project path="external/xserver" name="xserver" revision="2baabe700b59f5a2681558c6a764155102325974" upstream="rockchip-1.18"/>
+
+</manifest>
