@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote fetch="." name="rockchip-linux" review="https://github.com/rockchip-linux/"/>
+  
+  <default remote="rockchip-linux" revision="master" sync-j="4"/>
+  
+  <project name="QLauncher" path="app/QLauncher" revision="a553ab5b52e3c85fca65f35f4c8450faa57b045b" upstream="master"/>
+  <project name="audioservice" path="external/audioservice" revision="ec7efbf4cbb023a655228a1260fb83258fd667c1" upstream="master"/>
+  <project name="buildroot" revision="d074bd85f0086eb221cd4073bd0bd017e64a72da" upstream="2016.08.x"/>
+  <project name="byte-unixbench" path="external/byte-unixbench" revision="05b1bd94e070d300f90e7112ef3fb4427cefac89" upstream="master"/>
+  <project name="camera" path="app/camera" revision="7e18892fce6cde4d864d97ff2ef40def85f63dd0" upstream="master"/>
+  <project name="carmachine" path="app/carmachine" revision="089de487206d7f784aef05fd2291a3a043f5ccd8" upstream="rk3399"/>
+  <project name="device-custom" path="device/rockchip/rk3399" revision="a68d1ba78430ff72241c4fb25920149ddd440cb2" upstream="rk3399">
+    <linkfile dest="mkfirmware.sh" src="mkfirmware.sh"/>
+    <linkfile dest="build_all.sh" src="build_all.sh"/>
+    <linkfile dest="envsetup.sh" src="envsetup.sh"/>
+  </project>
+  <project name="docs" revision="c2a8b2dc8e78e5d562a13e20e66ed1863b8c5d59" upstream="rk3399"/>
+  <project name="download" path="buildroot/download" revision="0f14c3d4b5f14d8b9afa4105222975f43669538b" upstream="master"/>
+  <project name="gallery" path="app/gallery" revision="780d15a3bb1dedf9f7cbd843def726842a290cba" upstream="master"/>
+  <project name="gcc-linaro-6.3.1-2017.05-x86_64_aarch64-linux-gnu" path="prebuilts/gcc/linux-x86/aarch64/gcc-linaro-6.3.1-2017.05-x86_64_aarch64-linux-gnu" revision="f96f76d6be89a6e28d4dac1f233f9aca9921f69b" upstream="master"/>
+  <project name="gcc-prebuilts" path="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" revision="4b341df712969ca2ac0c3cf6294260d406b9d9be" upstream="aarch64-linux-android-4.9"/>
+  <project name="gstreamer-rockchip" path="external/gstreamer-rockchip" revision="aadf6ab77c53055f8be85c18bace6918e04e3f9c" upstream="master"/>
+  <project name="gstreamer-rockchip-extra" path="external/gstreamer-rockchip-extra" revision="ab5f747dcb82ee37e6d2cc370c5e53a39d8ddacc" upstream="master"/>
+  <project name="io" path="external/io" revision="56e9d7661f2e7ae9818e6fc22f38a222867f2076" upstream="master"/>
+  <project name="kernel" revision="46c5f780b197711bd2c1615547c3f6f5b99b31cf" upstream="release-4.4"/>
+  <project name="libcutils" path="external/libcutils" revision="1f5ab8e6301221721344f4014bbf6e965c7a5d8b" upstream="arm64"/>
+  <project name="libdrm-rockchip" path="external/libdrm-rockchip" revision="ea6c1f85b8691f0c2ecda16fb9919eeec3dafd48" upstream="rockchip-2.4.68"/>
+  <project name="liblog" path="external/liblog" revision="3867fe3c8f20f46d7109c2779ac48af2f16d6ea8" upstream="master"/>
+  <project name="libmali" path="external/libmali" revision="41a3e9ae1369e2e497e5c11c4c31c8fe7f4afafc" upstream="29mirror"/>
+  <project name="linux-adb" path="external/linux-adb" revision="4704805987b12f6b69ecc3c648106bcf74d6d914" upstream="master"/>
+  <project name="linux-rga" path="external/linux-rga" revision="b586e307e4c9336f52bc987c6b09e20c2a1ad295" upstream="master"/>
+  <project name="mkbootfs" path="external/mkbootfs" revision="14f5c9a162e1153a14db49a5868a86fbec0145f9" upstream="master"/>
+  <project name="mpp" path="external/mpp" revision="e39b6456b91a95912675d2ade9f3656597a754bf" upstream="release"/>
+  <project name="music" path="app/music" revision="5f8aa0bda0a69761f63871aa022bd5db9fe1cb85" upstream="master"/>
+  <project name="powermanager" path="external/powermanager" revision="5f449bc1cdbf4760ef5540ae58d78572828e4916" upstream="master"/>
+  <project name="punybench" path="external/punybench" revision="c050715684a5dde3a4fc818f3de816a407fdb2de" upstream="master"/>
+  <project name="recovery" path="external/recovery" revision="d2b4bce7b4646129b1b97b0feabc163d78c17e6f" upstream="develop"/>
+  <project name="rk-rootfs-build" path="rootfs" revision="274d45c14a4cb4fc97996f1c1e849ed12060a5db" upstream="master"/>
+  <project name="rkbin" revision="4cd5a95ba0b56f90d5e4152d394ed4546068305d" upstream="29mirror"/>
+  <project name="rkupdate" path="external/rkupdate" revision="cb2218cd8b542a937333dabadf4d57ba04db6d0f" upstream="master"/>
+  <project name="settings" path="app/settings" revision="e0d18b17d2efb80537fefd23a01c0f2e8adb8ca4" upstream="master"/>
+  <project name="tools" revision="0e212f1f77b87ade1dc5ade25e68c2e58678edaf" upstream="master">
+    <linkfile dest="tools/windows/AndroidTool/AndroidTool_Release/config.cfg" src="windows/AndroidTool/AndroidTool_Release/rk3399-config.cfg"/>
+    <linkfile dest="tools/windows/AndroidTool/rockdev/package-file" src="windows/AndroidTool/rockdev/rk3399-package-file"/>
+    <linkfile dest="tools/windows/AndroidTool/rockdev/mkupdate.bat" src="windows/AndroidTool/rockdev/rk3399-mkupdate.bat"/>
+    <linkfile dest="tools/linux/Linux_Pack_Firmware/rockdev/mkupdate.sh" src="linux/Linux_Pack_Firmware/rockdev/rk3399-mkupdate.sh"/>
+    <linkfile dest="tools/linux/Linux_Pack_Firmware/rockdev/package-file" src="linux/Linux_Pack_Firmware/rockdev/rk3399-package-file"/>
+  </project>
+  <project name="u-boot" revision="a5c82e2bba8b66cfb14dc945c7f97dddec92542c" upstream="release"/>
+  <project name="video" path="app/video" revision="44fbde3aa0d6318be0bac90785c6a8058367e2ed" upstream="master"/>
+  <project name="xserver" path="external/xserver" revision="2baabe700b59f5a2681558c6a764155102325974" upstream="rockchip-1.18"/>
+</manifest>
