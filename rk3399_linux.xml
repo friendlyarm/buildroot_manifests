@@ -20,9 +20,11 @@
     <linkfile dest="tools/linux/Linux_Pack_Firmware/rockdev/mkupdate.sh" src="linux/Linux_Pack_Firmware/rockdev/rk3399-mkupdate.sh"/>
     <linkfile dest="tools/linux/Linux_Pack_Firmware/rockdev/package-file" src="linux/Linux_Pack_Firmware/rockdev/rk3399-package-file"/>
   </project>
-  <project path="docs" name="docs" revision="rk3399"/>
-  <project path="buildroot" name="buildroot" revision="2016.08.x"/>
-  <project path="buildroot/download" name="download" revision="master"/>
+  <project path="docs" name="docs" revision="master"/>
+  <project path="buildroot" name="buildroot" revision="2016.08.x">
+    <linkfile dest="Makefile" src="build/Makefile"/>
+    <linkfile dest="envsetup.sh" src="build/envsetup.sh"/>
+  </project>
   <project path="rootfs" name="rk-rootfs-build" revision="master"/>
   <project path="external/recovery" name="recovery" revision="develop"/>
   <project path="app/carmachine" name="carmachine" revision="rk3399"/>
@@ -32,11 +34,13 @@
   <project path="app/QLauncher" name="QLauncher" revision="master"/>
   <project path="app/settings" name="settings" revision="master"/>
   <project path="app/video" name="video" revision="master"/>
+  <project path="buildroot/download" name="download" revision="master"/>
   <project path="external/liblog" name="liblog" revision="master"/>
   <project path="external/libcutils" name="libcutils" revision="arm64"/>
   <project path="external/audioservice" name="audioservice" revision="master"/>
   <project path="external/byte-unixbench" name="byte-unixbench" revision="master"/>
-  <project path="external/io" name="io"  revision="master"/>
+  <project path="external/adb" name="linux-adb" revision="29mirror"/>
+  <project path="external/ueventd" name="ueventd" revision="master"/>
   <project path="external/gstreamer-rockchip" name="gstreamer-rockchip" revision="master"/>
   <project path="external/gstreamer-rockchip-extra" name="gstreamer-rockchip-extra" revision="master"/>
   <project path="external/libmali" name="libmali" revision="29mirror"/>
@@ -48,10 +52,13 @@
   <project path="external/xserver" name="xserver" revision="rockchip-1.18"/>
   <project path="external/powermanager" name="powermanager" revision="master"/>
   <project path="external/punybench" name="punybench" revision="master"/>
-  <project path="external/mkbootfs" name="mkbootfs" revision="master"/>
   <project path="device/rockchip/rk3399" name="device-custom" revision="rk3399">
     <linkfile dest="mkfirmware.sh" src="mkfirmware.sh"/>
     <linkfile dest="build_all.sh" src="build_all.sh"/>
-    <linkfile dest="envsetup.sh" src="envsetup.sh"/>
+    <linkfile dest="mk-kernel.sh" src="mk-kernel.sh"/>
+    <linkfile dest="mk-rootfs.sh" src="mk-rootfs.sh"/>
+    <linkfile dest="mk-recovery.sh" src="mk-recovery.sh"/>
+    <linkfile dest="mk-uboot.sh" src="mk-uboot.sh"/>
+    <linkfile dest="rkflash.sh" src="rkflash.sh"/>
   </project>
 </manifest>
