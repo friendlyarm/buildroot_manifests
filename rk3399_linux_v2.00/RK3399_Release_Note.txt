@@ -1,6 +1,20 @@
 ===========RK3399 Linux SDK Release Note===========
+【rk3399_linux_release_beta_20180611.xml 更新日志】
 
-【rk3399_linux_release_beta_201806041.xml 更新日志】
+Buildroot更新：
+1. 解决keyboard异常问题
+2. 解决glibc>2.7编译出错问题
+3. 增加pcba/rksdd/mpv/rockcip_test
+
+文档更新：
+1. 增加更多平台支持
+
+U-boot更新:
+1.解决resource.img替换boot.img异常问题
+
+app/camera更新:
+1.修复camera显示不能全屏的问题
+【rk3399_linux_release_beta_20180604.xml 更新日志】
 
 Buildroot更新：
 1. 之前的app/external下的应用，放在buildroot中编译.
