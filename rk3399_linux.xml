@@ -35,8 +35,10 @@
   <project path="app/settings" name="settings" revision="master"/>
   <project path="app/video" name="video" revision="master"/>
   <project path="buildroot/download" name="download" revision="master"/>
+  <project path="external/ffmpeg" name="ffmpeg" revision="master"/>
   <project path="external/liblog" name="liblog" revision="master"/>
   <project path="external/libcutils" name="libcutils" revision="arm64"/>
+  <project path="external/mpv" name="mpv" revision="master"/>
   <project path="external/audioservice" name="audioservice" revision="master"/>
   <project path="external/byte-unixbench" name="byte-unixbench" revision="master"/>
   <project path="external/adb" name="linux-adb" revision="29mirror"/>
@@ -45,10 +47,13 @@
   <project path="external/gstreamer-rockchip-extra" name="gstreamer-rockchip-extra" revision="master"/>
   <project path="external/libmali" name="libmali" revision="29mirror"/>
   <project path="external/libdrm-rockchip" name="libdrm-rockchip" revision="rockchip-2.4.68" />
-  <project path="external/linux-adb" name="linux-adb" revision="master"/>
   <project path="external/linux-rga" name="linux-rga" revision="master"/>
   <project path="external/mpp" name="mpp" revision="release"/>
+  <project path="external/rkdemos" name="rkdemos" revision="master"/>
+  <project path="external/rk_pcba_test" name="rk_pcba_test" revision="master"/>
+  <project path="external/rkssd" name="rkssd" revision="master"/>
   <project path="external/rkupdate" name="rkupdate" revision="master"/>
+  <project path="external/rkwifibt" name="rkwifibt" revision="master"/>
   <project path="external/xserver" name="xserver" revision="rockchip-1.18"/>
   <project path="external/powermanager" name="powermanager" revision="master"/>
   <project path="external/punybench" name="punybench" revision="master"/>
