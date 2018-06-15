@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+	<remote fetch="." name="rockchip-linux" review="https://github.com/rockchip-linux/"/>
+	<default remote="rockchip-linux" upstream="master" sync-j="4"/>
+
+	<project path="app/camera" name="camera" upstream="master" revision="291866bcbabb706f48398883fbcc16d9808f7ef0"/>
+	<project path="app/gallery" name="gallery" upstream="master" revision="e1266402c9abf78bf609432de3101d76c8c09c12"/>
+	<project path="app/music" name="music" upstream="master" revision="37bcb6a7be0818f87fea39fcde6e71b3549d1eb3"/>
+	<project path="app/QLauncher" name="QLauncher" upstream="master" revision="fb56e9343e2233b868d0c69696fae811dd2f5968"/>
+	<project path="app/settings" name="settings" upstream="master" revision="42ef053e225e08c87f7c5bbe7e06f5cacb76f175"/>
+	<project path="app/video" name="video" upstream="master" revision="08524b4fe70ec754c7e443ddc9aa5d284db5e186"/>
+	<project path="buildroot" name="buildroot" upstream="2016.08.x" revision="aea433813d71a3052ad761c1008973d9f19b64e4">
+		<linkfile dest="envsetup.sh" src="build/envsetup.sh"/>
+		<linkfile dest="Makefile" src="build/Makefile"/>
+	</project>
+	<project path="buildroot/download" name="download" upstream="master" revision="ee87e484eef5c6e6ae27832885c76717467d0fef"/>
+	<project path="device/rockchip/rk3288" name="device-custom" upstream="rk3288" revision="deabf3a020f0f85f682cabeaf39edb7848828deb">
+		<linkfile dest="build_all.sh" src="build_all.sh"/>
+		<linkfile dest="mkfirmware.sh" src="mkfirmware.sh"/>
+		<linkfile dest="mk-kernel.sh" src="mk-kernel.sh"/>
+		<linkfile dest="mk-rootfs.sh" src="mk-rootfs.sh"/>
+		<linkfile dest="mk-recovery.sh" src="mk-recovery.sh"/>
+		<linkfile dest="mk-uboot.sh" src="mk-uboot.sh"/>
+		<linkfile dest="rkflash.sh" src="rkflash.sh"/>
+	</project>
+	<project path="docs" name="docs" upstream="master" revision="6d7721645d795fd434e98b79db914824f081797f"/>
+	<project path="external/adb" name="linux-adb" upstream="29mirror" revision="5c57a1f9145eef7c0265b0a9bbc2379a377391c6"/>
+	<project path="external/audioservice" name="audioservice" upstream="master" revision="ec7efbf4cbb023a655228a1260fb83258fd667c1"/>
+	<project path="external/byte-unixbench" name="byte-unixbench" upstream="master" revision="05b1bd94e070d300f90e7112ef3fb4427cefac89"/>
+	<project path="external/ffmpeg" name="ffmpeg" upstream="master" revision="c8b57d4333b1bc5c4125fdac8fbf4625c399fc9c"/>
+	<project path="external/gstreamer-rockchip" name="gstreamer-rockchip" upstream="master" revision="aadf6ab77c53055f8be85c18bace6918e04e3f9c"/>
+	<project path="external/gstreamer-rockchip-extra" name="gstreamer-rockchip-extra" upstream="master" revision="ab5f747dcb82ee37e6d2cc370c5e53a39d8ddacc"/>
+	<project path="external/libcutils" name="libcutils" upstream="master" revision="973b41906854a32379809b11138afbf7016563a0"/>
+	<project path="external/libdrm-rockchip" name="libdrm-rockchip" upstream="rockchip-2.4.68" revision="ea6c1f85b8691f0c2ecda16fb9919eeec3dafd48"/>
+	<project path="external/liblog" name="liblog" upstream="master" revision="3867fe3c8f20f46d7109c2779ac48af2f16d6ea8"/>
+	<project path="external/libmali" name="libmali" upstream="29mirror" revision="8c54a9d2849b69c09e69bec79922467377be4e44"/>
+	<project path="external/linux-rga" name="linux-rga" upstream="master" revision="b586e307e4c9336f52bc987c6b09e20c2a1ad295"/>
+	<project path="external/mpp" name="mpp" upstream="release" revision="9466a604521fa38ab44679c42290b2c2c0513503"/>
+	<project path="external/mpv" name="mpv" upstream="master" revision="2739ea80b7137daf3f9a39fd3a2ddfd787a6b964"/>
+	<project path="external/powermanager" name="powermanager" upstream="master" revision="2d0ea936836dbbf711ca049949c71125b7b5a3df"/>
+	<project path="external/punybench" name="punybench" upstream="master" revision="c050715684a5dde3a4fc818f3de816a407fdb2de"/>
+	<project path="external/recovery" name="recovery" upstream="develop" revision="60b357c867ab9495124f1e046f296c19ae8c2724"/>
+	<project path="external/rkdemos" name="rkdemos" upstream="master" revision="0dd2aaf0f5e13d5ef45c5350b949ece39e617ab5"/>
+	<project path="external/rkupdate" name="rkupdate" upstream="master" revision="72ffdc96ef557594dc4c22ad8ab9f62fe90195ab"/>
+	<project path="external/rkwifibt" name="rkwifibt" upstream="master" revision="22427597b27ce03f1c2ab2539821acbeeeabdc7e"/>
+	<project path="external/rk_pcba_test" name="rk_pcba_test" upstream="master" revision="fa3d220a8a9e8c46250f8242e90c404d342d46a5"/>
+	<project path="external/ueventd" name="ueventd" upstream="master" revision="6131251e513d708fde4156639f2707decbc6fb29"/>
+	<project path="external/xserver" name="xserver" upstream="rockchip-1.18" revision="6f770de04d50422af48f83e17de7197ed0a76fdb"/>
+	<project path="kernel" name="kernel" upstream="release-4.4" revision="cc20bc020b16e9b924de509e2bcdfd1fae6bc99e"/>
+	<project path="prebuilts/gcc/linux-x86/arm/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf" name="gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf" upstream="master" revision="dd4df7dff4f1df65d78939a958b760a79e3650a1"/>
+	<project path="rkbin" name="rkbin" upstream="master" revision="ffb36c0a2df9dd6b38f2da8f842f26ddc5990800"/>
+	<project path="rootfs" name="rk-rootfs-build" upstream="master" revision="274d45c14a4cb4fc97996f1c1e849ed12060a5db"/>
+	<project path="tools" name="tools" upstream="master" revision="995fe6d51f813acd913aaecabe30c4c86a48aa71">
+		<linkfile dest="tools/linux/Linux_Pack_Firmware/rockdev/mkupdate.sh" src="linux/Linux_Pack_Firmware/rockdev/rk3288-mkupdate.sh"/>
+		<linkfile dest="tools/linux/Linux_Pack_Firmware/rockdev/package-file" src="linux/Linux_Pack_Firmware/rockdev/rk3288-package-file"/>
+		<linkfile dest="tools/windows/AndroidTool/AndroidTool_Release/config.cfg" src="windows/AndroidTool/AndroidTool_Release/rk3288-config.cfg"/>
+		<linkfile dest="tools/windows/AndroidTool/rockdev/package-file" src="windows/AndroidTool/rockdev/rk3288-package-file"/>
+		<linkfile dest="tools/windows/AndroidTool/rockdev/mkupdate.bat" src="windows/AndroidTool/rockdev/rk3288-mkupdate.bat"/>
+	</project>
+	<project path="u-boot" name="u-boot" upstream="release" revision="b2cd2d96bc14551bca204d181933920fda4e78dd"/>
+</manifest>
