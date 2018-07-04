@@ -12,7 +12,25 @@ $ repo sync
 
 --
 
-The RK3399 chips:
+The RK3288 chips
+
+There are two ways to get the code:
+
+(1) Sync to the lastest TOT code:
+
+$ repo init -u https://github.com/rockchip-linux/manifests -m rk3288_linux.xml
+
+$ repo sync
+
+(2) Sync to the lastest release code:
+
+$ repo init -u https://github.com/rockchip-linux/manifests -m rk3288_linux_release.xml
+
+$ repo sync
+
+--
+
+The RK3399 chips
 
 There are two ways to get the code:
 
