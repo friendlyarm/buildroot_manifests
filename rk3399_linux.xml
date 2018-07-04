@@ -21,7 +21,7 @@
     <linkfile dest="tools/linux/Linux_Pack_Firmware/rockdev/package-file" src="linux/Linux_Pack_Firmware/rockdev/rk3399-package-file"/>
   </project>
   <project path="docs" name="docs" revision="master"/>
-  <project path="buildroot" name="buildroot" revision="2016.08.x">
+  <project path="buildroot" name="buildroot" revision="rockchip/2018.02-rc3">
     <linkfile dest="Makefile" src="build/Makefile"/>
     <linkfile dest="envsetup.sh" src="build/envsetup.sh"/>
   </project>
@@ -57,13 +57,13 @@
   <project path="external/xserver" name="xserver" revision="rockchip-1.18"/>
   <project path="external/powermanager" name="powermanager" revision="master"/>
   <project path="external/punybench" name="punybench" revision="master"/>
-  <project path="device/rockchip/rk3399" name="device-custom" revision="rk3399">
-    <linkfile dest="mkfirmware.sh" src="mkfirmware.sh"/>
-    <linkfile dest="build_all.sh" src="build_all.sh"/>
-    <linkfile dest="mk-kernel.sh" src="mk-kernel.sh"/>
-    <linkfile dest="mk-rootfs.sh" src="mk-rootfs.sh"/>
-    <linkfile dest="mk-recovery.sh" src="mk-recovery.sh"/>
-    <linkfile dest="mk-uboot.sh" src="mk-uboot.sh"/>
-    <linkfile dest="rkflash.sh" src="rkflash.sh"/>
+  <project path="device/rockchip" name="device-custom" revision="master">
+     <linkfile dest="mkfirmware.sh" src="rk3399/mkfirmware.sh"/>
+     <linkfile dest="build_all.sh" src="rk3399/build_all.sh"/>
+     <linkfile dest="mk-kernel.sh" src="rk3399/mk-kernel.sh"/>
+     <linkfile dest="mk-rootfs.sh" src="rk3399/mk-rootfs.sh"/>
+     <linkfile dest="mk-recovery.sh" src="rk3399/mk-recovery.sh"/>
+     <linkfile dest="mk-uboot.sh" src="rk3399/mk-uboot.sh"/>
+     <linkfile dest="rkflash.sh" src="rk3399/rkflash.sh"/>
   </project>
 </manifest>
