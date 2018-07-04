@@ -1,5 +1,14 @@
 ===========RK3399 Linux SDK Release Note===========
-【rk3399_linux_release_beta_20180611.xml 更新日志】
+【rk3399_linux_release_v2.2_20180704.xml 更新日志】
+
+Buildroot更新：
+1.更新新版本2018.02-rc3
+2.支持gmac
+文档更新：
+1. 增加软件开发指南和开发文档更新
+
+
+【rk3399_linux_release_v2.1_20180611.xml 更新日志】
 
 Buildroot更新：
 1. 解决keyboard异常问题
@@ -14,7 +23,8 @@ U-boot更新:
 
 app/camera更新:
 1.修复camera显示不能全屏的问题
-【rk3399_linux_release_beta_20180604.xml 更新日志】
+
+【rk3399_linux_release_v2.02_20180604.xml 更新日志】
 
 Buildroot更新：
 1. 之前的app/external下的应用，放在buildroot中编译.
