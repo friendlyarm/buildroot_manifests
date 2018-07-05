@@ -51,7 +51,7 @@
   <project name="rkupdate" path="external/rkupdate" revision="72ffdc96ef557594dc4c22ad8ab9f62fe90195ab" upstream="master"/>
   <project name="rkwifibt" path="external/rkwifibt" revision="7fc6a307951ee525fa30f5af201760362b756c2c" upstream="master"/>
   <project name="settings" path="app/settings" revision="ec4f67a2df498893539eb2435d14348d97ecc462" upstream="master"/>
-  <project name="tools" revision="246b3887a05a1e5b09b1f1cdd2a06dacf8ef3ce0" upstream="master">
+  <project name="tools" revision="5df74b5254924522026fc35c245bc7862a2feb12" upstream="master">
     <linkfile dest="tools/windows/AndroidTool/AndroidTool_Release/config.cfg" src="windows/AndroidTool/AndroidTool_Release/rk3399-config.cfg"/>
     <linkfile dest="tools/windows/AndroidTool/rockdev/package-file" src="windows/AndroidTool/rockdev/rk3399-package-file"/>
     <linkfile dest="tools/windows/AndroidTool/rockdev/mkupdate.bat" src="windows/AndroidTool/rockdev/rk3399-mkupdate.bat"/>
