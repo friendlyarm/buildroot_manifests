@@ -18,13 +18,13 @@ There are two ways to get the code:
 
 (1) Sync to the lastest TOT code:
 
-$ repo init -u https://github.com/rockchip-linux/manifests -m rk3288_linux.xml
+$ repo init -u https://github.com/rockchip-linux/manifests -b master -m rk3288_linux.xml
 
 $ repo sync
 
 (2) Sync to the lastest release code:
 
-$ repo init -u https://github.com/rockchip-linux/manifests -m rk3288_linux_release.xml
+$ repo init -u https://github.com/rockchip-linux/manifests -b master -m rk3288_linux_release.xml
 
 $ repo sync
 
@@ -36,12 +36,12 @@ There are two ways to get the code:
 
 (1) Sync to the lastest TOT code:
 
-$ repo init -u https://github.com/rockchip-linux/manifests -m rk3399_linux.xml
+$ repo init -u https://github.com/rockchip-linux/manifests -b master -m rk3399_linux.xml
 
 $ repo sync
 
 (2) Sync to the lastest release code:
 
-$ repo init -u https://github.com/rockchip-linux/manifests -m rk3399_linux_release.xml
+$ repo init -u https://github.com/rockchip-linux/manifests -b master -m rk3399_linux_release.xml
 
 $ repo sync
