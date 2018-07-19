@@ -35,6 +35,7 @@
   <project path="app/settings" name="settings" revision="master"/>
   <project path="app/video" name="video" revision="master"/>
   <project path="buildroot/download" name="download" revision="master"/>
+  <project path="external/camera_engine_cifisp" name="camera_engine_cifisp" revision="master"/>
   <project path="external/ffmpeg" name="ffmpeg" revision="master"/>
   <project path="external/liblog" name="liblog" revision="master"/>
   <project path="external/libcutils" name="libcutils" revision="arm64"/>
@@ -43,6 +44,7 @@
   <project path="external/byte-unixbench" name="byte-unixbench" revision="master"/>
   <project path="external/adb" name="linux-adb" revision="29mirror"/>
   <project path="external/ueventd" name="ueventd" revision="master"/>
+  <project path="external/gstreamer-camera" name="gstreamer-camera" revision="master"/>
   <project path="external/gstreamer-rockchip" name="gstreamer-rockchip" revision="master"/>
   <project path="external/gstreamer-rockchip-extra" name="gstreamer-rockchip-extra" revision="master"/>
   <project path="external/libmali" name="libmali" revision="29mirror"/>
@@ -54,16 +56,11 @@
   <project path="external/rkssd" name="rkssd" revision="master"/>
   <project path="external/rkupdate" name="rkupdate" revision="master"/>
   <project path="external/rkwifibt" name="rkwifibt" revision="master"/>
-  <project path="external/xserver" name="xserver" revision="rockchip-1.18"/>
   <project path="external/powermanager" name="powermanager" revision="master"/>
-  <project path="external/punybench" name="punybench" revision="master"/>
   <project path="device/rockchip" name="device-custom" revision="master">
      <linkfile dest="mkfirmware.sh" src="rk3399/mkfirmware.sh"/>
-     <linkfile dest="build_all.sh" src="rk3399/build_all.sh"/>
-     <linkfile dest="mk-kernel.sh" src="rk3399/mk-kernel.sh"/>
-     <linkfile dest="mk-rootfs.sh" src="rk3399/mk-rootfs.sh"/>
-     <linkfile dest="mk-recovery.sh" src="rk3399/mk-recovery.sh"/>
-     <linkfile dest="mk-uboot.sh" src="rk3399/mk-uboot.sh"/>
+     <linkfile dest="build.sh" src="common/build.sh"/>
      <linkfile dest="rkflash.sh" src="rk3399/rkflash.sh"/>
+     <linkfile dest="device/rockchip/.BoardConfig.mk" src="rk3399/BoardConfig.mk"/>
   </project>
 </manifest>
