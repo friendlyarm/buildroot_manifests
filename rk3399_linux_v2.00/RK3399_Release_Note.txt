@@ -1,5 +1,14 @@
 ===========RK3399 Linux SDK Release Note===========
-【rk3399_linux_release_v2.2_20180704.xml 更新日志】
+【rk3399_linux_release_v2.05_20180719.xml 更新日志】
+
+Buildroot更新：
+1.移除一些没用benchmark
+2.增加camera_cifisp个camera_gstremer仓库
+文档更新：
+1. 更新发布文档
+device/rockchip:更新自动编译脚本
+
+【rk3399_linux_release_v2.04_20180704.xml 更新日志】
 
 Buildroot更新：
 1.更新新版本2018.02-rc3
@@ -8,7 +17,7 @@ Buildroot更新：
 1. 增加软件开发指南和开发文档更新
 
 
-【rk3399_linux_release_v2.1_20180611.xml 更新日志】
+【rk3399_linux_release_v2.03_20180611.xml 更新日志】
 
 Buildroot更新：
 1. 解决keyboard异常问题
