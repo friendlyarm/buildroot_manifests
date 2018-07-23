@@ -1,0 +1,15 @@
+===========RK3288 Linux SDK Release Note===========
+
+【rk3288_linux_release_v2.0_20180620.xml 更新日志】
+
+Buildroot更新：
+1.移除没用的package包
+2.开发文档和编译脚本的更新
+3.loader(rockusb)模式的支持
+4.增加trust.img的支持
+5.增加ddr变频支持
+6.rk3288w的兼容
+7.修复camera，music，QLuancher的问题
+8.之前的app/external下的应用，统一在buildroot中编译
+9.应用显示框架由原来eglfs切换到wayland
+10.adbd的支持 Bt的支持 recovery模式的支持
