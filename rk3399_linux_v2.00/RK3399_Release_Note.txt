@@ -1,12 +1,16 @@
 ===========RK3399 Linux SDK Release Note===========
+
 【rk3399_linux_release_v2.05_20180719.xml 更新日志】
 
 Buildroot更新：
-1.移除一些没用benchmark
-2.增加camera_cifisp个camera_gstremer仓库
+1.增加openmpp,resize2fs等工具
+2.修复oem格式不对，以及增加automount功能
 文档更新：
 1. 更新发布文档
-device/rockchip:更新自动编译脚本
+device/rockchip:脚本更新，生成update.img和之前版本差异保存
+
+Debian更新:
+增加adb的支持
 
 【rk3399_linux_release_v2.04_20180704.xml 更新日志】
 
@@ -40,7 +44,7 @@ Buildroot更新：
 2. 应用显示由原来eglfa切换到wayland框架.
 
 文档更新：
-1. 增加文档发布说明：RK3399_LINUX_SDK_V2.1_20180601发布说明.pdf.
+1. 增加文档发布说明
 2. 所有芯片的文档统一.
 
 U-boot更新:
@@ -49,3 +53,30 @@ U-boot更新:
 
 app/camera更新:
 1.修复camera显示不能全屏的问题
+
+【rk3399_linux_release_v2.01_20180524.xml 更新日志】
+
+rkbin更新:
+解决重启第一次起来ddr引起的hang问题.
+
+rk3399: ddr: update ddr init bin v1.12
+
+built from ddr init project commit:
+	9e6431a Version: DDR Version 1.12 20180518
+
+	update feature:
+	1.fix ddr3 board power up fail because of lpddr4 commit
+
+	ddr3 power up fail at trust, and ddr3 board download flow can pass,
+	can enter system, reboot also pass, only power down and up, and hardware
+	reset can meet this problem.
+	the fail log as below:
+	NOTICE:  BL31: Rockchip release version: v1.1
+	INFO:    GICv3 with legacy support detected. ARM GICV3 driver initialized in EL3
+	INFO:    Using opteed sec cpu_context!
+	INFO:    boot cpu mask: 0
+	ASSERT: bakery_lock_release <170> : bakery_ticket_number(bakery->lock_data[me])
+
+【rk3399_linux_release_v2.00_20180517.xml 更新日志】
+
+1. v2.0初始版本
