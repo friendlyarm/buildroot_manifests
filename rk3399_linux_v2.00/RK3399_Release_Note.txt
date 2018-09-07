@@ -1,8 +1,43 @@
 ===========RK3399 Linux SDK Release Note===========
 
-【rk3399_linux_release_v2.05_20180719.xml 更新日志】
+【rk3399_linux_release_v2.07_20180907.xml 更新日志】
 
 Buildroot更新：
+1.减少rootfs的源码包大小，删除原先download目录，重新生成重命名为dl.
+2.configs分成各个模块，然后可定制修改，具体参考configs/rockchip
+3.增加usb自动挂载和MTP功能
+4.修复oem错误类型
+5.修复recovery/update升级异常问题
+6.修复userdata/oem/rootfs分区大小不对问题
+7.修复envsetup.sh编译单独模块，坏境变量不对问题
+8.增加tensorflow的rk3399 NN的支持
+9.去掉qlanucher的背景图设置功能，因为会引起界面hang的假象
+10.增加weston.ini对输入设备，横竖屏等配置
+11.修复reboot过程udev引起的异常问题
+
+Debian更新:
+1.修复64位adb的支持
+2.修复64位debian生成大小不对
+3.增加64位debian的rkximagesink gstreamer的支持
+
+文档和工具的更新:
+1.WNpctool的工具和源码提供
+2.更新wifi/bt的文档
+
+kernel的更新:
+1.增加wide-temperature的支持
+2.增加rk3399 双usb的传输性能
+3.更改vdd_log的电压从1.0v到0.9v
+
+uboot的更新:
+1.增加rk3399 双usb的传输性能
+2.修复firefly的用spl的sd boot问题
+3.clocks的pll修复
+4、miniloader的升级，修复一些atf/reboot以及gpt支持
+
+【rk3399_linux_release_v2.05_20180719.xml 更新日志】
+
+buildroot更新：
 1.增加openmpp,resize2fs等工具
 2.修复oem格式不对，以及增加automount功能
 文档更新：
@@ -11,6 +46,7 @@ device/rockchip:脚本更新，生成update.img和之前版本差异保存
 
 Debian更新:
 增加adb的支持
+
 
 【rk3399_linux_release_v2.04_20180704.xml 更新日志】
 
