@@ -1,45 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
+  <remote fetch="." name="rockchip-linux" review="https://github.com/rockchip-linux/"/>
 
-  <remote  name="rockchip-linux"
-           fetch="."
-           review="https://github.com/rockchip-linux/" />
-  <default revision="master"
-           remote="rockchip-linux"
-           sync-j="4" />
+  <default remote="rockchip-linux" revision="master" sync-j="4"/>
 
-  <project name="gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf" path="prebuilts/gcc/linux-x86/arm/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf"  upstream="master"/>
-  <project path="kernel" name="kernel" revision="release-4.4"/>
-  <project path="u-boot" name="u-boot" revision="release"/>
-  <project path="rootfs" name="rk-rootfs-build" />
-  <project path="buildroot" name="buildroot" revision="2016.08.x"/>
-  <project path="rkbin" name="rkbin" revision="29mirror"/>
-  <project path="tools" name="tools" revision="rk3288" />
-  <project path="docs" name="docs" revision="rk3288"/>
-  <project path="app/camera" name="camera" revision="master"/>
-  <project path="app/carmachine" name="carmachine" revision="master"/>
-  <project path="app/gallery" name="gallery" revision="master"/>
-  <project path="app/music" name="music" revision="master"/>
-  <project path="app/QLauncher" name="QLauncher" revision="master"/>
-  <project path="app/settings" name="settings" revision="master"/>
-  <project path="app/video" name="video" revision="master"/>
-  <project path="external/xserver" name="xserver" revision="rockchip-1.18"/>
-  <project path="external/linux-adb" name="linux-adb" revision="master"/>
-  <project path="external/linux-rga" name="linux-rga" revision="master"/>
-  <project path="external/libmali" name="libmali" revision="29mirror"/>
-  <project path="external/libdrm-rockchip" name="libdrm-rockchip" revision="rockchip-2.4.68" />
-  <project path="external/mpp" name="mpp" revision="release"/>
-  <project path="external/gstreamer-rockchip" name="gstreamer-rockchip" revision="master"/>
-  <project path="external/gstreamer-rockchip-extra" name="gstreamer-rockchip-extra" revision="master"/>
-  <project path="external/io" name="io" revision="master"/>
-  <project path="external/audioservice" name="audioservice" revision="master"/>
-  <project path="external/byte-unixbench" name="byte-unixbench" revision="master"/>
-  <project path="external/powermanager" name="powermanager" revision="master"/>
-  <project path="external/punybench" name="punybench" revision="master"/>
-  <project path="device/rockchip/rk3288" name="device-custom" revision="rk3288">
-	  <copyfile dest="mkfirmware.sh" src="mkfirmware.sh"/>
-          <copyfile dest="build_all.sh" src="build_all.sh"/>
-          <copyfile dest="envsetup.sh" src="envsetup.sh"/>
+  <project name="QLauncher" path="app/QLauncher" revision="master"/>
+  <project name="alsa-config" path="external/alsa-config" revision="master"/>
+  <project name="audioservice" path="external/audioservice" revision="master"/>
+  <project name="buildroot" path="buildroot" revision="rockchip/2018.02-rc3">
+    <linkfile dest="Makefile" src="build/Makefile"/>
+    <linkfile dest="envsetup.sh" src="build/envsetup.sh"/>
   </project>
-
+  <project name="camera" path="app/camera" revision="master"/>
+  <project name="camera_engine_cifisp" path="external/camera_engine_cifisp" revision="master"/>
+  <project name="camera_engine_rkisp" path="external/camera_engine_rkisp" revision="master"/>
+  <project name="device-custom" path="device/rockchip" revision="master">
+     <linkfile dest="mkfirmware.sh" src="common/mkfirmware.sh"/>
+     <linkfile dest="build.sh" src="common/build.sh"/>
+     <linkfile dest="rkflash.sh" src="common/rkflash.sh"/>
+     <linkfile dest="device/rockchip/.BoardConfig.mk" src="rk3288/BoardConfig.mk"/>
+  </project>
+  <project name="distro" path="distro" revision="master"/>
+  <project name="dl" path="buildroot/dl" revision="master"/>
+  <project name="docs" path="docs" revision="master"/>
+  <project name="ffmpeg" path="external/ffmpeg" revision="master"/>
+  <project name="gallery" path="app/gallery" revision="master"/>
+  <project name="gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf" path="prebuilts/gcc/linux-x86/arm/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf"  upstream="master"/>
+  <project name="gstreamer-camera" path="external/gstreamer-camera" revision="master"/>
+  <project name="gstreamer-rockchip" path="external/gstreamer-rockchip" revision="master"/>
+  <project name="kernel" path="kernel" revision="release-4.4"/>
+  <project name="libdrm-rockchip" path="external/libdrm-rockchip" revision="rockchip-2.4.68" />
+  <project name="libmali" path="external/libmali" revision="29mirror"/>
+  <project name="linux-rga" path="external/linux-rga" revision="master"/>
+  <project name="mpp" path="external/mpp" revision="release"/>
+  <project name="mpv" path="external/mpv" revision="master"/>
+  <project name="music" path="app/music" revision="master"/>
+  <project name="powermanager" path="external/powermanager" revision="master"/>
+  <project name="recovery" path="external/recovery" revision="develop"/>
+  <project name="rk-rootfs-build" path="rootfs" revision="master"/>
+  <project name="rk_pcba_test" path="external/rk_pcba_test" revision="master"/>
+  <project name="rkbin" path="rkbin" revision="29mirror"/>
+  <project name="rkssd" path="external/rkssd" revision="master"/>
+  <project name="rkupdate" path="external/rkupdate" revision="master"/>
+  <project name="rkwifibt" path="external/rkwifibt" revision="master"/>
+  <project name="settings" path="app/settings" revision="master"/>
+  <project name="tensorflow" path="external/tensorflow" revision="master"/>
+  <project name="tools" path="tools" revision="master">
+    <linkfile dest="tools/windows/AndroidTool/AndroidTool_Release/config.cfg" src="windows/AndroidTool/AndroidTool_Release/rk3288-config.cfg"/>
+    <linkfile dest="tools/windows/AndroidTool/rockdev/package-file" src="windows/AndroidTool/rockdev/rk3288-package-file"/>
+    <linkfile dest="tools/windows/AndroidTool/rockdev/mkupdate.bat" src="windows/AndroidTool/rockdev/rk3288-mkupdate.bat"/>
+    <linkfile dest="tools/linux/Linux_Pack_Firmware/rockdev/mkupdate.sh" src="linux/Linux_Pack_Firmware/rockdev/rk3288-mkupdate.sh"/>
+    <linkfile dest="tools/linux/Linux_Pack_Firmware/rockdev/package-file" src="linux/Linux_Pack_Firmware/rockdev/rk3288-package-file"/>
+  </project>
+  <project name="u-boot" path="u-boot" revision="release"/>
+  <project name="video" path="app/video" revision="master"/>
 </manifest>
