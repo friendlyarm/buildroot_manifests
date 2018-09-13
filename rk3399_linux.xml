@@ -26,7 +26,6 @@
   <project name="ffmpeg" path="external/ffmpeg" revision="master"/>
   <project name="gallery" path="app/gallery" revision="master"/>
   <project name="gcc-linaro-6.3.1-2017.05-x86_64_aarch64-linux-gnu" path="prebuilts/gcc/linux-x86/aarch64/gcc-linaro-6.3.1-2017.05-x86_64_aarch64-linux-gnu" revision="master"/>
-  <project name="gcc-prebuilts" path="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" revision="aarch64-linux-android-4.9"/>
   <project name="gstreamer-camera" path="external/gstreamer-camera" revision="master"/>
   <project name="gstreamer-rockchip" path="external/gstreamer-rockchip" revision="master"/>
   <project name="kernel" path="kernel" revision="release-4.4"/>
