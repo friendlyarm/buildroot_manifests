@@ -28,7 +28,7 @@
   <project name="gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf" path="prebuilts/gcc/linux-x86/arm/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf" upstream="master" revision="dd4df7dff4f1df65d78939a958b760a79e3650a1"/>
   <project name="gstreamer-camera" path="external/gstreamer-camera" revision="7b8a9b33f95a0a7c65fd76d4f4e3f6778fce8ea7" upstream="master"/>
   <project name="gstreamer-rockchip" path="external/gstreamer-rockchip" revision="aadf6ab77c53055f8be85c18bace6918e04e3f9c" upstream="master"/>
-  <project name="kernel" revision="3fb59731c66b00277a37963e854cd4ea95063320" upstream="release-4.4"/>
+  <project name="kernel" revision="4311650fc8ae85d181313f08ab482e3dacc7bf4d" upstream="release-4.4"/>
   <project name="libdrm-rockchip" path="external/libdrm-rockchip" revision="ea6c1f85b8691f0c2ecda16fb9919eeec3dafd48" upstream="rockchip-2.4.68"/>
   <project name="libmali" path="external/libmali" revision="9840771868ebda1f6c2a17dd24dcd674ef0ca36a" upstream="29mirror"/>
   <project name="linux-rga" path="external/linux-rga" revision="eb14310e72e2f76eb78c0d6dafc350af8a25c3d8" upstream="master"/>
@@ -37,7 +37,7 @@
   <project name="music" path="app/music" revision="40a4da13e82f32d83369f7777479a196d9f58576" upstream="master"/>
   <project name="powermanager" path="external/powermanager" revision="d257b3c0a1eee68972296d975395f7bd8bfff7db" upstream="master"/>
   <project name="recovery" path="external/recovery" revision="8d004833b17ccb64df5f508129c49a512aa08ad0" upstream="develop"/>
-  <project name="rk-rootfs-build" path="rootfs" revision="92cd2724c1e2bc8497ad9efe65b3b05b1de4483a" upstream="master"/>
+  <project name="rk-rootfs-build" path="rootfs" revision="9213e5059c9a5bbbdc5ee6b7684a8b64843a2cf4" upstream="master"/>
   <project name="rk_pcba_test" path="external/rk_pcba_test" revision="fa3d220a8a9e8c46250f8242e90c404d342d46a5" upstream="master"/>
   <project name="rkbin" revision="9e7dcd3fdd709cfea98db03be818c0dfc217f376" upstream="29mirror"/>
   <project name="rkssd" path="external/rkssd" revision="1c50d336e770a8ce09ae33b3e09d2783d5b4c2d9" upstream="master"/>
