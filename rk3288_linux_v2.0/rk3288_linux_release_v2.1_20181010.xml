@@ -21,7 +21,7 @@
     <linkfile dest="device/rockchip/.BoardConfig.mk" src="rk3288/BoardConfig.mk"/>
   </project>
   <project name="dl" path="buildroot/dl" revision="9706155226abf00e9cba5bf600fdd98c5daf9eef" upstream="master"/>
-  <project name="docs" revision="cfd6f1f5e49655891d850dc150a9ba010a4d4b91" upstream="master"/>
+  <project name="docs" revision="16f819a2d45cff07e9193387ddc11dda4ee0a3f2" upstream="master"/>
   <project name="ffmpeg" path="external/ffmpeg" revision="c8b57d4333b1bc5c4125fdac8fbf4625c399fc9c" upstream="master"/>
   <project name="gallery" path="app/gallery" revision="8cdb4c492c7e0be5803675409958f816bcd56cc3" upstream="master"/>
   <project name="gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf" path="prebuilts/gcc/linux-x86/arm/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf" upstream="master" revision="dd4df7dff4f1df65d78939a958b760a79e3650a1"/>
