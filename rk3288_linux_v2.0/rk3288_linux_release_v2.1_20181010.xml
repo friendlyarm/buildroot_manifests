@@ -13,8 +13,8 @@
   </project>
   <project name="camera" path="app/camera" revision="291866bcbabb706f48398883fbcc16d9808f7ef0" upstream="master"/>
   <project name="camera_engine_cifisp" path="external/camera_engine_cifisp" revision="8b85c704d2af804f6cfd281b641f50ab7b20a0ed" upstream="master"/>
-  <project name="camera_engine_rkisp" path="external/camera_engine_rkisp" revision="e0016ff6507b5812f807e861ea80cb07667734f1" upstream="master"/>
-  <project name="device-custom" path="device/rockchip" revision="8ede92b7e28ca0ccc31803b7d11d58107d9c9f04" upstream="master">
+  <project name="camera_engine_rkisp" path="external/camera_engine_rkisp" revision="7c6c8184ecc8af4511046d46df7ae360f9c966d0" upstream="master"/>
+  <project name="device-custom" path="device/rockchip" revision="277df052d6a5ff02d1d030349586c0efd65a9024" upstream="master">
     <linkfile dest="mkfirmware.sh" src="common/mkfirmware.sh"/>
     <linkfile dest="build.sh" src="common/build.sh"/>
     <linkfile dest="rkflash.sh" src="common/rkflash.sh"/>
@@ -27,14 +27,14 @@
   <project name="gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf" path="prebuilts/gcc/linux-x86/arm/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf" upstream="master" revision="dd4df7dff4f1df65d78939a958b760a79e3650a1"/>
   <project name="gstreamer-camera" path="external/gstreamer-camera" revision="7b8a9b33f95a0a7c65fd76d4f4e3f6778fce8ea7" upstream="master"/>
   <project name="gstreamer-rockchip" path="external/gstreamer-rockchip" revision="aadf6ab77c53055f8be85c18bace6918e04e3f9c" upstream="master"/>
-  <project name="kernel" revision="1898fa5b73a79eede6ae1ce526ebf8da87523fbe" upstream="stable-4.4-rk3288-linux"/>
+  <project name="kernel" revision="0d0a64c1102a11161738c555888d52eec5880b3c" upstream="stable-4.4-rk3288-linux"/>
   <project name="libdrm-rockchip" path="external/libdrm-rockchip" revision="ea6c1f85b8691f0c2ecda16fb9919eeec3dafd48" upstream="rockchip-2.4.68"/>
   <project name="libmali" path="external/libmali" revision="9840771868ebda1f6c2a17dd24dcd674ef0ca36a" upstream="29mirror"/>
   <project name="linux-rga" path="external/linux-rga" revision="eb14310e72e2f76eb78c0d6dafc350af8a25c3d8" upstream="master"/>
   <project name="mpp" path="external/mpp" revision="15e357ffd0c98e3099be81eb91b4a48cf8db78a7" upstream="release"/>
   <project name="mpv" path="external/mpv" revision="2739ea80b7137daf3f9a39fd3a2ddfd787a6b964" upstream="master"/>
   <project name="music" path="app/music" revision="40a4da13e82f32d83369f7777479a196d9f58576" upstream="master"/>
-  <project name="powermanager" path="external/powermanager" revision="d257b3c0a1eee68972296d975395f7bd8bfff7db" upstream="master"/>
+  <project name="powermanager" path="external/powermanager" revision="17921d6b75395df5478613973e58916a6cf7c7ad" upstream="master"/>
   <project name="recovery" path="external/recovery" revision="8d004833b17ccb64df5f508129c49a512aa08ad0" upstream="develop"/>
   <project name="rk-rootfs-build" path="rootfs" revision="6673840f2e7bc7d3cbb93610ed2d0b29cfc92c90" upstream="master"/>
   <project name="rk_pcba_test" path="external/rk_pcba_test" revision="fa3d220a8a9e8c46250f8242e90c404d342d46a5" upstream="master"/>
