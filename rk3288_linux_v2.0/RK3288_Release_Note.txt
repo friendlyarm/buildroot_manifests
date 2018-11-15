@@ -3,13 +3,33 @@
 【rk3288_linux_release_v2.0_20180620.xml 更新日志】
 
 Buildroot更新：
-1.移除没用的package包
-2.开发文档和编译脚本的更新
-3.loader(rockusb)模式的支持
-4.增加trust.img的支持
-5.增加ddr变频支持
-6.rk3288w的兼容
-7.修复camera，music，QLuancher的问题
-8.之前的app/external下的应用，统一在buildroot中编译
-9.应用显示框架由原来eglfs切换到wayland
-10.adbd的支持 Bt的支持 recovery模式的支持
+	1.移除没用的package包
+	2.开发文档和编译脚本的更新
+	3.loader(rockusb)模式的支持
+	4.增加trust.img的支持
+	5.增加ddr变频支持
+	6.rk3288w的兼容
+	7.修复camera，music，QLuancher的问题
+	8.之前的app/external下的应用，统一在buildroot中编译
+	9.应用显示框架由原来eglfs切换到wayland
+	10.adbd的支持 Bt的支持 recovery模式的支持
+
+【rk3288_linux_release_v2.1_20181010.xml 更新日志】
+Uboot更新：
+  【 Fix 】
+	1.usb-otg: siddp初始化，支持在rootfs阶段通过reboot loader进入loader模式
+	2.clk: fix up dclk_vop setting.
+
+  【 Features 】
+	1.build: 编译使用./make.sh rk3288，和kernel共用了DTS (CONFIG_USING_KERNEL_DTB)
+	2.display: 支持hdmi/edp/mipi/lvds/rgb的uboot、kernel logo显示
+		   支持uboot阶段的双屏显示
+
+Kernel更新：
+   【 Fix 】
+	1.power_off: evb-act8846可以正确的shutdown
+
+Debian更新：
+   【 Fix 】
+	1.package: chromium: fix version to 67.0.3396.87
+	2.overlay: init: update rk3288w libmali link.
