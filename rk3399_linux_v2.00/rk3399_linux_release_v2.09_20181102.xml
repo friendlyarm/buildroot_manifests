@@ -7,7 +7,7 @@
   <project name="QLauncher" path="app/QLauncher" revision="0dd9497ec64309b4512f07e01c92723c60927d88" upstream="master"/>
   <project name="alsa-config" path="external/alsa-config" revision="7dce63af6a4e24c0154f70de6d96dfc17aa38ddc" upstream="master"/>
   <project name="audioservice" path="external/audioservice" revision="ec7efbf4cbb023a655228a1260fb83258fd667c1" upstream="master"/>
-  <project name="buildroot" revision="11649bc723d5c0086c53347ffb1b19e2c7772405" upstream="rockchip/stable-rk3399-v2.09-20181102">
+  <project name="buildroot" revision="4f000a079765bd255123061ab054b5e44cf86139" upstream="rockchip/stable-rk3399-v2.09-20181102">
     <linkfile dest="Makefile" src="build/Makefile"/>
     <linkfile dest="envsetup.sh" src="build/envsetup.sh"/>
   </project>
