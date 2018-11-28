@@ -33,3 +33,8 @@ Debian更新：
    【 Fix 】
 	1.package: chromium: fix version to 67.0.3396.87
 	2.overlay: init: update rk3288w libmali link.
+
+Buildroot更新：
+   【 Fix 】
+	1. weston: xdg_shell_v6: reconfigure size
+           to fix qt app (such settings) open err.

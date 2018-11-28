@@ -7,7 +7,7 @@
   <project name="QLauncher" path="app/QLauncher" revision="073678082e1563fa8eac1e617ac938fba7f8c7b9" upstream="master"/>
   <project name="alsa-config" path="external/alsa-config" revision="fb3f7a7ac3170a97926d314c108a8352b409da88" upstream="master"/>
   <project name="audioservice" path="external/audioservice" revision="ec7efbf4cbb023a655228a1260fb83258fd667c1" upstream="master"/>
-  <project name="buildroot" revision="7b04ffd667bf77db8c9d4816bf3c859c05d26b8b" upstream="rockchip/2018.02-rc3">
+  <project name="buildroot" revision="ad5c54d175bd3dc3065d11c2e45f111b97652ae9" upstream="rockchip/2018.02-rc3">
     <linkfile dest="Makefile" src="build/Makefile"/>
     <linkfile dest="envsetup.sh" src="build/envsetup.sh"/>
   </project>
@@ -20,7 +20,7 @@
     <linkfile dest="rkflash.sh" src="common/rkflash.sh"/>
     <linkfile dest="device/rockchip/.BoardConfig.mk" src="rk3288/BoardConfig.mk"/>
   </project>
-  <project name="dl" path="buildroot/dl" revision="9706155226abf00e9cba5bf600fdd98c5daf9eef" upstream="master"/>
+  <project name="dl" path="buildroot/dl" revision="6c5a3c60b6fee1a7a78c83d20ca3f51329801665" upstream="master"/>
   <project name="docs" revision="16f819a2d45cff07e9193387ddc11dda4ee0a3f2" upstream="master"/>
   <project name="ffmpeg" path="external/ffmpeg" revision="c8b57d4333b1bc5c4125fdac8fbf4625c399fc9c" upstream="master"/>
   <project name="gallery" path="app/gallery" revision="8cdb4c492c7e0be5803675409958f816bcd56cc3" upstream="master"/>
