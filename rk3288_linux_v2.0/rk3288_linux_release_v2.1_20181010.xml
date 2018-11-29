@@ -51,6 +51,6 @@
     <linkfile dest="tools/linux/Linux_Pack_Firmware/rockdev/mkupdate.sh" src="linux/Linux_Pack_Firmware/rockdev/rk3288-mkupdate.sh"/>
     <linkfile dest="tools/linux/Linux_Pack_Firmware/rockdev/package-file" src="linux/Linux_Pack_Firmware/rockdev/rk3288-package-file"/>
   </project>
-  <project name="u-boot" revision="d713692fe1ddcf466b912c0482bd29a14d089c48" upstream="stable-4.4-rk3288-linux"/>
+  <project name="u-boot" revision="d3231d014d1d22410acab7152e99017f5e64003f" upstream="stable-4.4-rk3288-linux"/>
   <project name="video" path="app/video" revision="4ce9c5ae8094ff0bc30f9ac6ec9c5c5173f69dd9" upstream="master"/>
 </manifest>
