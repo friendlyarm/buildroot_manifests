@@ -1,7 +1,6 @@
-===========RK3288 Linux SDK Release Note===========
+=============RK3288 Linux SDK Release Note============
 
-【rk3288_linux_release_v2.0_20180620.xml 更新日志】
-
++++++【rk3288_linux_release_v2.0_20180620.xml 更新日志】
 Buildroot更新：
 	1.移除没用的package包
 	2.开发文档和编译脚本的更新
@@ -14,27 +13,33 @@ Buildroot更新：
 	9.应用显示框架由原来eglfs切换到wayland
 	10.adbd的支持 Bt的支持 recovery模式的支持
 
-【rk3288_linux_release_v2.1_20181010.xml 更新日志】
+
+
++++++【rk3288_linux_release_v2.1_20181010.xml 更新日志】
 Uboot更新：
   【 Fix 】
 	1.usb-otg: siddp初始化，支持在rootfs阶段通过reboot loader进入loader模式
 	2.clk: fix up dclk_vop setting.
+	       adjust gpll init_cfg for better hdmi clk jitter.
+
 
   【 Features 】
 	1.build: 编译使用./make.sh rk3288，和kernel共用了DTS (CONFIG_USING_KERNEL_DTB)
 	2.display: 支持hdmi/edp/mipi/lvds/rgb的uboot、kernel logo显示
 		   支持uboot阶段的双屏显示
+		   sync display-subsystem route node when use uboot dts
+		   (# CONFIG_USING_KERNEL_DTB is not set)
 
 Kernel更新：
-   【 Fix 】
+  【 Fix 】
 	1.power_off: evb-act8846可以正确的shutdown
 
 Debian更新：
-   【 Fix 】
+  【 Fix 】
 	1.package: chromium: fix version to 67.0.3396.87
 	2.overlay: init: update rk3288w libmali link.
 
 Buildroot更新：
-   【 Fix 】
+  【 Fix 】
 	1. weston: xdg_shell_v6: reconfigure size
            to fix qt app (such settings) open err.
