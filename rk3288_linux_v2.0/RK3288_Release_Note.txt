@@ -43,3 +43,7 @@ Buildroot更新：
   【 Fix 】
 	1. weston: xdg_shell_v6: reconfigure size
            to fix qt app (such settings) open err.
+
+Tools更新：
+  【 Fix 】
+       1.SDDiskTool: update version to 1.56 for support update firmware by sdcard.
