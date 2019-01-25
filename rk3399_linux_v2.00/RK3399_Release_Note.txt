@@ -1,5 +1,38 @@
 ===========RK3399 Linux SDK Release Note===========
 
+【rk3399_linux_release_v2.10_20190124.xml 更新日志】
+
+Buildroot更新：
+1.同步内部最新的buildroot版本
+2.修复rockchip_test一些问题
+3.修复qt5 wayland应用上一些问题
+4.增加qt5 wayland多路视频播放的支持
+5.修复camera 3a一些问题
+6.修复recovey更新的一些问题
+
+Debian更新:
+1.drm hotplug的问题
+    1/ Avoid force changing resolution
+    2/ Be able to handle it before login
+
+文档和工具的更新:
+1.更新pcba/recovery/secureboot
+2.增加camera opencv的支持
+3.工具驱动的升级
+4.增加efusetool, ddr tool, spi image tool， secureboottools
+
+kernel的更新:
+1. 修复camera 3a问题和其他camera的支持
+2. 修复PCIe一些问题
+3. 同步内部最新版本kernel
+
+uboot的更新:
+1.miniloaer版本的更新
+2.evb-rk3399_defconfig 配置改用rk3399_defconfig
+3.串口波特率loader阶段修改的支持
+4.同步内部最新uboot代码
+5. rk optee和avb的支持
+
 【rk3399_linux_release_v2.09_20181102.xml 更新日志】
 
 Buildroot更新：
