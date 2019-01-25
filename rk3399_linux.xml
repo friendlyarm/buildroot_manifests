@@ -20,6 +20,7 @@
      <linkfile dest="rkflash.sh" src="common/rkflash.sh"/>
      <linkfile dest="device/rockchip/.BoardConfig.mk" src="rk3399/BoardConfig.mk"/>
   </project>
+  <project name="bin" path="external/security/bin" revision="master"/>
   <project name="distro" path="distro" revision="master"/>
   <project name="dl" path="buildroot/dl" revision="master"/>
   <project name="docs" path="docs" revision="master"/>
@@ -43,6 +44,7 @@
   <project name="rkssd" path="external/rkssd" revision="master"/>
   <project name="rkupdate" path="external/rkupdate" revision="master"/>
   <project name="rkwifibt" path="external/rkwifibt" revision="master"/>
+  <project name="rk_tee_user" path="external/security/rk_tee_user" revision="master"/>
   <project name="settings" path="app/settings" revision="master"/>
   <project name="tensorflow" path="external/tensorflow" revision="master"/>
   <project name="tools" path="tools" revision="master">
