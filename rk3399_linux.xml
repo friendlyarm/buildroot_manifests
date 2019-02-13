@@ -40,7 +40,7 @@
   <project name="recovery" path="external/recovery" revision="develop"/>
   <project name="rk-rootfs-build" path="rootfs" revision="master"/>
   <project name="rk_pcba_test" path="external/rk_pcba_test" revision="master"/>
-  <project name="rkbin" path="rkbin" revision="29mirror"/>
+  <project name="rkbin" path="rkbin" revision="master"/>
   <project name="rkssd" path="external/rkssd" revision="master"/>
   <project name="rkupdate" path="external/rkupdate" revision="master"/>
   <project name="rkwifibt" path="external/rkwifibt" revision="master"/>
