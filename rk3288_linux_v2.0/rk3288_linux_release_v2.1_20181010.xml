@@ -36,7 +36,7 @@
   <project name="music" path="app/music" revision="40a4da13e82f32d83369f7777479a196d9f58576" upstream="master"/>
   <project name="powermanager" path="external/powermanager" revision="17921d6b75395df5478613973e58916a6cf7c7ad" upstream="master"/>
   <project name="recovery" path="external/recovery" revision="8d004833b17ccb64df5f508129c49a512aa08ad0" upstream="develop"/>
-  <project name="rk-rootfs-build" path="rootfs" revision="6673840f2e7bc7d3cbb93610ed2d0b29cfc92c90" upstream="master"/>
+  <project name="rk-rootfs-build" path="rootfs" revision="57f157a77432cfcc8500e90bc093997a733de49d" upstream="master"/>
   <project name="rk_pcba_test" path="external/rk_pcba_test" revision="fa3d220a8a9e8c46250f8242e90c404d342d46a5" upstream="master"/>
   <project name="rkbin" revision="9e7dcd3fdd709cfea98db03be818c0dfc217f376" upstream="29mirror"/>
   <project name="rkssd" path="external/rkssd" revision="1c50d336e770a8ce09ae33b3e09d2783d5b4c2d9" upstream="master"/>

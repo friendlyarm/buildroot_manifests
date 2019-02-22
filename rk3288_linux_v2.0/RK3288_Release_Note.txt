@@ -47,3 +47,9 @@ Buildroot更新：
 Tools更新：
   【 Fix 】
        1.SDDiskTool: update version to 1.56 for support update firmware by sdcard.
+
++++++【rk3288_linux_release_v2.1_20181010.xml 更新日志】
+date: 2019-02-22
+Debian更新：
+  【 Features 】
+      1.update bt and wifi firmware and add wifi and bt support.
