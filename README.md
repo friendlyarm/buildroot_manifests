@@ -12,6 +12,16 @@ $ repo sync
 
 --
 
+The PX30 chips
+
+Sync to the lastest release code:
+
+$ repo init -u https://github.com/rockchip-linux/manifests -b master -m px30_linux_release.xml
+
+$ repo sync
+
+--
+
 The RK3326 chips
 
 Sync to the lastest release code:
