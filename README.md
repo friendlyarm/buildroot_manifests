@@ -12,6 +12,16 @@ $ repo sync
 
 --
 
+The RK3326 chips
+
+Sync to the lastest release code:
+
+$ repo init -u https://github.com/rockchip-linux/manifests -b master -m rk3326_linux_release.xml
+
+$ repo sync
+
+--
+
 The RK3288 chips
 
 There are two ways to get the code:
