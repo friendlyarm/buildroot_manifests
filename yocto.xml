@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote name="yocto" fetch="git://git.yoctoproject.org" />
+  <remote name="oe" fetch="git://git.openembedded.org" />
+
+  <project path="yocto/poky" remote="yocto" name="poky" revision="thud" >
+    <linkfile src="scripts" dest="yocto/scripts" />
+    <linkfile src="bitbake" dest="yocto/bitbake" />
+    <linkfile src="meta-poky" dest="yocto/meta-poky" />
+    <linkfile src=".templateconf" dest="yocto/.templateconf" />
+    <linkfile src="oe-init-build-env" dest="yocto/oe-init-build-env" />
+    <linkfile src="../../.repo/manifests/README_yocto.md"
+              dest="yocto/README.md" />
+  </project>
+
+  <project path="yocto/meta-openembedded" remote="oe" name="meta-openembedded" revision="thud" />
+
+  <project path="yocto/meta-rockchip" name="meta-rockchip" revision="yocto-next" />
+
+  <project path="yocto/build/conf" name="build" revision="yocto-next" />
+</manifest>

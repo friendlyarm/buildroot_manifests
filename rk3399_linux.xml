@@ -4,6 +4,8 @@
 
   <default remote="rockchip-linux" revision="master" sync-j="4"/>
 
+  <include name="yocto.xml" />
+
   <project name="QLauncher" path="app/QLauncher" revision="master"/>
   <project name="alsa-config" path="external/alsa-config" revision="master"/>
   <project name="audioservice" path="external/audioservice" revision="master"/>
