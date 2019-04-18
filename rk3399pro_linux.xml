@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote fetch="." name="rockchip-linux" review="https://github.com/rockchip-linux/"/>
+
+  <default remote="rockchip-linux" revision="master" sync-j="4"/>
+
+  <project name="camera" path="app/camera" revision="master"/>
+  <project name="demo" path="app/demo" revision="master"/>
+  <project name="gallery" path="app/gallery" revision="master"/>
+  <project name="music" path="app/music" revision="master"/>
+  <project name="settings" path="app/settings" revision="master"/>
+  <project name="video" path="app/video" revision="master"/>
+  <project name="QLauncher" path="app/QLauncher" revision="master"/>
+  <project name="buildroot" path="buildroot" revision="rockchip/2018.02-rc3">
+    <linkfile dest="Makefile" src="build/Makefile"/>
+    <linkfile dest="envsetup.sh" src="build/envsetup.sh"/>
+  </project>
+  <project name="device-custom" path="device/rockchip" revision="master">
+     <linkfile dest="mkfirmware.sh" src="common/mkfirmware.sh"/>
+     <linkfile dest="build.sh" src="common/build.sh"/>
+     <linkfile dest="rkflash.sh" src="common/rkflash.sh"/>
+     <linkfile dest="device/rockchip/.BoardConfig.mk" src="rk3399pro/BoardConfig.mk"/>
+  </project>
+  <project name="dl" path="buildroot/dl" revision="master"/>
+  <project name="buildroot" path="npu/buildroot" revision="rockchip/2018.02-rc3">
+      <linkfile dest="npu/Makefile" src="build/Makefile"/>
+      <linkfile dest="npu/envsetup.sh" src="build/envsetup.sh"/>
+  </project>
+  <project name="device-custom" path="npu/device/rockchip" revision="master">
+      <linkfile dest="npu/mkfirmware.sh" src="common/mkfirmware.sh"/>
+      <linkfile dest="npu/build.sh" src="common/build.sh"/>
+      <linkfile dest="npu/rkflash.sh" src="common/rkflash.sh"/>
+      <linkfile dest="npu/device/rockchip/.BoardConfig.mk" src="rk3399pro-npu/BoardConfig.mk"/>
+  </project>
+  <project name="dl" path="npu/buildroot/dl" revision="master"/>
+  <project name="distro" path="distro" revision="master"/>
+  <project name="docs" path="docs" revision="master"/>
+  <project name="alsa-config" path="external/alsa-config" revision="master"/>
+  <project name="audioservice" path="external/audioservice" revision="master"/>
+  <project name="bluez-alsa" path="external/bluez-alsa" revision="master"/>
+  <project name="ffmpeg" path="external/ffmpeg" revision="master"/>
+  <project name="camera_engine_cifisp" path="external/camera_engine_cifisp" revision="master"/>
+  <project name="camera_engine_rkisp" path="external/camera_engine_rkisp" revision="master"/>
+  <project name="gst-plugins-rockchip" path="external/gst-plugins-rockchip" revision="master"/>
+  <project name="gstreamer-camera" path="external/gstreamer-camera" revision="master"/>
+  <project name="gstreamer-rockchip" path="external/gstreamer-rockchip" revision="master"/>
+  <project name="libdrm-rockchip" path="external/libdrm" revision="rk33/mid/develop" />
+  <project name="libmali" path="external/libmali" revision="29mirror"/>
+  <project name="linux-rga" path="external/linux-rga" revision="master"/>
+  <project name="minigui" path="external/minigui" revision="master"/>
+  <project name="mpp" path="external/mpp" revision="release"/>
+  <project name="mpv" path="external/mpv" revision="master"/>
+  <project name="powermanager" path="external/powermanager" revision="master"/>
+  <project name="powermanager" path="npu/external/powermanager" revision="master"/>
+  <project name="recovery" path="external/recovery" revision="develop"/>
+  <project name="rk_pcba_test" path="external/rk_pcba_test" revision="master"/>
+  <project name="rknn_demo" path="external/rknn_demo" revision="master"/>
+  <project name="rknpu" path="external/rknpu" revision="master"/>
+  <project name="rknpu" path="npu/external/rknpu" revision="master"/>
+  <project name="rkscript" path="external/rkscript" revision="master"/>
+  <project name="rkssd" path="external/rkssd" revision="master"/>
+  <project name="rkupdate" path="external/rkupdate" revision="master"/>
+  <project name="rkwifibt" path="external/rkwifibt" revision="master"/>
+  <project name="rk_tee_user" path="external/security/rk_tee_user" revision="master"/>
+  <project name="bin" path="external/security/bin" revision="master"/>
+  <project name="softapDemo" path="external/softapDemo" revision="master"/>
+  <project name="ssoftapServer" path="external/softapServer" revision="master"/>
+  <project name="tensorflow" path="external/tensorflow" revision="master"/>
+  <project name="gcc-linaro-6.3.1-2017.05-x86_64_aarch64-linux-gnu" path="prebuilts/gcc/linux-x86/aarch64/gcc-linaro-6.3.1-2017.05-x86_64_aarch64-linux-gnu" revision="master"/>
+  <project name="gcc-linaro-6.3.1-2017.05-x86_64_aarch64-linux-gnu" path="npu/prebuilts/gcc/linux-x86/aarch64/gcc-linaro-6.3.1-2017.05-x86_64_aarch64-linux-gnu" revision="master"/>
+  <project name="kernel" path="kernel" revision="develop-4.4"/>
+  <project name="kernel" path="npu/kernel" revision="develop-4.4"/>
+  <project name="rk-rootfs-build" path="rootfs" revision="master"/>
+  <project name="rkbin" path="rkbin" revision="master"/>
+  <project name="rkbin" path="npu/rkbin" revision="master"/>
+  <project name="tools" path="tools" revision="master">
+    <linkfile dest="tools/windows/AndroidTool/AndroidTool_Release/config.cfg" src="windows/AndroidTool/AndroidTool_Release/rk3399-config.cfg"/>
+    <linkfile dest="tools/windows/AndroidTool/rockdev/package-file" src="windows/AndroidTool/rockdev/rk3399-package-file"/>
+    <linkfile dest="tools/windows/AndroidTool/rockdev/mkupdate.bat" src="windows/AndroidTool/rockdev/rk3399-mkupdate.bat"/>
+    <linkfile dest="tools/linux/Linux_Pack_Firmware/rockdev/mkupdate.sh" src="linux/Linux_Pack_Firmware/rockdev/rk3399-mkupdate.sh"/>
+    <linkfile dest="tools/linux/Linux_Pack_Firmware/rockdev/package-file" src="linux/Linux_Pack_Firmware/rockdev/rk3399-package-file"/>
+  </project>
+  <project name="u-boot" path="u-boot" revision="release"/>
+  <project name="u-boot" path="npu/u-boot" revision="release"/>
+</manifest>
