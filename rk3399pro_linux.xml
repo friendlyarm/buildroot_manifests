@@ -44,7 +44,7 @@
   <project name="gst-plugins-rockchip" path="external/gst-plugins-rockchip" revision="master"/>
   <project name="gstreamer-camera" path="external/gstreamer-camera" revision="master"/>
   <project name="gstreamer-rockchip" path="external/gstreamer-rockchip" revision="master"/>
-  <project name="libdrm-rockchip" path="external/libdrm" revision="rk33/mid/develop" />
+  <project name="libdrm-rockchip" path="external/libdrm" revision="rk33/mid/9.0/develop" />
   <project name="libmali" path="external/libmali" revision="29mirror"/>
   <project name="linux-rga" path="external/linux-rga" revision="master"/>
   <project name="minigui" path="external/minigui" revision="master"/>
@@ -64,7 +64,7 @@
   <project name="rk_tee_user" path="external/security/rk_tee_user" revision="master"/>
   <project name="bin" path="external/security/bin" revision="master"/>
   <project name="softapDemo" path="external/softapDemo" revision="master"/>
-  <project name="ssoftapServer" path="external/softapServer" revision="master"/>
+  <project name="softapServer" path="external/softapServer" revision="master"/>
   <project name="tensorflow" path="external/tensorflow" revision="master"/>
   <project name="gcc-linaro-6.3.1-2017.05-x86_64_aarch64-linux-gnu" path="prebuilts/gcc/linux-x86/aarch64/gcc-linaro-6.3.1-2017.05-x86_64_aarch64-linux-gnu" revision="master"/>
   <project name="gcc-linaro-6.3.1-2017.05-x86_64_aarch64-linux-gnu" path="npu/prebuilts/gcc/linux-x86/aarch64/gcc-linaro-6.3.1-2017.05-x86_64_aarch64-linux-gnu" revision="master"/>
@@ -80,6 +80,6 @@
     <linkfile dest="tools/linux/Linux_Pack_Firmware/rockdev/mkupdate.sh" src="linux/Linux_Pack_Firmware/rockdev/rk3399-mkupdate.sh"/>
     <linkfile dest="tools/linux/Linux_Pack_Firmware/rockdev/package-file" src="linux/Linux_Pack_Firmware/rockdev/rk3399-package-file"/>
   </project>
-  <project name="u-boot" path="u-boot" revision="release"/>
-  <project name="u-boot" path="npu/u-boot" revision="release"/>
+  <project name="u-boot" path="u-boot" revision="next-dev"/>
+  <project name="u-boot" path="npu/u-boot" revision="next-dev"/>
 </manifest>
