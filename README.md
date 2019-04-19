@@ -65,3 +65,23 @@ $ repo sync
 $ repo init -u https://github.com/rockchip-linux/manifests -b master -m rk3399_linux_release.xml
 
 $ repo sync
+
+--
+
+The RK3399pro chips
+
+There are two ways to get the code:
+
+(1) Sync to the lastest TOT code:
+
+$ repo init -u https://github.com/rockchip-linux/manifests -b master -m rk3399pro_linux.xml
+
+$ repo sync
+
+(2) Sync to the lastest release code:
+
+$ repo init -u https://github.com/rockchip-linux/manifests -b master -m rk3399pro_linux_release.xml
+
+$ repo sync
+
+--
