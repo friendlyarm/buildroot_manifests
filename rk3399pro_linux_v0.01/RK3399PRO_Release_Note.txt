@@ -1,0 +1,89 @@
+===========RK3399PRO Linux SDK Release Note===========
+
+【rk3399pro_linux_beta_v0.02_20190321.xml 更新日志】
+3. v0.02 beta version
+
+buildroot:
+    * npu_fw （版本升级: rknn 0.9.4, ddr v1.20, bl31: v1.04）
+    * fixes dual panel with hdmi display is abnormal.
+    * 优化Glmark2
+    * 默认双屏同显的支持
+    * 修复wifi密码无法保存问题，蓝牙音箱无法链接问题
+
+Debian:
+    * npu_fw 升级到0.9.4
+    * libmali&&qt的升级
+    * 修复ffmpeg的bug
+    * 优化Glmark2
+
+Camera:
+camera_engine_rkisp 和 gst-plugins-rockchip的更新，更新rkisp到v1.9版本
+librkisp.so:      v1.9.0
+librkisp_aec.so:  v0.0.9
+librkisp_awb.so:  v0.0.9
+librkisp_af.so:	  v0.2.10
+iq xml:           v0.2.5
+Camera HAL3:      v1.9.0
+rkisp1 driver:    v0.1.1
+版本主要更新点如下:
+1）修复以下重要 bug：
+	×初始化ISP参数未在数据流输出前设置导致的 死机， 采不到数据等问题
+	×拍照拷机，拍照按钮变灰，预览正常
+2) AE平滑收敛
+3）ISPv12(rk3326) 特性全功能支持
+4）自动匹配 iq 文件
+5）支持 sensor OTP
+6）支持自定义 metadata
+
+Loader:
+rk3399pro:npuloader: Add hash for rk atags
+rk3399pro: npu: ddr: update to v1.02 20190312
+
+Kernel:
+    kernel升级较多部分，同步内部最新20190321.
+   主要修复hdmi无声音问题。BT异常中断等
+
+
+【rk3399pro_linux_beta_v0.01_20190217.xml 更新日志】
+
+2. v0.01 beta version
+
+buildroot:
+    * 增加npu-powerctrl源码
+    * npu_fw的升级
+    * rknn_demo添加
+    * usb camera bug的修复
+    * 修复wifi settings，密码框退出问题
+    * gcc升级到6.5版本
+    * 修复rk3399pro待机唤醒问题
+
+uboot/docs/kernel/mpp 升级至内部最新code.
+
+【rk3399pro_linux_beta_v0.01_20190124.xml 更新日志】
+
+1. v0.01 beta version
+
+    Working and tested (to some extent):
+        * cluster cpu/gpu support -- including frequency, performance
+        * UART / console
+        * Thermal
+        * Touchscreen
+        * EDP
+        * Wifi
+        * Bluetooth / Webcam
+        * eMMC
+        * USB2/USB3
+        * Backlight
+        * DVFS: included cpu/gpu/ddr
+        * CAMERA: had tested the ov13850 camera
+        * VIDEO: tested the h264 video source
+        * AUDIO: play and mic music
+        * NPU
+        * HDMI
+        * GMAC
+    Not tested:
+        * Pcie
+        * MIPI
+    Not working:
+        * SD CARD: no sure, maybe the board sd card is broken by hardware.
+
