@@ -4,7 +4,7 @@ The Default:
 
 To initialize Linux source tree
 
-$ repo init --repo-url=https://github.com/rockchip-linux/repo -u https://github.com/rockchip-linux/manifests
+$ repo init --repo-url=https://github.com/rockchip-linux/repo --no-clone-bundle -u https://github.com/rockchip-linux/manifests
 
 To synchronize the source code
 
@@ -16,7 +16,7 @@ The PX30 chips
 
 Sync to the lastest release code:
 
-$ repo init --repo-url=https://github.com/rockchip-linux/repo -u https://github.com/rockchip-linux/manifests -b master -m px30_linux_release.xml
+$ repo init --repo-url=https://github.com/rockchip-linux/repo --no-clone-bundle -u https://github.com/rockchip-linux/manifests -b master -m px30_linux_release.xml
 
 $ repo sync --no-clone-bundle
 
@@ -26,7 +26,7 @@ The RK3326 chips
 
 Sync to the lastest release code:
 
-$ repo init --repo-url=https://github.com/rockchip-linux/repo -u https://github.com/rockchip-linux/manifests -b master -m rk3326_linux_release.xml
+$ repo init --repo-url=https://github.com/rockchip-linux/repo --no-clone-bundle -u https://github.com/rockchip-linux/manifests -b master -m rk3326_linux_release.xml
 
 $ repo sync --no-clone-bundle
 
