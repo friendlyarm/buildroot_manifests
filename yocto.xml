@@ -2,6 +2,7 @@
 <manifest>
   <remote name="yocto" fetch="git://git.yoctoproject.org" />
   <remote name="oe" fetch="git://git.openembedded.org" />
+  <remote name="qt5" fetch="https://github.com/meta-qt5" />
 
   <project path="yocto/poky" remote="yocto" name="poky" revision="thud" >
     <linkfile src="scripts" dest="yocto/scripts" />
@@ -14,6 +15,8 @@
   </project>
 
   <project path="yocto/meta-openembedded" remote="oe" name="meta-openembedded" revision="thud" />
+
+  <project path="yocto/meta-qt5" remote="qt5" name="meta-qt5" revision="thud" />
 
   <project path="yocto/meta-rockchip" name="meta-rockchip" revision="yocto-next" />
 
