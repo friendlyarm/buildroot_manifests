@@ -42,7 +42,7 @@
   <project name="kernel" path="kernel" revision="c48522ca132a0a45389deae63a3bae3147d75cd4" upstream="develop-4.4"/>
   <project name="mpp" path="external/mpp" revision="75d0b296812b2a3f8ea9fdc08000e8f0b2570050" upstream="develop"/>
   <project name="gcc-linaro-6.3.1-2017.05-x86_64_aarch64-linux-gnu" path="prebuilts/gcc/linux-x86/aarch64/gcc-linaro-6.3.1-2017.05-x86_64_aarch64-linux-gnu" revision="f96f76d6be89a6e28d4dac1f233f9aca9921f69b" upstream="master"/>
-  <project name="buildroot" path="buildroot" revision="c5c5fb7b9a06d24fd46f0d02f14f9337269dc5e7" upstream="rockchip/2018.02-rc3">
+  <project name="buildroot" path="buildroot" revision="80bb4c92f0552b6e237093b93efd93863157b553" upstream="rockchip/2018.02-rc3">
     <linkfile dest="Makefile" src="build/Makefile"/>
     <linkfile dest="envsetup.sh" src="build/envsetup.sh"/>
   </project>
