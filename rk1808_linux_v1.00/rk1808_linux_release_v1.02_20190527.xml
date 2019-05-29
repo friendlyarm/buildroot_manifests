@@ -18,7 +18,7 @@
   <project name="audioservice" path="external/audioservice" revision="ec7efbf4cbb023a655228a1260fb83258fd667c1" upstream="master"/>
   <project name="bluez-alsa" path="external/bluez-alsa" revision="38c52f0860e45aef83fdf746347b464093873762" upstream="master"/>
   <project name="camera_engine_cifisp" path="external/camera_engine_cifisp" revision="ae1a9dffc54c798b62e29f5948d9f4b33170dd38" upstream="master"/>
-  <project name="camera_engine_rkisp" path="external/camera_engine_rkisp" revision="83b6328da726da32941a9714c7f4324ad17e8453" upstream="rk1808_develop"/>
+  <project name="camera_engine_rkisp" path="external/camera_engine_rkisp" revision="83b6328da726da32941a9714c7f4324ad17e8453" upstream="master"/>
   <project name="ffmpeg" path="external/ffmpeg" revision="589de66a0b50c43b93f511361275d9ff86da21dd" upstream="rockchip/release/4.0"/>
   <project name="gstreamer-camera" path="external/gstreamer-camera" revision="7b8a9b33f95a0a7c65fd76d4f4e3f6778fce8ea7" upstream="master"/>
   <project name="minigui" path="external/minigui" revision="935476e2917c31cb861baf14e98ada313be64e14" upstream="master"/>
