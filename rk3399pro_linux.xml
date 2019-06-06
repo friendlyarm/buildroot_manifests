@@ -4,6 +4,8 @@
 
   <default remote="rockchip-linux" revision="master" sync-j="4"/>
 
+  <include name="yocto.xml" />
+
   <project name="camera" path="app/camera" revision="master"/>
   <project name="demo" path="app/demo" revision="master"/>
   <project name="gallery" path="app/gallery" revision="master"/>
@@ -35,6 +37,7 @@
   <project name="dl" path="npu/buildroot/dl" revision="master"/>
   <project name="distro" path="distro" revision="master"/>
   <project name="docs" path="docs" revision="master"/>
+  <project name="RKNPUTools" path="external/RKNPUTools" revision="rk/rk33/mid/8.1/develop"/>
   <project name="alsa-config" path="external/alsa-config" revision="master"/>
   <project name="audioservice" path="external/audioservice" revision="master"/>
   <project name="bluez-alsa" path="external/bluez-alsa" revision="master"/>
@@ -56,6 +59,7 @@
   <project name="rk_pcba_test" path="external/rk_pcba_test" revision="master"/>
   <project name="rknn_demo" path="external/rknn_demo" revision="master"/>
   <project name="rknpu" path="external/rknpu" revision="master"/>
+  <project name="rknpu-fw" path="external/rknpu-fw" revision="master"/>
   <project name="rknpu" path="npu/external/rknpu" revision="master"/>
   <project name="rkscript" path="external/rkscript" revision="master"/>
   <project name="rkssd" path="external/rkssd" revision="master"/>
@@ -66,12 +70,14 @@
   <project name="softapDemo" path="external/softapDemo" revision="master"/>
   <project name="softapServer" path="external/softapServer" revision="master"/>
   <project name="tensorflow" path="external/tensorflow" revision="master"/>
+  <project name="uvc_app" path="external/uvc_app" revision="master"/>
   <project name="gcc-linaro-6.3.1-2017.05-x86_64_aarch64-linux-gnu" path="prebuilts/gcc/linux-x86/aarch64/gcc-linaro-6.3.1-2017.05-x86_64_aarch64-linux-gnu" revision="master"/>
   <project name="gcc-linaro-6.3.1-2017.05-x86_64_aarch64-linux-gnu" path="npu/prebuilts/gcc/linux-x86/aarch64/gcc-linaro-6.3.1-2017.05-x86_64_aarch64-linux-gnu" revision="master"/>
   <project name="kernel" path="kernel" revision="develop-4.4"/>
   <project name="kernel" path="npu/kernel" revision="develop-4.4"/>
   <project name="rk-rootfs-build" path="rootfs" revision="master"/>
   <project name="rkbin" path="rkbin" revision="master"/>
+  <project name="rknn-toolkit" path="external/rknn-toolkit" revision="master"/>
   <project name="rkbin" path="npu/rkbin" revision="master"/>
   <project name="tools" path="tools" revision="master">
     <linkfile dest="tools/windows/AndroidTool/AndroidTool_Release/config.cfg" src="windows/AndroidTool/AndroidTool_Release/rk3399-config.cfg"/>
