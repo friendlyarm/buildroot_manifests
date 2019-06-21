@@ -1,5 +1,44 @@
 ===========RK3399PRO Linux SDK Release Note===========
 
+【rk3399pro_linux_release_v1.0.1_20190621.xml Release Note】
+
+1. update device/rockchip
+(1) support to run './build.sh debian' for debian9 and run
+    './build.sh distro' for debian10.
+(2) Fix broken cleanall with './build.sh cleanall'.
+
+2. update RK3399PRO_Release_Note.txt
+(1) dos2unix fixes the file format on ubuntu.
+(2) change the language from Chinese to English.
+
+3. update kernel
+(1) support headphone jack.
+(2) support NTFS filesystem.
+
+4. update debian
+(1) support usb3.0 for adbd.
+(2) support rk809 switch configure.
+(3) fixes the online video crash on chromium.
+(4) support the camera 3a function on debian.
+
+5. update buildroot
+(1) support NTFS filesystem.
+(2) Fixes somethings in rockchip_test
+(3) Fixes the rootfs size is larger than befor.
+
+6. update wlan on app/settings
+(1) Fixed frequency display error
+(2) Fixed failure to reconnect automatically
+(3) Support Chinese ssid
+(4) Fixed connection failure in softap mode
+(5) Fixed save configuration fail in softap mode
+
+7. update docs
+(1) add the Rockchip Linux Software_Developer_Guide_CN and Rockchip_Linux_Software_Developer_Guide_EN.pdf
+(2) update RK3399PRO_Release_Note.txt
+    * dos2unix fixes the file format on ubuntu.
+    * change the language from Chinese to English.
+
 【rk3399pro_linux_release_v1.0.0_20190606.xml 更新日志】
 
 一 NPU的更新:
