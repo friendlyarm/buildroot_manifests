@@ -1,6 +1,139 @@
 ===========RK3399 Linux SDK Release Note===========
+【rk3399_linux_release_v2.2.0_20190628.xml 更新日志】
+1. Changed the EDP/MIPI/.. Monitor display in VOPL, and HDMI monitor
+   display put in VOPB.
+2. Support audio/headphone jack in debian os.
+3. fix host mode resume fail for rk3399's usb3
 
-【rk3399_linux_release_v2.10_20190124.xml 更新日志】
+【rk3399_linux_release_v2.1.5_20190617.xml 更新日志】
+1. ntfs格式支持
+2. 解决codec声卡注册顺序不对导致音乐播放异常问题
+
+【rk3399_linux_release_v2.1.4_2019611.xml 更新日志】
+1. Glibc、libv4l等库升级，适配Yocto的浏览器用于Buildroot中
+2. video默认使用waylandsink
+3. rockchhip_test中camera测试更新
+
+【rk3399_linux_release_v2.1.3_20190508.xml 更新日志】
+
+Buildroot更新：
+1.双屏同显示或异显的支持
+2.修复待机唤醒input-event-daemo引起异常
+3.修复gstreamer播放视频异常和更多格式片源的支持
+4.优化wifi/bt和更多兼容性的支持
+5.camera 3a库升级到v2.0.0
+ 3A lib version:
+       af:  v0.2.14
+       awb: v0.0.b
+       aec: v0.0.9
+
+Debian更新:
+1.adb/glmark2的优化
+2.gstreamer/mpp/qt等更新同步buildroot
+
+Yocto系统的支持。
+
+文档和工具的更新:
+1.AndroidTool更新到v2.67
+2.DriverAssitantg更新到v4.8
+3.FactoryTool更新到v1.66
+
+kernel的更新:
+1. 修复lpddr4计算错误
+2. 更新isp1驱动到v0.1.3
+3. 挖掘机linux dts的优化，以及概率无显示问题的解决
+
+uboot/rkbin的更新:
+1.ddr bin升级到v1.22，bl31升级到v1.288。解决lpddr4异常问题的修复
+rk3399: ddr: update ddr version to v1.22 20190506
+
+    build from:
+        8132b62 Version: DDR Version 1.22 20190506
+    update feature:
+        ce4c893 lpddr4: fix lpddr4 some timing error
+
+rk3399: bl31: update version to 1.28
+
+    Build from ATF commit:
+        51f2096 plat: rk3399: ddr: fix lpddr4 some timing error
+
+    update feature:
+        this bl31 is match ddr bin Version "DDR Version 1.22 20190506"
+
+【rk3399_linux_release_v2.1.2_20190308.xml 更新日志】
+
+Buildroot更新：
+1.优化rockchip_test
+2.优化input-event-daemon和power按键的待机唤醒
+3.qt5wayland的功能添加
+Debian更新:
+1.debian64硬解的支持
+2.debian64 glmark2没使用gpu的问题
+3.增加ffmpeg/mpv的跑支持
+
+文档和工具的更新:
+更新pcba
+
+kernel的更新:
+1. 修复lpddr4 burst计算错误
+2. 更新isp1驱动到v0.1.1
+3. 开启rga
+
+uboot/rkbin的更新:
+1.ddr bin升级到v1.19
+rk3399: ddr: update version to v1.19
+
+    built from ddr init project commit:
+        8aa7e79: DDR Version 1.19 20190305
+    Update feature:
+        8aa7e79: DDR Version 1.19 20190305
+        0c6787a: rk3399: clear interrupt before data training
+
+2. avb功能的支持
+
+【rk3399_linux_release_v2.1.1_20190222.xml 更新日志】
+
+Buildroot更新：
+1.修复qt5.6编译问题
+2.修复qt5wayland random xdg_shell error
+3.修复rockchip_test一些问题,主要是多路视频和app demo的添加
+4.支持mount resizing read-only ext2 rootfs
+5.增加gst-plugins-rockchip，解决usb camera和mipi camera不能共存问题
+
+Debian更新:
+1.blueman问题
+scripts: fixes blueman error
+
+    dpkg: error processing package blueman (--configure):
+     subprocess installed post-installation script returned error exit status 1
+
+文档和工具的更新:
+更新uboot/dvfs/mmc/rkisp drive user manual
+
+kernel的更新:
+1. 修复Pmic regulator每次启动出错警告问题
+2. 修复recovery按键进入loader无效问题
+3. 默认开启rk rga
+4. 修复PCCI失败进入L2 link state
+5. 开启ramoops
+6. 修复rk3399 dwc3 host power on fail
+7. rockchip isp1一些bug修复
+
+uboot/rkbin的更新:
+1.ddr bin升级到v1.18
+rk3399: ddr: update version to v1.18
+
+built from ddr init project commit:
+d91c3eb Version: DDR Version 1.18 20190218
+Update feature:
+d91c3eb Version: DDR Version 1.18 20190218
+9eae850 rk3399: using unify global argument for uart, dram info config
+
+Change-Id: Iefbc3b5f5276e531a84257107f04317b89c38ffc
+Signed-off-by: Tang Yun ping <typ@rock-chips.com>
+
+
+【rk3399_linux_release_v2.1.0_20190124.xml 更新日志】
 
 Buildroot更新：
 1.同步内部最新的buildroot版本
@@ -33,7 +166,7 @@ uboot的更新:
 4.同步内部最新uboot代码
 5. rk optee和avb的支持
 
-【rk3399_linux_release_v2.09_20181102.xml 更新日志】
+【rk3399_linux_release_v2.0.9_20181102.xml 更新日志】
 
 Buildroot更新：
 1.修改camera 3a的效果曝光问题
@@ -74,7 +207,7 @@ loader的更新:
 8. 4a0d30f0 console_init: set printf uart from rk_atags
 9. e1096a16 uart: rockchip: add timeout for uart operation
 
-【rk3399_linux_release_v2.08_20180929.xml 更新日志】
+【rk3399_linux_release_v2.0.8_20180929.xml 更新日志】
 
 Buildroot更新：
 1.增加camera 3a的app效果,具体camera,只要增加cam_iq.xml放到/etc牡蛎即可
@@ -99,7 +232,7 @@ kernel的更新:
 5.修复dmc的vop参数不对问题
 
 
-【rk3399_linux_release_v2.07_20180907.xml 更新日志】
+【rk3399_linux_release_v2.0.7_20180907.xml 更新日志】
 
 Buildroot更新：
 1.减少rootfs的源码包大小，删除原先download目录，重新生成重命名为dl.
@@ -134,7 +267,7 @@ uboot的更新:
 3.clocks的pll修复
 4、miniloader的升级，修复一些atf/reboot以及gpt支持
 
-【rk3399_linux_release_v2.05_20180719.xml 更新日志】
+【rk3399_linux_release_v2.0.5_20180719.xml 更新日志】
 
 buildroot更新：
 1.增加openmpp,resize2fs等工具
@@ -147,7 +280,7 @@ Debian更新:
 增加adb的支持
 
 
-【rk3399_linux_release_v2.04_20180704.xml 更新日志】
+【rk3399_linux_release_v2.0.4_20180704.xml 更新日志】
 
 Buildroot更新：
 1.更新新版本2018.02-rc3
@@ -156,7 +289,7 @@ Buildroot更新：
 1. 增加软件开发指南和开发文档更新
 
 
-【rk3399_linux_release_v2.03_20180611.xml 更新日志】
+【rk3399_linux_release_v2.0.3_20180611.xml 更新日志】
 
 Buildroot更新：
 1. 解决keyboard异常问题
@@ -172,7 +305,7 @@ U-boot更新:
 app/camera更新:
 1.修复camera显示不能全屏的问题
 
-【rk3399_linux_release_v2.02_20180604.xml 更新日志】
+【rk3399_linux_release_v2.0.2_20180604.xml 更新日志】
 
 Buildroot更新：
 1. 之前的app/external下的应用，放在buildroot中编译.
@@ -189,7 +322,7 @@ U-boot更新:
 app/camera更新:
 1.修复camera显示不能全屏的问题
 
-【rk3399_linux_release_v2.01_20180524.xml 更新日志】
+【rk3399_linux_release_v2.0.1_20180524.xml 更新日志】
 
 rkbin更新:
 解决重启第一次起来ddr引起的hang问题.
@@ -212,6 +345,6 @@ built from ddr init project commit:
 	INFO:    boot cpu mask: 0
 	ASSERT: bakery_lock_release <170> : bakery_ticket_number(bakery->lock_data[me])
 
-【rk3399_linux_release_v2.00_20180517.xml 更新日志】
+【rk3399_linux_release_v2.0.0_20180517.xml 更新日志】
 
 1. v2.0初始版本
