@@ -29,7 +29,7 @@
   <project name="alsa-config" path="external/alsa-config" revision="master"/>
   <project name="audioservice" path="external/audioservice" revision="master"/>
   <project name="bluez-alsa" path="external/bluez-alsa" revision="master"/>
-  <project name="ffmpeg" path="external/ffmpeg" revision="master"/>
+  <project name="ffmpeg" path="external/ffmpeg" revision="rockchip/release/4.1"/>
   <project name="camera_engine_cifisp" path="external/camera_engine_cifisp" revision="master"/>
   <project name="camera_engine_rkisp" path="external/camera_engine_rkisp" revision="master"/>
   <project name="gst-plugins-rockchip" path="external/gst-plugins-rockchip" revision="master"/>
