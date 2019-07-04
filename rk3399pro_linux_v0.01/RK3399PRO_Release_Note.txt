@@ -1,5 +1,26 @@
 ===========RK3399PRO Linux SDK Release Note===========
 
+¡¾rk3399pro_linux_release_v1.1.0_20190706.xml Release Note¡¿
+
+1. update kernel
+(1) fix host mode resume fail for rk3399/rk33999pro
+(2) put the edp/mipi in vopl, and hdmi in vopb.
+(3) fixes irq of BT on rk3399pro evb
+(4) Fixes the regulator the abnormal during suspend.
+
+2. update uboot
+(1) update vopl init correct
+(2) fixes avb
+
+3. update debian
+(1) fixes vp8 encode was abnormal on debian.
+
+7. update docs
+(1) add the Rockchip Linux Software_Developer_Guide_CN and Rockchip_Linux_Software_Developer_Guide_EN.pdf
+(2) update RK3399PRO_Release_Note.txt
+    * dos2unix fixes the file format on ubuntu.
+    * change the language from Chinese to English.
+
 ¡¾rk3399pro_linux_release_v1.0.1_20190621.xml Release Note¡¿
 
 1. update device/rockchip
