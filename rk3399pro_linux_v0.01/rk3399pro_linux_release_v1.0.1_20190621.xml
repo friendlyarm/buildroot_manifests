@@ -41,7 +41,7 @@
   <project name="distro" revision="1755221b0ca0dcb063b811b91b34e3df635a8218" upstream="master"/>
   <project name="dl" path="buildroot/dl" revision="8ff89187627615be855a76f9a35673860810eb2e" upstream="master"/>
   <project name="dl" path="npu/buildroot/dl" revision="8ff89187627615be855a76f9a35673860810eb2e" upstream="master"/>
-  <project name="docs" revision="d73619605056bcc1985f5522173d4f949e37ac72" upstream="master"/>
+  <project name="docs" revision="55d90868f9bf60b447a4ad77a058021a542906bf" upstream="master"/>
   <project name="ffmpeg" path="external/ffmpeg" revision="589de66a0b50c43b93f511361275d9ff86da21dd" upstream="master"/>
   <project name="gallery" path="app/gallery" revision="67850ebbbc400b0a46968fb99bdd60c86358cc49" upstream="master"/>
   <project name="gcc-linaro-6.3.1-2017.05-x86_64_aarch64-linux-gnu" path="prebuilts/gcc/linux-x86/aarch64/gcc-linaro-6.3.1-2017.05-x86_64_aarch64-linux-gnu" revision="f96f76d6be89a6e28d4dac1f233f9aca9921f69b" upstream="master"/>

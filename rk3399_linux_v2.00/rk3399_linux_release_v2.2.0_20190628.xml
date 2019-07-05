@@ -28,7 +28,7 @@
   </project>
   <project name="distro" revision="85c31c4cb996e06f5f1d82c04d7744bc072f9a23" upstream="master"/>
   <project name="dl" path="buildroot/dl" revision="5e8b12996471998e471159693f91fa1e941b8261" upstream="master"/>
-  <project name="docs" revision="d73619605056bcc1985f5522173d4f949e37ac72" upstream="master"/>
+  <project name="docs" revision="55d90868f9bf60b447a4ad77a058021a542906bf" upstream="master"/>
   <project name="ffmpeg" path="external/ffmpeg" revision="226e514675a10e583d2af123b2b6960043da1dca" upstream="rockchip/release/4.1"/>
   <project name="gallery" path="app/gallery" revision="67850ebbbc400b0a46968fb99bdd60c86358cc49" upstream="master"/>
   <project name="gcc-linaro-6.3.1-2017.05-x86_64_aarch64-linux-gnu" path="prebuilts/gcc/linux-x86/aarch64/gcc-linaro-6.3.1-2017.05-x86_64_aarch64-linux-gnu" revision="f96f76d6be89a6e28d4dac1f233f9aca9921f69b" upstream="master"/>
