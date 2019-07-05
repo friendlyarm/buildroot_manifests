@@ -28,14 +28,14 @@
   </project>
   <project name="distro" revision="85c31c4cb996e06f5f1d82c04d7744bc072f9a23" upstream="master"/>
   <project name="dl" path="buildroot/dl" revision="5e8b12996471998e471159693f91fa1e941b8261" upstream="master"/>
-  <project name="docs" revision="55d90868f9bf60b447a4ad77a058021a542906bf" upstream="master"/>
+  <project name="docs" revision="b726a315462d288631b6d30877db09271538a4c4" upstream="master"/>
   <project name="ffmpeg" path="external/ffmpeg" revision="226e514675a10e583d2af123b2b6960043da1dca" upstream="rockchip/release/4.1"/>
   <project name="gallery" path="app/gallery" revision="67850ebbbc400b0a46968fb99bdd60c86358cc49" upstream="master"/>
   <project name="gcc-linaro-6.3.1-2017.05-x86_64_aarch64-linux-gnu" path="prebuilts/gcc/linux-x86/aarch64/gcc-linaro-6.3.1-2017.05-x86_64_aarch64-linux-gnu" revision="f96f76d6be89a6e28d4dac1f233f9aca9921f69b" upstream="master"/>
   <project name="gst-plugins-rockchip" path="external/gst-plugins-rockchip" revision="0b606f9c64e18634c349717c60f50b6921e4e774" upstream="master"/>
   <project name="gstreamer-camera" path="external/gstreamer-camera" revision="7b8a9b33f95a0a7c65fd76d4f4e3f6778fce8ea7" upstream="master"/>
   <project name="gstreamer-rockchip" path="external/gstreamer-rockchip" revision="c766879e0b750233b197a2dd495e562d64498244" upstream="master"/>
-  <project name="kernel" revision="951cd817a4bbcbcc5a2ef2b61590d8d0045ed18e" upstream="stable-4.4-rk3399-linux"/>
+  <project name="kernel" revision="24d866d654ed06d9b518bc58b9823c7f535f8d49" upstream="stable-4.4-rk3399-linux-v2.1x"/>
   <project name="libdrm-rockchip" path="external/libdrm" revision="696a303b72faf2dd9a0850aa31e678b29e3aec08" upstream="rk33/mid/9.0/develop"/>
   <project name="libmali" path="external/libmali" revision="721653b5b3b525a4f80d15aa7e2f9df7b7e60427" upstream="29mirror"/>
   <project name="linux-rga" path="external/linux-rga" revision="d4155b84a6a285c3f25f32143eae66530dccf351" upstream="master"/>
