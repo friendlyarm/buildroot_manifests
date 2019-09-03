@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote name="origin"
+          fetch="."
+          revision="refs/heads/master" />
+  <remote fetch="git://git.openembedded.org" name="oe"/>
+  <remote fetch="https://github.com/meta-qt5" name="qt5"/>
+  <remote fetch="git://git.yoctoproject.org" name="yocto"/>
+  <remote name="rockchip-linux"
+          fetch="https://github.com/rockchip-linux/" />
+
+  <default remote="rockchip-linux" revision="master" sync-j="4" />
+
+  <project name="QLauncher" path="app/QLauncher" revision="dbd9b7562253c277e5010e1df0ed2dcc4fca4a21" upstream="master"/>
+  <project name="alsa-config" path="external/alsa-config" revision="5a80dbcff93b5db40310910835649277f60048c4" upstream="master"/>
+  <project name="audioservice" path="external/audioservice" revision="ec7efbf4cbb023a655228a1260fb83258fd667c1" upstream="master"/>
+  <project name="bin" path="external/security/bin" revision="d6676eb02c8a1b4966df7d8c4bb203ea25fc98b2" upstream="master"/>
+  <project name="bluez-alsa" path="external/bluez-alsa" revision="06defedfb76083c198eeea9323315f2e5d2dc3b1" upstream="master"/>
+  <project name="build" path="yocto/build/conf" revision="yocto-next"/>
+  <project name="buildroot" revision="ed1ba576e33a5425eb15b5f22425e32f75134423" upstream="rockchip/stable-rk3399-v2.2.0-20190628">
+    <linkfile dest="Makefile" src="build/Makefile"/>
+    <linkfile dest="envsetup.sh" src="build/envsetup.sh"/>
+  </project>
+  <project name="camera" path="app/camera" revision="68c892e8affb6d70b36fd86f2da535f53415a61c" upstream="master"/>
+  <project name="camera_engine_cifisp" path="external/camera_engine_cifisp" revision="1ca397689e2803445326dcddea49fa6b0757a416" upstream="master"/>
+  <project name="camera_engine_rkisp" path="external/camera_engine_rkisp" revision="fe8e1563c787d607b6bf4dea0d5f32a8662d9445" upstream="master"/>
+  <project name="demo" path="app/demo" revision="9c70bb34443f8a8c7b5987baf4b47dbb29d0a0c2" upstream="master"/>
+  <project path="kernel" name="kernel-rockchip" remote="origin" revision="refs/heads/nanopi4-linux-v4.4.y" />
+  <project path="u-boot" name="uboot-rockchip" remote="origin" revision="refs/heads/nanopi4-v2014.10_oreo" />
+  <project path="device/rockchip" name="buildroot-device-custom_rk3399" remote="origin">
+    <linkfile dest="mkfirmware.sh" src="common/mkfirmware.sh"/>
+    <linkfile dest="build.sh" src="common/build.sh"/>
+    <linkfile dest="rkflash.sh" src="common/rkflash.sh"/>
+    <linkfile dest="device/rockchip/.BoardConfig.mk" src="rk3399/BoardConfig.mk"/>
+  </project>
+  <project path="friendlyelec/rk3399/sd-fuse_rk3399" name="sd-fuse_rk3399" remote="origin" >
+          <linkfile dest="out" src="out"/>
+  </project>
+  <project path="friendlyelec/rk3399/fs-overlay-64" name="buildroot-fs-overlay-64_rk3399" remote="origin" />
+  <project path="friendlyelec/rk3399/scripts" name="buildroot-scripts_rk3399" remote="origin" />
+
+  <project name="distro" revision="85c31c4cb996e06f5f1d82c04d7744bc072f9a23" upstream="master"/>
+  <project name="dl" path="buildroot/dl" revision="5e8b12996471998e471159693f91fa1e941b8261" upstream="master"/>
+  <project name="docs" revision="b726a315462d288631b6d30877db09271538a4c4" upstream="master"/>
+  <project name="ffmpeg" path="external/ffmpeg" revision="226e514675a10e583d2af123b2b6960043da1dca" upstream="rockchip/release/4.1"/>
+  <project name="gallery" path="app/gallery" revision="67850ebbbc400b0a46968fb99bdd60c86358cc49" upstream="master"/>
+  <project name="gcc-linaro-6.3.1-2017.05-x86_64_aarch64-linux-gnu" path="prebuilts/gcc/linux-x86/aarch64/gcc-linaro-6.3.1-2017.05-x86_64_aarch64-linux-gnu" revision="f96f76d6be89a6e28d4dac1f233f9aca9921f69b" upstream="master"/>
+  <project name="gst-plugins-rockchip" path="external/gst-plugins-rockchip" revision="0b606f9c64e18634c349717c60f50b6921e4e774" upstream="master"/>
+  <project name="gstreamer-camera" path="external/gstreamer-camera" revision="7b8a9b33f95a0a7c65fd76d4f4e3f6778fce8ea7" upstream="master"/>
+  <project name="gstreamer-rockchip" path="external/gstreamer-rockchip" revision="c766879e0b750233b197a2dd495e562d64498244" upstream="master"/>
+  <project name="libdrm-rockchip" path="external/libdrm" revision="696a303b72faf2dd9a0850aa31e678b29e3aec08" upstream="rk33/mid/9.0/develop"/>
+  <project name="libmali" path="external/libmali" revision="721653b5b3b525a4f80d15aa7e2f9df7b7e60427" upstream="29mirror"/>
+  <project name="linux-rga" path="external/linux-rga" revision="d4155b84a6a285c3f25f32143eae66530dccf351" upstream="master"/>
+  <project name="meta-openembedded" path="yocto/meta-openembedded" remote="oe" revision="thud"/>
+  <project name="meta-qt5" path="yocto/meta-qt5" remote="qt5" revision="thud"/>
+  <project name="meta-rockchip" path="yocto/meta-rockchip" revision="yocto-next"/>
+  <project name="minigui" path="external/minigui" revision="6e1d520d5f07a2e719703bf7f62fde1c7a37bd7d" upstream="master"/>
+  <project name="mpp" path="external/mpp" revision="e4f3d1f8bf885348c72e27eda3ed469a3a1848f2" upstream="release"/>
+  <project name="mpv" path="external/mpv" revision="2739ea80b7137daf3f9a39fd3a2ddfd787a6b964" upstream="master"/>
+  <project name="music" path="app/music" revision="057a31b47de52b02a3b95dc482b494dd3542b214" upstream="master"/>
+  <project name="poky" path="yocto/poky" remote="yocto" revision="thud">
+    <linkfile dest="yocto/scripts" src="scripts"/>
+    <linkfile dest="yocto/bitbake" src="bitbake"/>
+    <linkfile dest="yocto/meta-poky" src="meta-poky"/>
+    <linkfile dest="yocto/.templateconf" src=".templateconf"/>
+    <linkfile dest="yocto/oe-init-build-env" src="oe-init-build-env"/>
+    <linkfile dest="yocto/README.md" src="../../.repo/manifests/README_yocto.md"/>
+  </project>
+  <project name="powermanager" path="external/powermanager" revision="17921d6b75395df5478613973e58916a6cf7c7ad" upstream="master"/>
+  <project name="recovery" path="external/recovery" revision="349d290f82d12ef820cb5f076ee30c3546821af1" upstream="develop"/>
+  <project name="rk-rootfs-build" path="rootfs" revision="8ef6e7a86e2a7f1eb3af18b5b47b59258a09b22b" upstream="master"/>
+  <project name="rk_pcba_test" path="external/rk_pcba_test" revision="25643cf5f522a71ed2a918b0abe15e363a893504" upstream="master"/>
+  <project name="rk_tee_user" path="external/security/rk_tee_user" revision="e1aa9109bdfa53ee0e331eea07ee8ad360d97706" upstream="master"/>
+  <project name="rkbin" revision="18cd9b732e7c90cf1bb653a36d707ae629b3a791" upstream="stable-4.4-rk3399-linux"/>
+  <project name="rknn-toolkit" path="external/rknn-toolkit" revision="211f258f43068c2b567db2433d8176b7c8d8eeea" upstream="master"/>
+  <project name="rknn_demo" path="external/rknn_demo" revision="6cf9ebe274a62e881085a10d144aeabea4bd6752" upstream="master"/>
+  <project name="rkscript" path="external/rkscript" revision="625038f089e1fe56a437fe7d2318ab57191d9b5a" upstream="master"/>
+  <project name="rkssd" path="external/rkssd" revision="1c50d336e770a8ce09ae33b3e09d2783d5b4c2d9" upstream="master"/>
+  <project name="rkupdate" path="external/rkupdate" revision="000bc14833c2fa12ba45e9f87e0775977485b4f1" upstream="master"/>
+  <project name="rkwifibt" path="external/rkwifibt" revision="816e700b95f1abb54448d4af935cbe67965fdd9b" upstream="master"/>
+  <project name="settings" path="app/settings" revision="d0cc205538c5da8b48817fbdb3aae403d21129e5" upstream="master"/>
+  <project name="softapDemo" path="external/softapDemo" revision="4c7d1bd3d28df276d263f49324b022b44b3a1c85" upstream="master"/>
+  <project name="softapServer" path="external/softapServer" revision="9158517316a050190273c6809ea88467a4276e16" upstream="master"/>
+  <project name="tensorflow" path="external/tensorflow" revision="e1877bb157a775d76ec8c0b68467aef6d053bbb2" upstream="master"/>
+  <project name="tools" revision="6874a6d3e27508cc7781641f5fb115d137e6adfe" upstream="master">
+    <linkfile dest="tools/windows/AndroidTool/AndroidTool_Release/config.cfg" src="windows/AndroidTool/AndroidTool_Release/rk3399-config.cfg"/>
+    <linkfile dest="tools/windows/AndroidTool/rockdev/package-file" src="windows/AndroidTool/rockdev/rk3399-package-file"/>
+    <linkfile dest="tools/windows/AndroidTool/rockdev/mkupdate.bat" src="windows/AndroidTool/rockdev/rk3399-mkupdate.bat"/>
+    <linkfile dest="tools/linux/Linux_Pack_Firmware/rockdev/mkupdate.sh" src="linux/Linux_Pack_Firmware/rockdev/rk3399-mkupdate.sh"/>
+    <linkfile dest="tools/linux/Linux_Pack_Firmware/rockdev/package-file" src="linux/Linux_Pack_Firmware/rockdev/rk3399-package-file"/>
+  </project>
+  <project name="uvc_app" path="external/uvc_app" revision="dfbe0a0a7af3d8ca8a67099bdb1bd931f2e43367" upstream="master"/>
+  <project name="video" path="app/video" revision="b52211fe8d0d91b2210cfab757885277cae1211c" upstream="master"/>
+</manifest>
