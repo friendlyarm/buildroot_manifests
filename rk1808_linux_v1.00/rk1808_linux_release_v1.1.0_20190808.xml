@@ -13,7 +13,7 @@
     <linkfile dest="rkflash.sh" src="common/rkflash.sh"/>
     <linkfile dest="device/rockchip/.BoardConfig.mk" src="rk1808/BoardConfig.mk"/>
   </project>
-  <project name="docs" path="docs" revision="c46a79575476fb0f40df86db1ba467e0c4d4be3a" upstream="master"/>
+  <project name="docs" path="docs" revision="95c34c5a9098c3b4afec62a8744a131e0bef933f" upstream="master"/>
   <project name="QLauncher" path="app/QLauncher" revision="a104b4154021b663f3126ec6f9c7a24dc080704c" upstream="develop"/>
   <project name="demo" path="app/demo" revision="f65a5d17c7639ccec0b6b01fa2f282e94e9bc41d" upstream="master"/>
   <project name="alsa-config" path="external/alsa-config" revision="5a80dbcff93b5db40310910835649277f60048c4" upstream="master"/>
