@@ -6,60 +6,62 @@
 
   <include name="yocto.xml" />
 
-  <project name="camera" path="app/camera" revision="master"/>
-  <project name="demo" path="app/demo" revision="master"/>
-  <project name="gallery" path="app/gallery" revision="master"/>
-  <project name="music" path="app/music" revision="master"/>
-  <project name="settings" path="app/settings" revision="master"/>
-  <project name="video" path="app/video" revision="master"/>
-  <project name="QLauncher" path="app/QLauncher" revision="master"/>
-  <project name="buildroot" path="buildroot" revision="rockchip/2018.02-rc3">
-    <linkfile dest="Makefile" src="build/Makefile"/>
-    <linkfile dest="envsetup.sh" src="build/envsetup.sh"/>
-  </project>
-  <project name="device-custom" path="device/rockchip" revision="master">
-     <linkfile dest="mkfirmware.sh" src="common/mkfirmware.sh"/>
-     <linkfile dest="build.sh" src="common/build.sh"/>
-     <linkfile dest="rkflash.sh" src="common/rkflash.sh"/>
-     <linkfile dest="device/rockchip/.BoardConfig.mk" src="rk3399/BoardConfig.mk"/>
-  </project>
-  <project name="dl" path="buildroot/dl" revision="master"/>
-  <project name="distro" path="distro" revision="master"/>
-  <project name="docs" path="docs" revision="master"/>
-  <project name="alsa-config" path="external/alsa-config" revision="master"/>
-  <project name="audioservice" path="external/audioservice" revision="master"/>
-  <project name="bluez-alsa" path="external/bluez-alsa" revision="master"/>
-  <project name="ffmpeg" path="external/ffmpeg" revision="rockchip/release/4.1"/>
-  <project name="camera_engine_cifisp" path="external/camera_engine_cifisp" revision="master"/>
-  <project name="camera_engine_rkisp" path="external/camera_engine_rkisp" revision="master"/>
-  <project name="gst-plugins-rockchip" path="external/gst-plugins-rockchip" revision="master"/>
-  <project name="gstreamer-camera" path="external/gstreamer-camera" revision="master"/>
-  <project name="gstreamer-rockchip" path="external/gstreamer-rockchip" revision="master"/>
   <project name="libdrm-rockchip" path="external/libdrm" revision="rk33/mid/9.0/develop" />
-  <project name="libmali" path="external/libmali" revision="29mirror"/>
-  <project name="linux-rga" path="external/linux-rga" revision="master"/>
+  <project name="rk_tee_user" path="external/security/rk_tee_user" revision="master"/>
+  <project name="u-boot" path="u-boot" revision="next-dev"/>
+  <project name="RKNPUTools" path="external/RKNPUTools" revision="rk33/mid/8.1/develop"/>
+  <project name="QLauncher" path="app/QLauncher" revision="develop"/>
+  <project name="demo" path="app/demo" revision="master"/>
+  <project name="multivideoplayer" path="app/multivideoplayer" revision="master"/>
+  <project name="multicamera" path="app/multicamera" revision="master"/>
+  <project name="qcamera" path="app/qcamera" revision="master"/>
+  <project name="qfm" path="app/qfm" revision="master"/>
+  <project name="qplayer" path="app/qplayer" revision="master"/>
+  <project name="settings" path="app/qsetting" revision="develop"/>
+  <project name="dl" path="buildroot/dl" revision="master"/>
+  <project name="device-custom" path="device/rockchip" revision="master">
+    <linkfile dest="mkfirmware.sh" src="common/mkfirmware.sh"/>
+    <linkfile dest="build.sh" src="common/build.sh"/>
+    <linkfile dest="rkflash.sh" src="common/rkflash.sh"/>
+    <linkfile dest="device/rockchip/.BoardConfig.mk" src="rk3399/BoardConfig.mk"/>
+  </project>
+  <project name="distro" path="distro" revision="master"/>
+  <project name="download" path="distro/download" revision="master"/>
+  <project name="docs" path="docs" revision="master"/>
+  <project name="LocalPlayer" path="external/LocalPlayer" revision="master"/>
+  <project name="WakeWordAgent" path="external/wakeWordAgent" revision="master"/>
+  <project name="alsa-config" path="external/alsa-config" revision="master"/>
+  <project name="app" path="external/app" revision="master"/>
+  <project name="audioservice" path="external/audioservice" revision="master"/>
+  <project name="avb" path="external/avb" revision="master"/>
+  <project name="bluez-alsa" path="external/bluez-alsa" revision="master"/>
+  <project name="camera_engine_rkisp" path="external/camera_engine_rkisp" revision="master"/>
+  <project name="chromium" path="external/chromium" revision="master"/>
+  <project name="deviceio_release" path="external/deviceio_release" revision="master"/>
   <project name="minigui" path="external/minigui" revision="master"/>
-  <project name="mpp" path="external/mpp" revision="release"/>
   <project name="mpv" path="external/mpv" revision="master"/>
   <project name="powermanager" path="external/powermanager" revision="master"/>
-  <project name="recovery" path="external/recovery" revision="develop"/>
   <project name="rk_pcba_test" path="external/rk_pcba_test" revision="master"/>
+  <project name="rknpu" path="external/rknpu" revision="master"/>
   <project name="rknn_demo" path="external/rknn_demo" revision="master"/>
   <project name="rkscript" path="external/rkscript" revision="master"/>
   <project name="rkssd" path="external/rkssd" revision="master"/>
+  <project name="rktoolkit" path="external/rktoolkit" revision="master"/>
   <project name="rkupdate" path="external/rkupdate" revision="master"/>
   <project name="rkwifibt" path="external/rkwifibt" revision="master"/>
-  <project name="rk_tee_user" path="external/security/rk_tee_user" revision="master"/>
-  <project name="bin" path="external/security/bin" revision="master"/>
+  <project name="tensorflow" path="external/tensorflow" revision="master"/>
   <project name="softapDemo" path="external/softapDemo" revision="master"/>
   <project name="softapServer" path="external/softapServer" revision="master"/>
-  <project name="tensorflow" path="external/tensorflow" revision="master"/>
+  <project name="update_engine" path="external/update_engine" revision="master"/>
   <project name="uvc_app" path="external/uvc_app" revision="master"/>
-  <project name="gcc-linaro-6.3.1-2017.05-x86_64_aarch64-linux-gnu" path="prebuilts/gcc/linux-x86/aarch64/gcc-linaro-6.3.1-2017.05-x86_64_aarch64-linux-gnu" revision="master"/>
-  <project name="kernel" path="kernel" revision="develop-4.4"/>
-  <project name="rk-rootfs-build" path="rootfs" revision="master"/>
-  <project name="rkbin" path="rkbin" revision="master"/>
-  <project name="rknn-toolkit" path="external/rknn-toolkit" revision="master"/>
+  <project name="wifiAutoSetup" path="external/wifiAutoSetup" revision="master"/>
+  <project name="gstreamer-rockchip" path="external/gstreamer-rockchip" revision="master"/>
+  <project name="libmali" path="external/libmali" revision="master"/>
+  <project name="linux-rga" path="external/linux-rga" revision="master"/>
+  <project name="rk-rootfs-build" path="debian" revision="master"/>
+  <project name="recovery" path="external/recovery" revision="develop"/>
+  <project name="rkmedia" path="external/rkmedia" revision="master"/>
+  <project name="bin" path="external/security/bin" revision="master"/>
   <project name="tools" path="tools" revision="master">
     <linkfile dest="tools/windows/AndroidTool/AndroidTool_Release/config.cfg" src="windows/AndroidTool/AndroidTool_Release/rk3399-config.cfg"/>
     <linkfile dest="tools/windows/AndroidTool/rockdev/package-file" src="windows/AndroidTool/rockdev/rk3399-package-file"/>
@@ -67,5 +69,14 @@
     <linkfile dest="tools/linux/Linux_Pack_Firmware/rockdev/mkupdate.sh" src="linux/Linux_Pack_Firmware/rockdev/rk3399-mkupdate.sh"/>
     <linkfile dest="tools/linux/Linux_Pack_Firmware/rockdev/package-file" src="linux/Linux_Pack_Firmware/rockdev/rk3399-package-file"/>
   </project>
-  <project name="u-boot" path="u-boot" revision="next-dev"/>
+  <project name="kernel" path="kernel" revision="develop-4.4"/>
+  <project name="mpp" path="external/mpp" revision="develop"/>
+  <project name="gcc-linaro-6.3.1-2017.05-x86_64_aarch64-linux-gnu" path="prebuilts/gcc/linux-x86/aarch64/gcc-linaro-6.3.1-2017.05-x86_64_aarch64-linux-gnu" revision="master"/>
+  <project name="gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf" path="prebuilts/gcc/linux-x86/arm/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf" revision="master"/>
+  <project name="buildroot" path="buildroot" revision="rockchip/2018.02-rc3">
+    <linkfile dest="Makefile" src="build/Makefile"/>
+    <linkfile dest="envsetup.sh" src="build/envsetup.sh"/>
+  </project>
+  <project name="rkbin" path="rkbin"  revision="master"/>
+  <project name="rknn-toolkit" path="external/rknn-toolkit" revision="master"/>
 </manifest>

@@ -1,350 +1,450 @@
 ===========RK3399 Linux SDK Release Note===========
-【rk3399_linux_release_v2.2.0_20190628.xml 更新日志】
-1. Changed the EDP/MIPI/.. Monitor display in VOPL, and HDMI monitor
-   display put in VOPB.
-2. Support audio/headphone jack in debian os.
-3. fix host mode resume fail for rk3399's usb3
 
-【rk3399_linux_release_v2.1.5_20190617.xml 更新日志】
-1. ntfs格式支持
-2. 解决codec声卡注册顺序不对导致音乐播放异常问题
+【rk3399_linux_release_v2.3.0_20191203.xml change log】
 
-【rk3399_linux_release_v2.1.4_2019611.xml 更新日志】
-1. Glibc、libv4l等库升级，适配Yocto的浏览器用于Buildroot中
-2. video默认使用waylandsink
-3. rockchhip_test中camera测试更新
+ Buildroot (2018.02-rc3):
+    - Support multivideoplayer and qsetting apps
+    - Update xserver: fix wrong rga format map and fix random crash
+    - Fixes some weston render issues
+    - Support rockchip RGA 2D accel
+    - The logs output on br.log
 
-【rk3399_linux_release_v2.1.3_20190508.xml 更新日志】
+ Kernel (4.4):
+    - Upgrade to 4.4.194
+        enable iep for rk3399 sapphire excavator linux
+	correct voltage for rk3399-firefly
+	Fixup wrong swap uv on YCrCb_420_P
 
-Buildroot更新：
-1.双屏同显示或异显的支持
-2.修复待机唤醒input-event-daemo引起异常
-3.修复gstreamer播放视频异常和更多格式片源的支持
-4.优化wifi/bt和更多兼容性的支持
-5.camera 3a库升级到v2.0.0
- 3A lib version:
-       af:  v0.2.14
-       awb: v0.0.b
-       aec: v0.0.9
+ rkbin (Rockchip binary):
+    - rk3399: bl32: update version to 1.21
+        Update feature:
+        07ae323c scripts: optimize checkbuild.sh
+        a87d3b09 scripts: optimize build scripts
+    - rk3399: bl31: update version to 1.30
+        42583b6 plat: rk3399: change bl31_base to 0x40000
+    - rk3399: ddr: update ddr version to v1.24 20191016
+        5ed0e6d lpddr4: add support multi frequency
+        1eb26fb RK3399: ddr: support choice uart by g_uart_info
 
-Debian更新:
-1.adb/glmark2的优化
-2.gstreamer/mpp/qt等更新同步buildroot
+ docs/tools:
+    - Update AVL
+    - Update Soc_public
+    - Secureboottool: update to v1.95
 
-Yocto系统的支持。
+Debian (stretch-9.11):
+    - Update xserver
+    - Fixes jpeg's decode to 60fps
+    - Update test_camera for uvc
+    - Update mpp
+    - Update rga
 
-文档和工具的更新:
-1.AndroidTool更新到v2.67
-2.DriverAssitantg更新到v4.8
-3.FactoryTool更新到v1.66
+Yocto (thud 2.6.2):
+    - add rockchip-rkisp
+    - chromium-ozone-wayland: Support 78.0.3904.97g
+    - Support adding extra volumes
 
-kernel的更新:
-1. 修复lpddr4计算错误
-2. 更新isp1驱动到v0.1.3
-3. 挖掘机linux dts的优化，以及概率无显示问题的解决
+【rk3399_linux_release_v2.2.1_20191014.xml change log】
 
-uboot/rkbin的更新:
-1.ddr bin升级到v1.22，bl31升级到v1.288。解决lpddr4异常问题的修复
-rk3399: ddr: update ddr version to v1.22 20190506
+ Buildroot (2018.02-rc3):
+    - Support the freerdp with X11
+    - Upgrade QT verison from 5.9.4 to 5.12.2
+    - Support Chromium Browser (74.0.3729.157)
+    - Upgrade Xserver-xorg to v1.20.4
+    - change the new qt app to instead the old apps
+        new apps: qcamera  qfm  QLauncher+  qplayer  qsetting
+        old apps: camera gallery  music  QLauncher  settings  video
+    - Add the missing license/copyright with legal-info
+    - Support x11 packages
+    - Support weston rotate and scale
+    - Upgrade camera_engine_rksip
+        librkisp: v2.2.0
+        3A lib version:
+        af:  v0.2.17
+        wb: v0.0.e
+        aec: v0.0.e
+        iq version: v1.5.0
+        iq magic version code: 706729
+        matched rkisp1 driver version: v0.1.5
+    - Upgrade Linux NN to v1.3
 
+ Kernel (4.4):
+    - Upgrade to 4.4.189
+        In order to more stable, increase the minimum voltage to from 800mv to 825mv.
+        Fixes the HDMI status in resume
+        Add the rk3399 lpddr4 dts for reference
+        Fixes nvme/p-cie interface sdd
+        camera stuff update...etc
+
+ rkbin (Rockchip binary):
+    - rk3399: bl32: update version to 1.20
+        Update feature:
+        19950c70 rk3399: fix secure ddr region setting error
+        da2bcfdc sta: rk_os_service: add permission check
+        64eedbd9 ree fs: recreate file if open meta file fail
+    - rk3399: bl31: update version to 1.29
+        22b599a plat: rk3399: ddr: fix lpddr4 read write-only register bit
+        eb0e92c plat: rk3399: ddr: lpddr4 increase 50MHz PLL FOUTVCO
+    - rk3399: ddr: update ddr version to v1.23 20190709
+        13a0b3f lpddr4: fix v1.22 block when advanced training done
+        cba7a71 lpddr4: fix read write-only register bit
+        7d1b640 lpddr4: fix dma sw training last delay pass bug
+        70c60fa lpddr4: fix tCKELCMD to max(7.5ns, 5nCK)
+
+ docs/tools:
+    - Add Docker document
+    - update PWM document
+    - remove internal docs
+    - add Rockchip SDK Kit document
+    - update avb tool to v2.6
+    - add window/linux secure sign tool
+    - add DM tools
+    - Upgrade AndroidTool from v2.67 to v2.69, support for ubifs
+    - Update rk_provision_tool to RKDevInfoWriteTool_V1.0.4
+        V1.0.4:
+        1.add two custom id
+        2.the rk_provision_tool rename to RKDevInfoWriteTool
+    - upgrade SDDiskTool to v1.59
+
+Debian (stretch-9.11):
+    - support exa/glamor hw acceleration on xserver
+    - update camera_engine_rksip to v2.2.0
+    - add LICENSE.txt
+    - QT upgraded to v5.11
+    - fixes system suspend/resume for rk3399pro Socs
+    - Add glmark2 normal mode
+    - add video hardware acceleration for chromium
+
+Yocto (thud 2.6.2):
+    - gstreamer-rockchip: Update source and patches
+    - gstreamer1.0-plugins-base: xvimagesink: Support dma buffer rendering
+    - xserver-xorg: glamor: Update patches
+
+【rk3399_linux_release_v2.2.0_20190628.xml change log】
+
+    - Changed the EDP/MIPI/.. Monitor display in VOPL, and HDMI monitor
+      display put in VOPB
+    - Support audio/headphone jack in debian os
+    - Fix host mode resume fail for rk3399's usb3
+
+【rk3399_linux_release_v2.1.5_20190617.xml change log】
+
+    - Support ntfs format
+    - Fix the issue that playing music abnormally caused by error codec sound card registration order.
+
+【rk3399_linux_release_v2.1.4_20190611.xml change log】
+
+    - Glibc, libv4l and other libraries upgrade, adapt Yocto’s browser to Buildroot
+    - Video use waylandsink by default
+    - Camera test update in the rockchhip_test
+
+【rk3399_linux_release_v2.1.3_20190508.xml change log】
+
+ Buildroot update:
+    - Support dual panel with the same display or different display
+    - Fix suspend and resume input-event-daemo abnormal issue
+    - Fix gstreamer play video abnormally and support more format sources
+    - Optimize wifi/bt and support for more compatibility
+    - camera 3a library upgrade to v2.0.0
+      3A lib version:
+            af: v0.2.14
+            awb: v0.0.b
+            aec: v0.0.9
+
+ Debian update:
+    - Optimize adb/glmark2
+    - Gstreamer/mpp/qt and other update synchronization with buildroot and Yocto system
+
+ Document and tools update:
+    - AndroidTool update to v2.67
+    - DriverAssitantg update to v4.8
+    - FactoryTool update to v1.66
+
+ Kernel update:
+    - Fix lpddr4 compute error
+    - Update the isp1 driver to v0.1.3
+    - Optimize linux dts of excavators and fix probably no display issue
+
+ uboot/rkbin update:
+    - The ddr bin update to v1.22, bl31 update to v1.288. Fix lpddr4 abnormal issue k3399: ddr: update ddr version to v1.22 20190506
     build from:
         8132b62 Version: DDR Version 1.22 20190506
     update feature:
         ce4c893 lpddr4: fix lpddr4 some timing error
-
-rk3399: bl31: update version to 1.28
-
+        rk3399: bl31: update version to 1.28
     Build from ATF commit:
         51f2096 plat: rk3399: ddr: fix lpddr4 some timing error
-
     update feature:
         this bl31 is match ddr bin Version "DDR Version 1.22 20190506"
 
-【rk3399_linux_release_v2.1.2_20190308.xml 更新日志】
-
-Buildroot更新：
-1.优化rockchip_test
-2.优化input-event-daemon和power按键的待机唤醒
-3.qt5wayland的功能添加
-Debian更新:
-1.debian64硬解的支持
-2.debian64 glmark2没使用gpu的问题
-3.增加ffmpeg/mpv的跑支持
-
-文档和工具的更新:
-更新pcba
-
-kernel的更新:
-1. 修复lpddr4 burst计算错误
-2. 更新isp1驱动到v0.1.1
-3. 开启rga
-
-uboot/rkbin的更新:
-1.ddr bin升级到v1.19
-rk3399: ddr: update version to v1.19
-
-    built from ddr init project commit:
-        8aa7e79: DDR Version 1.19 20190305
-    Update feature:
-        8aa7e79: DDR Version 1.19 20190305
-        0c6787a: rk3399: clear interrupt before data training
-
-2. avb功能的支持
-
-【rk3399_linux_release_v2.1.1_20190222.xml 更新日志】
-
-Buildroot更新：
-1.修复qt5.6编译问题
-2.修复qt5wayland random xdg_shell error
-3.修复rockchip_test一些问题,主要是多路视频和app demo的添加
-4.支持mount resizing read-only ext2 rootfs
-5.增加gst-plugins-rockchip，解决usb camera和mipi camera不能共存问题
-
-Debian更新:
-1.blueman问题
-scripts: fixes blueman error
-
-    dpkg: error processing package blueman (--configure):
-     subprocess installed post-installation script returned error exit status 1
-
-文档和工具的更新:
-更新uboot/dvfs/mmc/rkisp drive user manual
-
-kernel的更新:
-1. 修复Pmic regulator每次启动出错警告问题
-2. 修复recovery按键进入loader无效问题
-3. 默认开启rk rga
-4. 修复PCCI失败进入L2 link state
-5. 开启ramoops
-6. 修复rk3399 dwc3 host power on fail
-7. rockchip isp1一些bug修复
-
-uboot/rkbin的更新:
-1.ddr bin升级到v1.18
-rk3399: ddr: update version to v1.18
-
-built from ddr init project commit:
-d91c3eb Version: DDR Version 1.18 20190218
-Update feature:
-d91c3eb Version: DDR Version 1.18 20190218
-9eae850 rk3399: using unify global argument for uart, dram info config
-
-Change-Id: Iefbc3b5f5276e531a84257107f04317b89c38ffc
-Signed-off-by: Tang Yun ping <typ@rock-chips.com>
-
-
-【rk3399_linux_release_v2.1.0_20190124.xml 更新日志】
-
-Buildroot更新：
-1.同步内部最新的buildroot版本
-2.修复rockchip_test一些问题
-3.修复qt5 wayland应用上一些问题
-4.增加qt5 wayland多路视频播放的支持
-5.修复camera 3a一些问题
-6.修复recovey更新的一些问题
-
-Debian更新:
-1.drm hotplug的问题
-    1/ Avoid force changing resolution
-    2/ Be able to handle it before login
-
-文档和工具的更新:
-1.更新pcba/recovery/secureboot
-2.增加camera opencv的支持
-3.工具驱动的升级
-4.增加efusetool, ddr tool, spi image tool， secureboottools
-
-kernel的更新:
-1. 修复camera 3a问题和其他camera的支持
-2. 修复PCIe一些问题
-3. 同步内部最新版本kernel
-
-uboot的更新:
-1.miniloaer版本的更新
-2.evb-rk3399_defconfig 配置改用rk3399_defconfig
-3.串口波特率loader阶段修改的支持
-4.同步内部最新uboot代码
-5. rk optee和avb的支持
-
-【rk3399_linux_release_v2.0.9_20181102.xml 更新日志】
-
-Buildroot更新：
-1.修改camera 3a的效果曝光问题
-2.gstreamer升级到v1.14.4
-3.支持gstreamer的render-rectangle属性的支持
-4.增加ffplay支持rkmppdec
-
-Debian更新:
-1.解决bt默认开启，不需要手动配置
-
-文档和工具的更新:
-1.更新android tool, linux upgrade tool, factory tool
-2.增加SDDiskTool_v1.56.zip,支持sd卡固件的制作
-3.升级securetool和avb的文档
-4.增加rk3399 mcu相关文档
-
-kernel的更新:
-1. hdmiin功能的支持
-2. 修复isp1一些问题和增加imx323 camera
-3. 修复i2c irq问题
-4. 修复devfreq cooling问题
-5. 解决bt的Power设置处理，解决debian上blueman使用引起的问题
-
-recovery/rkupdate的更新:
-1. 主要支持sd卡启动和升级固件功能
-
-ffmpeg的更新:
-1. ffplay视频硬件解码的支持
-
-loader的更新:
-1. 9edd6fd all: fix some lpddr3 die print lpddr4 log first
-2. 6f34fb0 all: phy manual update after override wr lvl result
-3. 601ba71 lpddr4: let lp4_io_set adapt all frequency
-4. e35e6ba plat: rk3399: ddr: fix lpddr4 board power on block at trust
-5. 4f4079b plat: rk322xh: ddr: let ddr_set_rate can be called independent
-6. 3f0aafa6 static ta: support read data from user ta
-7. de6bc87b ta verify: support new key to sign TA
-8. 4a0d30f0 console_init: set printf uart from rk_atags
-9. e1096a16 uart: rockchip: add timeout for uart operation
-
-【rk3399_linux_release_v2.0.8_20180929.xml 更新日志】
-
-Buildroot更新：
-1.增加camera 3a的app效果,具体camera,只要增加cam_iq.xml放到/etc牡蛎即可
-2.增加wifi/bt更加自能匹配
-3.更新rockchip_test
-
-Debian更新:
-1.修复32位chromiumos浏览器打开异常问题
-
-文档和工具的更新:
-1.增加20810929发布文档说明
-2.增加recovery文档使用说明
-3.Linux_Upgrade_Tool更新到v1.35
-4.增加rk_provision_tool工具和源码用来读取写入mac地址
-5.更新pcba工具
-
-kernel的更新:
-1.修复camera pin复用引起以太网不能正常使用问题
-2.修复firefly vdd_log异常问题
-3.更新wifi驱动解决一些问题
-4.切换到新的isp框架isp1
-5.修复dmc的vop参数不对问题
-
-
-【rk3399_linux_release_v2.0.7_20180907.xml 更新日志】
-
-Buildroot更新：
-1.减少rootfs的源码包大小，删除原先download目录，重新生成重命名为dl.
-2.configs分成各个模块，然后可定制修改，具体参考configs/rockchip
-3.增加usb自动挂载和MTP功能
-4.修复oem错误类型
-5.修复recovery/update升级异常问题
-6.修复userdata/oem/rootfs分区大小不对问题
-7.修复envsetup.sh编译单独模块，坏境变量不对问题
-8.增加tensorflow的rk3399 NN的支持
-9.去掉qlanucher的背景图设置功能，因为会引起界面hang的假象
-10.增加weston.ini对输入设备，横竖屏等配置
-11.修复reboot过程udev引起的异常问题
-
-Debian更新:
-1.修复64位adb的支持
-2.修复64位debian生成大小不对
-3.增加64位debian的rkximagesink gstreamer的支持
-
-文档和工具的更新:
-1.WNpctool的工具和源码提供
-2.更新wifi/bt的文档
-
-kernel的更新:
-1.增加wide-temperature的支持
-2.增加rk3399 双usb的传输性能
-3.更改vdd_log的电压从1.0v到0.9v
-
-uboot的更新:
-1.增加rk3399 双usb的传输性能
-2.修复firefly的用spl的sd boot问题
-3.clocks的pll修复
-4、miniloader的升级，修复一些atf/reboot以及gpt支持
-
-【rk3399_linux_release_v2.0.5_20180719.xml 更新日志】
-
-buildroot更新：
-1.增加openmpp,resize2fs等工具
-2.修复oem格式不对，以及增加automount功能
-文档更新：
-1. 更新发布文档
-device/rockchip:脚本更新，生成update.img和之前版本差异保存
-
-Debian更新:
-增加adb的支持
-
-
-【rk3399_linux_release_v2.0.4_20180704.xml 更新日志】
-
-Buildroot更新：
-1.更新新版本2018.02-rc3
-2.支持gmac
-文档更新：
-1. 增加软件开发指南和开发文档更新
-
-
-【rk3399_linux_release_v2.0.3_20180611.xml 更新日志】
-
-Buildroot更新：
-1. 解决keyboard异常问题
-2. 解决glibc>2.7编译出错问题
-3. 增加pcba/rksdd/mpv/rockcip_test
-
-文档更新：
-1. 增加更多平台支持
-
-U-boot更新:
-1.解决resource.img替换boot.img异常问题
-
-app/camera更新:
-1.修复camera显示不能全屏的问题
-
-【rk3399_linux_release_v2.0.2_20180604.xml 更新日志】
-
-Buildroot更新：
-1. 之前的app/external下的应用，放在buildroot中编译.
-2. 应用显示由原来eglfa切换到wayland框架.
-
-文档更新：
-1. 增加文档发布说明
-2. 所有芯片的文档统一.
-
-U-boot更新:
-1.支持开机logo的支持，和adb recovery命令的支持.
-2.修复pmic名字匹配不对的问题.
-
-app/camera更新:
-1.修复camera显示不能全屏的问题
-
-【rk3399_linux_release_v2.0.1_20180524.xml 更新日志】
-
-rkbin更新:
-解决重启第一次起来ddr引起的hang问题.
-
-rk3399: ddr: update ddr init bin v1.12
-
-built from ddr init project commit:
-	9e6431a Version: DDR Version 1.12 20180518
-
-	update feature:
-	1.fix ddr3 board power up fail because of lpddr4 commit
-
-	ddr3 power up fail at trust, and ddr3 board download flow can pass,
-	can enter system, reboot also pass, only power down and up, and hardware
-	reset can meet this problem.
-	the fail log as below:
-	NOTICE:  BL31: Rockchip release version: v1.1
-	INFO:    GICv3 with legacy support detected. ARM GICV3 driver initialized in EL3
-	INFO:    Using opteed sec cpu_context!
-	INFO:    boot cpu mask: 0
-	ASSERT: bakery_lock_release <170> : bakery_ticket_number(bakery->lock_data[me])
-
-【rk3399_linux_release_v2.0.0_20180517.xml 更新日志】
-
-1. v2.0初始版本
+【rk3399_linux_release_v2.1.2_20190308.xml change log】
+
+ Buildroot update:
+    - optimize the rockchip_test
+    - optimize input-event-daemon and suspend and resume of power button
+    - Add the qt5wayland function
+
+ Debian update:
+    - Support debian64 hard decoding
+    - Fix the issue that debian64 glmark2 did not use gpu
+    - Add ffmpeg/mpv.
+
+ Document and tools update:
+    - Update pcba
+
+ Kernel update:
+    - Fix lpddr4 burst compute error
+    - Update the isp1 driver to v0.1.1
+    - Enable rga
+
+ uboot/rkbin update:
+    - ddr bin update to v1.19
+      rk3399: ddr: update version to v1.19
+        built from ddr init project commit:
+            8aa7e79: DDR Version 1.19 20190305
+        Update feature:
+            8aa7e79: DDR Version 1.19 20190305
+            0c6787a: rk3399: clear interrupt before data training
+    - The avb function supported
+
+【rk3399_linux_release_v2.1.1_20190222.xml change log】
+
+ Buildroot update:
+    - Fix the qt5.6 compile issue
+    - Fix the qt5wayland random xdg_shell error
+    - Fix some rockchip_test bugs, mainly include adding multi-channel video and app demo
+    - Support for mount resizing read-only ext2 rootfs
+    - Add gst-plugins-rockchip, fix the issue that usb camera and mipi camera can not coexist
+
+ Debian update:
+    - The blueman issue
+    - scripts: fixes blueman error
+    - dpkg: error processing package blueman (--configure):
+    - subprocess installed post-installation script returned error exit status 1
+
+ Documents and tools update:
+    - update uboot/dvfs/mmc/rkisp drive user manual
+
+ Kernel update:
+    - Fix the issue that very time you start, error warning of Pmic regulator
+    - Fix recovery button invalid to enter loader issue.
+    - Enable rk rga by default
+    - Fix PCCI failed to enter L2 link state
+    - Enable ramoops
+    - Fix rk3399 dwc3 host power on fail
+    - Fix some rockchip isp1 bugs.
+
+uboot/rkbin update:
+    - The ddr bin update to v1.18
+    - rk3399: ddr: update version to v1.18
+        built from ddr init project commit:
+            d91c3eb Version: DDR Version 1.18 20190218
+       Update feature:
+            d91c3eb Version: DDR Version 1.18 20190218
+            9eae850 rk3399: using unify global argument for uart, dram info config
+
+【rk3399_linux_release_v2.1.0_20190124.xml change log】
+
+ Buildroot update：
+    - Synchronize the internal latest buildroot version
+    - Fix some rockchip_test issues
+    - Fix some issues in qt5 wayland application
+    - Add support for qt5 wayland multi-channel video playback
+    - Fix some camera 3a issues
+    - Fix some recovey updates issues
+
+ Debian update:
+    - Fix the drm hotplug issue：
+        1/ Avoid force changing resolution
+        2/ Be able to handle it before login
+
+ Documents and tools update:
+    - Update pcba/recovery/secureboot
+    - Add camera opencv support
+    - Tools driver upgrade
+    - Add efusetool, ddr tool, spi image tool, secureboottools
+
+ Kernel update:
+    - Fix the camera 3a issue and support for some other cameras
+    - Fix some PCIe issues
+    - Synchronize to the latest internal kernel version.
+
+ uboot update:
+    - miniloader version update
+    - evb-rk3399_defconfig was changed to rk3399_defconfig
+    - Support serial port baud rate modification during loader process
+    - Synchronize to the latest internal uboot code
+    - Support for rk optee and avb
+
+【rk3399_linux_release_v2.0.9_20181102.xml change log】
+
+ Buildroot update:
+    - Modify the effect of camera 3a exposure
+    - The gstreamer upgrade to v1.14.4
+    - Support for render-rectangle property of gstreamer
+    - Add ffplay support for rkmppdec
+
+ Debian update:
+    - Enable bt by default, no need to configure manually.
+
+ Documents and tools updates:
+    - Update android tool, linux upgrade tool, factory tool.
+    - Add SDDiskTool_v1.56.zip, to support sd card firmware making.
+    - Upgrade securetool and avb documents.
+    - Add rk3399 mcu related documents.
+
+ Kernel update:
+    - The hdmiin function supported
+    - Fix some isp1 issues and add the imx323 camera.mZ3. Fix the i2c irq issue.
+    - Fix the devfreq cooling issue.
+    - Fix the issues that bt Power settings and issues caused by blueman when running on debian.
+
+ recovery/rkupdate update:
+    - Mainly support for sd card startup and upgrading firmware function.
+
+ The ffmpeg update:
+    - The ffplay video hardware decoding support
+
+ Loader update:
+    - 9edd6fd all: fix some lpddr3 die print lpddr4 log first
+    - 6f34fb0 all: phy manual update after override wr lvl result
+    - 601ba71 lpddr4: let lp4_io_set adapt all frequency
+    - e35e6ba plat: rk3399: ddr: fix lpddr4 board power on block at trust
+    - 4f4079b plat: rk322xh: ddr: let ddr_set_rate can be called independent
+    - 3f0aafa6 static ta: support read data from user ta
+    - de6bc87b ta verify: support new key to sign TA
+    - 4a0d30f0 console_init: set printf uart from rk_atags
+    - e1096a16 uart: rockchip: add timeout for uart operation
+
+【rk3399_linux_release_v2.0.8_20180929.xml change log】
+
+ Buildroot upate:
+    - Add the camera 3a app effect, for specific cameras, just add cam_iq.xml to /etc directory
+    - Improve wifi/bt more intelligent match
+    - Update the rockchip_test
+
+ Debian update:
+    - Fix opening 32-bit chromiumos browser abnormally issue.
+
+ Documents and tools update :
+    - Add descriptions to 20810929 Release note.
+    - Add the recovery document instructions
+    - Linux_Upgrade_Tool updated to v1.35
+    - Add the rk_provision_tool and the source code to read the write mac address
+    - Update the pcba tool
+
+ Kernel update:
+    - Fix reusing camera pin causes Ethernet to not work properly issue
+    - Fix the vdd_log abnormal issue on firefly
+    - Update the wifi driver to fix some issues
+    - Change to the new isp framework isp1
+    - Fix the issue that vop parameter of dmc is not correct
+
+【rk3399_linux_release_v2.0.7_20180907.xml change log】
+
+ Buildroot update:
+    - Cut the rootfs source code package size, delete the original download directory, and regenerate and rename it to dl
+    - The configs is divided into modules, which can be customized. For details, please refer to configs/rockchip
+    - Add usb automount and MTP function
+    - Fix the oem type error
+    - Fix recovery/update abnormal issue
+    - Fix wrong userdata/oem/rootfs partition size issue
+    - Fix the issue that the environment variable is not correct when envsetup.sh compile a separate module
+    - Add rk3399 NN support for tensorflow
+    - Remove the background image setting function of qlanucher, because it will cause the illusion of interface hang
+    - Add the horizontal and vertical screens and other configuration of input devices using weston.ini on
+    - Fix anomalies casued by udev during the reboot process
+
+ Debian update:
+    - Fix 64-bit adb support
+    - Fix wrong 64-bit debian generation size
+    - Added support for rkximagesink gstreamer of 64-bit debian
+
+ Updates to documents and tools:
+    - The WNpctool tool and source code provide
+    - Update wifi/bt document
+
+ Kernel update:
+    - Add wide-temperature supported
+    - Improve rk3399 duel usb transmission performance
+    - Change vdd_log voltage from 1.0v to 0.9v
+
+ uboot update
+    - Improve rk3399 duel usb transmission performance
+    - Fix the spl’s sd boot issue on firefly
+    - Fix clocks pll
+    - miniloader upgrade, fix some atf/reboot issues and gpt support
+
+【rk3399_linux_release_v2.05_20180719.xml change log】
+
+ Buildroot update：
+    - Remove some useless benchmarks
+    - Add camera_gstremer repositories with camera_cifisp piece
+
+ documents update：
+    - Update the SDK release note
+    - device/rockchip:update automatic compilation script
+
+【rk3399_linux_release_v2.04_20180704.xml change log】
+
+ Buildroot update：
+    - update version to 2018.02-rc3
+    - support gmac
+
+ documents update：
+    - Add software developer guide and other developer guides update
+
+【rk3399_linux_release_v2.03_20180611.xml change log】
+
+ Buildroot update：
+    - Fix the keyboard abnormal issue
+    - Fix error compiling glibc>2.7 issue
+    - Add pcba/rksdd/mpv/rockcip_test
+
+ documents update：
+    - more platforms support
+
+ U-boot update:
+    - Fix abnormally replacing boot.img with resource.img issue
+
+ app/camera update:
+    - Fix camera can not full screen to display issue
+
+【rk3399_linux_release_v2.02_20180604.xml change log】
+
+ Buildroot update：
+    - The applications under the previous app/external is changed to compile in buildroot.
+    - The application display framework switches from the original eglfa to the wayland.
+
+ documents update：
+    - Add the SDK release note
+    - Integrate all chipshet documents
+
+ U-boot update:
+    - Support for boot logo and adb recovery command.
+    - Fix the issue that the pmic name is incorrectly matched.
+
+ app/camera update:
+    - Fix camera can not full screen to display issue
+
+【rk3399_linux_release_v2.01_20180524.xml change log】
+
+ rkbin update:
+    - Fix the hang issue caused by restarting ddr for the first time
+    - rk3399: ddr: update ddr init bin v1.12
+        built from ddr init project commit:
+            9e6431a Version: DDR Version 1.12 20180518
+        update feature:
+        - fix ddr3 board power up fail because of lpddr4 commit
+          ddr3 power up fail at trust, and ddr3 board download flow can pass,
+          can enter system, reboot also pass, only power down and up, and hardware
+          reset can meet this problem.
+          the fail log as below:
+                NOTICE: BL31: Rockchip release version: v1.1
+                INFO: GICv3 with legacy support detected. ARM GICV3 driver initialized in EL3
+                INFO: Using opteed sec cpu_context!
+                INFO: boot cpu mask: 0
+                ASSERT: bakery_lock_release <170> : bakery_ticket_number(bakery->lock_data[me])
+
+【rk3399_linux_release_v2.00_20180517.xml change log】
+
+    - v2.0 initial version
