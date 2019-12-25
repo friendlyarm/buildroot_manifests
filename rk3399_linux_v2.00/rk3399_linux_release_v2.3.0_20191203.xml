@@ -18,7 +18,7 @@
   <project name="bin" path="external/security/bin" revision="c9857d10000038872858ebe1d6c8ee63d544178c" upstream="master"/>
   <project name="bluez-alsa" path="external/bluez-alsa" revision="514a57b440a9467400e3c5fd164df719f2fc79ee" upstream="master"/>
   <project name="build" path="yocto/build/conf" revision="a33f53fcd2547ce06b6d3cdd1677c36ff3ecf1b2" upstream="yocto-next"/>
-  <project name="buildroot" revision="459b04628efa87bd0993041f104cc66b4a44363e" upstream="stable-rk3399-v2.3.0-20191203">
+  <project name="buildroot" revision="459b04628efa87bd0993041f104cc66b4a44363e" upstream="rockchip/stable-rk3399-v2.3.0-20191203">
     <linkfile dest="Makefile" src="build/Makefile"/>
     <linkfile dest="envsetup.sh" src="build/envsetup.sh"/>
   </project>
