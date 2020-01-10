@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <remote fetch="." name="rockchip-linux" review="https://github.com/rockchip-linux/"/>
+  <default remote="rockchip-linux" revision="master" sync-j="4"/>
+
+  <include name="yocto.xml" />
+
+ <project name="rockx" path="external/rockx" revision="d0af63ebdbc1f8d496a6ba823bb8bbb382fd6316" upstream="master"/>
+  <project name="rkmedia" path="external/rkmedia" revision="6c796505c1d327f06ec6ade0df697ff84bfe75b1" upstream="master"/>
+  <project name="rkmedia" path="npu/external/rkmedia" revision="6c796505c1d327f06ec6ade0df697ff84bfe75b1" upstream="master"/>
+  <project name="wifiAutoSetup" path="external/wifiAutoSetup" revision="d2cfc6b2ca9754311542f91e481e8576fd4ecbc0" upstream="master"/>
+  <project name="update_engine" path="external/update_engine" revision="047d95d37b628563389eb397f19fe5f1c0c8eb05" upstream="master"/>
+  <project name="rtc_demo" path="external/rtc_demo" revision="e1e8f6704a31b36982745f7627bc9b8959f54157" upstream="master"/>
+  <project name="deviceio_release" path="external/deviceio_release" revision="57bf22def3ef873f19b581979f35d0c8c847ae17" upstream="master"/>
+  <project name="chromium" path="external/chromium" revision="da1e188076a27d8c5f37c5ed253b013d1e59e61c" upstream="master"/>
+  <project name="avb" path="external/avb" revision="64b5ea0130d7440084796f6a23d7cd91fac988b8" upstream="master"/>
+  <project name="WakeWordAgent" path="external/wakeWordAgent" revision="4a5a3c2d9d991e392894d1e5345b7487655d3cc6" upstream="master"/>
+  <project name="LocalPlayer" path="external/LocalPlayer" revision="e7d5cc72e5f0da13f2765aa02bd22d03ebc82750" upstream="master"/>
+  <project name="RKNPUTools" path="external/RKNPUTools" revision="fcf821281397599b816354595c30394f0fa2c7e3" upstream="rk/rk33/mid/8.1/develop"/>
+  <project name="libdrm-rockchip" path="external/libdrm" revision="696a303b72faf2dd9a0850aa31e678b29e3aec08" upstream="rk33/mid/9.0/develop"/>
+  <project name="QLauncher" path="app/QLauncher" revision="dbd9b7562253c277e5010e1df0ed2dcc4fca4a21" upstream="master"/>
+  <project name="multicamera" path="app/multicamera" revision="6c3b01afba79d69b3ed6c1d55bb5dc87f51b8df2" upstream="master"/>
+  <project name="qcamera" path="app/qcamera" revision="fc17cb9ac199095303f45aa27c59b0c901c0478b" upstream="master"/>
+  <project name="n4" path="npu/app/n4" revision="6e3fc43844746cfbf4498f63f27472023c01f0a0" upstream="master"/>
+  <project name="qfm" path="app/qfm" revision="cb38ba939c7ebdb1d205b68290754a115269c7e4" upstream="master"/>
+  <project name="DuerClientSDK" path="external/DuerClientSDK" revision="e366033a83adb6187ee765915696d70cd36b4231" upstream="master_64bit"/>
+  <project name="qplayer" path="app/qplayer" revision="cf359f850956d7ac2c1679f0fb39cd52978593a1" upstream="master"/>
+  <project name="multivideoplayer" path="app/multivideoplayer" revision="617e58ec389d6b84f99875c098792c071db87640" upstream="master"/>
+  <project name="alsa-config" path="external/alsa-config" revision="30d750e5dc846d15d1a5159e47bf3e1121953eb3" upstream="master"/>
+  <project name="audioservice" path="external/audioservice" revision="68fa86817d762d4b761add42dcd03abe746bea61" upstream="master"/>
+  <project name="bin" path="external/security/bin" revision="c9857d10000038872858ebe1d6c8ee63d544178c" upstream="master"/>
+  <project name="bluez-alsa" path="external/bluez-alsa" revision="514a57b440a9467400e3c5fd164df719f2fc79ee" upstream="master"/>
+  <project name="buildroot" revision="546ebdc44fcea9a69211548d5c1c84ab7811d597" upstream="rockchip/stable-rk3399pro-v1.2.0-20191224">
+    <linkfile dest="Makefile" src="build/Makefile"/>
+    <linkfile dest="envsetup.sh" src="build/envsetup.sh"/>
+  </project>
+  <project name="buildroot" path="npu/buildroot" revision="459b04628efa87bd0993041f104cc66b4a44363e" upstream="rockchip/2018.02-rc3">
+    <linkfile dest="npu/Makefile" src="build/Makefile"/>
+    <linkfile dest="npu/envsetup.sh" src="build/envsetup.sh"/>
+  </project>
+  <project name="camera" path="app/camera" revision="68c892e8affb6d70b36fd86f2da535f53415a61c" upstream="master"/>
+  <project name="camera_engine_cifisp" path="external/camera_engine_cifisp" revision="dff8b97d58507c9fd74082880ae4ab068ba6b88d" upstream="master"/>
+  <project name="camera_engine_rkisp" path="external/camera_engine_rkisp" revision="1115ec90edca37ce5f1fce5a1651a65aced0ef51" upstream="master"/>
+  <project name="camera_engine_rkisp" path="npu/external/camera_engine_rkisp" revision="1115ec90edca37ce5f1fce5a1651a65aced0ef51" upstream="master"/>
+  <project name="demo" path="app/demo" revision="61c8371134674e116cb06e9b5945320a5bcd7fd2" upstream="master"/>
+  <project name="device-custom" path="device/rockchip" revision="02396a894ff61dc5a00f704459e43826a8a8bc20" upstream="master">
+    <linkfile dest="mkfirmware.sh" src="common/mkfirmware.sh"/>
+    <linkfile dest="build.sh" src="common/build.sh"/>
+    <linkfile dest="rkflash.sh" src="common/rkflash.sh"/>
+    <linkfile dest="device/rockchip/.BoardConfig.mk" src="rk3399pro/BoardConfig.mk"/>
+  </project>
+  <project name="device-custom" path="npu/device/rockchip" revision="39ea63ecc0f644998956f8349ad6909317a203df" upstream="master">
+    <linkfile dest="npu/mkfirmware.sh" src="common/mkfirmware.sh"/>
+    <linkfile dest="npu/build.sh" src="common/build.sh"/>
+    <linkfile dest="npu/rkflash.sh" src="common/rkflash.sh"/>
+    <linkfile dest="npu/device/rockchip/.BoardConfig.mk" src="rk3399pro-npu/BoardConfig.mk"/>
+  </project>
+  <project name="distro" revision="5d71d4468bd592adb39e1cf5f053ba023beac9b2" upstream="master"/>
+  <project name="download" path="distro/download" revision="83788d77516e2f669e0718ff85585f49cbe4caf8" upstream="master"/>
+  <project name="dl" path="buildroot/dl" revision="master"/>
+  <project name="dl" path="npu/buildroot/dl" revision="master"/>
+  <project name="docs" revision="e456b0b3cfa8710035f836887d3b681177055e5a" upstream="master"/>
+  <project name="ffmpeg" path="external/ffmpeg" revision="589de66a0b50c43b93f511361275d9ff86da21dd" upstream="master"/>
+  <project name="gallery" path="app/gallery" revision="67850ebbbc400b0a46968fb99bdd60c86358cc49" upstream="master"/>
+  <project name="gcc-linaro-6.3.1-2017.05-x86_64_aarch64-linux-gnu" path="prebuilts/gcc/linux-x86/aarch64/gcc-linaro-6.3.1-2017.05-x86_64_aarch64-linux-gnu" revision="f96f76d6be89a6e28d4dac1f233f9aca9921f69b" upstream="master"/>
+  <project name="gcc-linaro-6.3.1-2017.05-x86_64_aarch64-linux-gnu" path="npu/prebuilts/gcc/linux-x86/aarch64/gcc-linaro-6.3.1-2017.05-x86_64_aarch64-linux-gnu" revision="f96f76d6be89a6e28d4dac1f233f9aca9921f69b" upstream="master"/>
+  <project name="gst-plugins-rockchip" path="external/gst-plugins-rockchip" revision="0b606f9c64e18634c349717c60f50b6921e4e774" upstream="master"/>
+  <project name="gstreamer-camera" path="external/gstreamer-camera" revision="7b8a9b33f95a0a7c65fd76d4f4e3f6778fce8ea7" upstream="master"/>
+  <project name="gstreamer-rockchip" path="external/gstreamer-rockchip" revision="59c3bdd06a22844957fe20f47c998bb8255bedd2" upstream="master"/>
+  <project name="kernel" revision="4336055326f671bd057fc6823564fb92aa458c1b" upstream="stable-4.4-rk3399pro-linux"/>
+  <project name="kernel" path="npu/kernel" revision="c633a8f44b8eded2547577b78da69416de22d601" upstream="stable-4.4-rk3399pro_npu-linux"/>
+  <project name="libmali" path="external/libmali" revision="1b74a4844df5b4d2cb49948eb98246900d962b00" upstream="29mirror"/>
+  <project name="linux-rga" path="external/linux-rga" revision="72e7764a9fe358e6ad50eb1b21176cc95802c7fb" upstream="master"/>
+  <project name="linux-rga" path="npu/external/linux-rga" revision="72e7764a9fe358e6ad50eb1b21176cc95802c7fb" upstream="master"/>
+  <project name="minigui" path="external/minigui" revision="0eabde0682742f1b89a1bb8bc64e410d88242ec9" upstream="master"/>
+  <project name="minigui_desktop" path="external/minigui_desktop" revision="9fa64dabb6bae25c07c2fc6ed40de6123f71f493" upstream="master"/>
+  <project name="mpp" path="external/mpp" revision="a8ef9864c12a31a2cb7778a86aed698faea3627a" upstream="release"/>
+  <project name="mpv" path="external/mpv" revision="851e19b414e6d01f8200d04d9cf79741ffc93090" upstream="master"/>
+  <project name="music" path="app/music" revision="057a31b47de52b02a3b95dc482b494dd3542b214" upstream="master"/>
+  <project name="powermanager" path="external/powermanager" revision="17921d6b75395df5478613973e58916a6cf7c7ad" upstream="master"/>
+  <project name="powermanager" path="npu/external/powermanager" revision="17921d6b75395df5478613973e58916a6cf7c7ad" upstream="master"/>
+  <project name="recovery" path="external/recovery" revision="fb73491961a1b902310f1dd0cbfb0b0281f01363" upstream="develop"/>
+  <project name="rk-rootfs-build" path="debian" revision="d12bb726f4dc1ff5f613a1f1bd2960eea34d2651" upstream="master"/>
+  <project name="rk_pcba_test" path="external/rk_pcba_test" revision="25643cf5f522a71ed2a918b0abe15e363a893504" upstream="master"/>
+  <project name="rk_tee_user" path="external/security/rk_tee_user" revision="985a45523e9e6f2f2006e9eaa178065a382a52f9" upstream="master"/>
+  <project name="rkbin" revision="021e30ef2ddaf3522edf8418e354cd8dc7764cde" upstream="stable-4.4-rk3399pro-linux"/>
+  <project name="rkbin" path="npu/rkbin" revision="5e54e6c0bbc0141985aca17adcebf3692cdc7f78" upstream="master"/>
+  <project name="rknn-toolkit" path="external/rknn-toolkit" revision="330932945e820145a534f237e44de5aa36bc6dc9" upstream="master"/>
+  <project name="rknn_demo" path="external/rknn_demo" revision="9a9b7e428a96405c027a85510b1520d581fdce95" upstream="master"/>
+  <project name="rknpu" path="external/rknpu" revision="c56a3e520b3e0882f082cb9f5f7518b2b9c9db2b" upstream="master"/>
+  <project name="rknpu" path="npu/external/rknpu" revision="c56a3e520b3e0882f082cb9f5f7518b2b9c9db2b" upstream="master"/>
+  <project name="rknpu-fw" path="external/rknpu-fw" revision="23d2a0b92d5484b8d6a0618e7b32aa39e7c171f2" upstream="master"/>
+  <project name="rkscript" path="external/rkscript" revision="67f6ef4e95ade68313b744494fba473fcbcbaafc" upstream="master"/>
+  <project name="rkscript" path="npu/external/rkscript" revision="a2da3f30146442dd4f8c415cf90b0c14dd294e31" upstream="master"/>
+  <project name="rkssd" path="external/rkssd" revision="1c50d336e770a8ce09ae33b3e09d2783d5b4c2d9" upstream="master"/>
+  <project name="rkupdate" path="external/rkupdate" revision="40b9c1ed1f69b90e97986d41b8270dc3c8042479" upstream="master"/>
+  <project name="rkwifibt" path="external/rkwifibt" revision="58820c428d2ecae6aaf5e4f00997652b9479853a" upstream="master"/>
+  <project name="settings" path="app/qsetting" revision="4247044a042bdc6ca2be0b60ac2a3ae3e015f9da" upstream="develop"/>
+  <project name="softapDemo" path="external/softapDemo" revision="4c7d1bd3d28df276d263f49324b022b44b3a1c85" upstream="master"/>
+  <project name="softapServer" path="external/softapServer" revision="9158517316a050190273c6809ea88467a4276e16" upstream="master"/>
+  <project name="tensorflow" path="external/tensorflow" revision="e1877bb157a775d76ec8c0b68467aef6d053bbb2" upstream="master"/>
+  <project name="tools" revision="376143e0ea7f9544477750256ee6bdbbb06c1ec8" upstream="master">
+    <linkfile dest="tools/windows/AndroidTool/AndroidTool_Release/config.cfg" src="windows/AndroidTool/AndroidTool_Release/rk3399-config.cfg"/>
+    <linkfile dest="tools/windows/AndroidTool/rockdev/package-file" src="windows/AndroidTool/rockdev/rk3399-package-file"/>
+    <linkfile dest="tools/windows/AndroidTool/rockdev/mkupdate.bat" src="windows/AndroidTool/rockdev/rk3399-mkupdate.bat"/>
+    <linkfile dest="tools/linux/Linux_Pack_Firmware/rockdev/mkupdate.sh" src="linux/Linux_Pack_Firmware/rockdev/rk3399-mkupdate.sh"/>
+    <linkfile dest="tools/linux/Linux_Pack_Firmware/rockdev/package-file" src="linux/Linux_Pack_Firmware/rockdev/rk3399-package-file"/>
+  </project>
+  <project name="u-boot" revision="64ba9ad7e911e9271ae24801f04168a784f438fb" upstream="stable-4.4-rk3399pro-linux"/>
+  <project name="u-boot" path="npu/u-boot" revision="d625acc28e2963c097074c49a25072346e686a1c" upstream="next-dev"/>
+  <project name="uvc_app" path="external/uvc_app" revision="225dca3e52bf70b5b217f0021e7501e4268e641b" upstream="master"/>
+  <project name="video" path="app/video" revision="b52211fe8d0d91b2210cfab757885277cae1211c" upstream="master"/>
+</manifest>
