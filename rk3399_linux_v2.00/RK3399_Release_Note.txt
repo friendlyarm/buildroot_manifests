@@ -1,5 +1,15 @@
 ===========RK3399 Linux SDK Release Note===========
 
+¡¾rk3399_linux_release_v2.3.1_20191223.xml change log¡¿
+
+ Buildroot (2018.02-rc3):
+    - Fixes wifi/bt on buildroot
+    - Support qt5webengine on buildroot
+    - Fixes camera 3A server
+
+ Distro (debian10):
+    - Update distro to fix some bugs
+
 ¡¾rk3399_linux_release_v2.3.0_20191203.xml change log¡¿
 
  Buildroot (2018.02-rc3):
