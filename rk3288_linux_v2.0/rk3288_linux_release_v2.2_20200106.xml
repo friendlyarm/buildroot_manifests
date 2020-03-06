@@ -63,7 +63,7 @@
   <project name="rk_tee_user" path="external/security/rk_tee_user" revision="985a45523e9e6f2f2006e9eaa178065a382a52f9" upstream="master"/>
   <project name="rkbin" revision="4d9721a3974007a0d49658eb8c9ddd1e5d4ef85d" upstream="master"/>
   <project name="rkscript" path="external/rkscript" revision="8a60f2e1794ee9087271c05a21ea41c73dbb474e" upstream="master"/>
-  <project name="rktoolkit" path="external/rktoolkit" revision="0f4211cd0b61c8eb7c9ebb34a1cee3377e4cff56" upstream="master"/>
+  <project name="rktoolkit" path="external/rktoolkit" revision="fc1ddcf4f804d1dbb55e2695a32b2aabe6016e8e" upstream="master"/>
   <project name="rkupdate" path="external/rkupdate" revision="40b9c1ed1f69b90e97986d41b8270dc3c8042479" upstream="master"/>
   <project name="rkwifibt" path="external/rkwifibt" revision="58820c428d2ecae6aaf5e4f00997652b9479853a" upstream="master"/>
   <project name="settings" path="app/qsetting" revision="4247044a042bdc6ca2be0b60ac2a3ae3e015f9da" upstream="develop"/>
