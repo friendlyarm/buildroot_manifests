@@ -29,15 +29,10 @@
   <project name="camera_engine_rkisp" path="external/camera_engine_rkisp" revision="1115ec90edca37ce5f1fce5a1651a65aced0ef51" upstream="master"/>
   <project name="chromium" path="external/chromium" revision="da1e188076a27d8c5f37c5ed253b013d1e59e61c" upstream="master"/>
   <project name="demo" path="app/demo" revision="06833562228ecc88b270112691576f07ac136a03" upstream="master"/>
-  <project name="device-custom" path="device/rockchip-org" revision="fe6afa13bd28676af054128a61c740609258f91b" upstream="master">
-    <linkfile dest="mkfirmware.sh" src="common/mkfirmware.sh"/>
-    <linkfile dest="build.sh" src="common/build.sh"/>
-    <linkfile dest="rkflash.sh" src="common/rkflash.sh"/>
-    <linkfile dest="device/rockchip/.BoardConfig.mk" src="rk3399/BoardConfig.mk"/>
-  </project>
   <project path="kernel" name="kernel-rockchip" remote="origin" revision="refs/heads/nanopi4-linux-v4.4.y" />
   <project path="u-boot" name="uboot-rockchip" remote="origin" revision="refs/heads/nanopi4-v2014.10_oreo" />
-  <project path="device/rockchip" name="buildroot-device-custom_rk3399" remote="origin">
+  <project name="device-custom" path="device/rockchip-org" revision="fe6afa13bd28676af054128a61c740609258f91b" upstream="master"/>
+  <project path="device/rockchip" name="buildroot-device-custom_rk3399" remote="origin" >
     <linkfile dest="mkfirmware.sh" src="common/mkfirmware.sh"/>
     <linkfile dest="build.sh" src="common/build.sh"/>
     <linkfile dest="rkflash.sh" src="common/rkflash.sh"/>
