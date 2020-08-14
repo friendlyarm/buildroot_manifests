@@ -38,7 +38,7 @@
     <linkfile dest="rkflash.sh" src="common/rkflash.sh"/>
     <linkfile dest="device/rockchip/.BoardConfig.mk" src="rk3399/BoardConfig.mk"/>
   </project>
-  <project path="friendlyelec/rk3399/sd-fuse_rk3399" name="sd-fuse_rk3399" remote="origin" >
+  <project path="friendlyelec/rk3399/sd-fuse_rk3399" name="sd-fuse_rk3399" remote="origin" upstream="kernel-4.19">
           <linkfile dest="out" src="out"/>
   </project>
   <project path="friendlyelec/rk3399/fs-overlay-64" name="buildroot-fs-overlay-64_rk3399" remote="origin" />
