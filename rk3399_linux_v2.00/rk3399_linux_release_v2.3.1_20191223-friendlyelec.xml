@@ -78,7 +78,7 @@
   <project name="rk-rootfs-build" path="debian" revision="6823d577a6b9bc859547227b15dc75cdaf04c0c9" upstream="master"/>
   <project name="rk_pcba_test" path="external/rk_pcba_test" revision="25643cf5f522a71ed2a918b0abe15e363a893504" upstream="master"/>
   <project name="rk_tee_user" path="external/security/rk_tee_user" revision="985a45523e9e6f2f2006e9eaa178065a382a52f9" upstream="master"/>
-  <project name="rkbin" revision="0286e92bb01557293b42e8fed5f64576f1236c34" upstream="master"/>
+  <project name="rkbin" revision="ef15224a9e6949897f37ef8fef03055cbbdb44c2" upstream="master"/>
   <project name="rkmedia" path="external/rkmedia" revision="6c796505c1d327f06ec6ade0df697ff84bfe75b1" upstream="master"/>
   <project name="rknn-toolkit" path="external/rknn-toolkit" revision="330932945e820145a534f237e44de5aa36bc6dc9" upstream="master"/>
   <project name="rknn_demo" path="external/rknn_demo" revision="6960d557e1f018b9e872ef7ddd842d8f7a127b39" upstream="master"/>
