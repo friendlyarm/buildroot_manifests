@@ -40,7 +40,6 @@
   <project path="friendlyelec/rk3399/scripts" name="buildroot-scripts_rk3399" remote="origin" />
 
   <project name="distro" revision="85c31c4cb996e06f5f1d82c04d7744bc072f9a23" upstream="master"/>
-  <project name="dl" path="buildroot/dl" revision="5e8b12996471998e471159693f91fa1e941b8261" upstream="master"/>
   <project name="docs" revision="b726a315462d288631b6d30877db09271538a4c4" upstream="master"/>
   <project name="ffmpeg" path="external/ffmpeg" revision="226e514675a10e583d2af123b2b6960043da1dca" upstream="rockchip/release/4.1"/>
   <project name="gallery" path="app/gallery" revision="67850ebbbc400b0a46968fb99bdd60c86358cc49" upstream="master"/>
