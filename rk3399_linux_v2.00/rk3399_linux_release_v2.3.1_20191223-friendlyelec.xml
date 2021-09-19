@@ -12,7 +12,7 @@
   <default remote="rockchip-linux" revision="master" sync-j="4"/>
   
   <project name="LocalPlayer" path="external/LocalPlayer" revision="e7d5cc72e5f0da13f2765aa02bd22d03ebc82750" upstream="master"/>
-  <project name="QLauncher" path="app/QLauncher" revision="d131e2d41101d967bdd2c1bbb8d523073c4d3f02" upstream="develop"/>
+  <project name="QLauncher" path="app/QLauncher" revision="9f0561b58316fe42e10e65d8785cf83dd760d0cb" upstream="develop"/>
   <project name="RKNPUTools" path="external/RKNPUTools" revision="18b71c788317de29a7bcdffbf06c4708f58055b9" upstream="rk33/mid/8.1/develop"/>
   <project name="WakeWordAgent" path="external/wakeWordAgent" revision="4a5a3c2d9d991e392894d1e5345b7487655d3cc6" upstream="master"/>
   <project name="alsa-config" path="external/alsa-config" revision="30d750e5dc846d15d1a5159e47bf3e1121953eb3" upstream="master"/>
