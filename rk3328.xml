@@ -20,7 +20,9 @@
   <project path="buildroot/dl" name="linuxsdk-rockchip-dl" upstream="master" remote="origin" />
 
   <!-- friendlyelec device configs -->
-  <project path="device/friendlyelec" name="buildroot_device_rockchip" remote="origin" revision="refs/heads/master" />
+  <project path="device/friendlyelec" name="buildroot_device_rockchip" remote="origin" revision="refs/heads/master" >
+      <linkfile dest=".current" src="rk3328"/>
+  </project>
 
   <!-- friendlyelec scripts -->
   <project path="scripts" name="buildroot_scripts" remote="origin" revision="refs/heads/master">
