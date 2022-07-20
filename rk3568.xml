@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote name="origin"
+          fetch="."
+          revision="refs/heads/master" />
+
+  <project path="kernel" name="kernel-rockchip" remote="origin" revision="refs/heads/nanopi5-v5.10.y_opt" />
+  <project path="u-boot" name="uboot-rockchip" remote="origin" revision="refs/heads/nanopi5-v2017.09" />
+  <project path="rkbin" name="rkbin" remote="origin" revision="refs/heads/nanopi5" />
+
+  <!-- img tools for rk3568 -->
+  <project path="scripts/sd-fuse" name="sd-fuse_rk3568" remote="origin" revision="refs/heads/master">
+    <linkfile dest="out" src="out"/>
+  </project>
+
+  <!-- rockchip linuxsdk -->
+  <project path="app" name="linuxsdk-rockchip-app" remote="origin" revision="refs/heads/kernel-4.19" />
+  <project path="external" name="linuxsdk-rockchip-external" remote="origin" revision="refs/heads/kernel-4.19" />
+  <project path="buildroot" name="linuxsdk-rockchip-buildroot" remote="origin" revision="refs/heads/kernel-4.19" />
+  <project path="buildroot/dl" name="linuxsdk-rockchip-dl" upstream="master" remote="origin" />
+
+  <!-- friendlyelec device configs -->
+  <project path="device/friendlyelec" name="buildroot_device_rockchip" remote="origin" revision="refs/heads/master" >
+      <linkfile dest=".current" src="rk3568"/>
+  </project>
+
+  <!-- friendlyelec scripts -->
+  <project path="scripts" name="buildroot_scripts" remote="origin" revision="refs/heads/master">
+	  <linkfile dest="build.sh" src="build.sh"/>
+  </project>
+
+  <!-- toolchain -->
+  <project path="toolchain" name="prebuilts" remote="origin" revision="refs/heads/master" />
+</manifest>
