@@ -20,7 +20,6 @@
   <project path="external/rknn-toolkit2" name="rknn-toolkit2" remote="origin" revision="refs/heads/master" />
   <project path="external/rknpu2" name="rknpu2" remote="origin" revision="refs/heads/master" />
   <project path="buildroot" name="linuxsdk-rockchip-buildroot" remote="origin" revision="refs/heads/kernel-5.10" />
-  <project path="buildroot/dl" name="linuxsdk-rockchip-dl" upstream="master" remote="origin" />
 
   <!-- friendlyelec device configs -->
   <project path="device/friendlyelec" name="buildroot_device_friendlyelec" remote="origin" revision="refs/heads/kernel-5.10" >
