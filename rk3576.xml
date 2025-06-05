@@ -6,10 +6,10 @@
 
   <project path="kernel" name="kernel-rockchip" remote="origin" revision="refs/heads/nanopi6-v6.1.y" />
   <project path="u-boot" name="uboot-rockchip" remote="origin" revision="refs/heads/nanopi5-v2017.09" />
-  <project path="rkbin" name="rkbin" remote="origin" revision="refs/heads/nanopi_r3" />
+  <project path="rkbin" name="rkbin" remote="origin" revision="refs/heads/nanopi_m5" />
 
-  <!-- img tools for rk3566 -->
-  <project path="scripts/sd-fuse" name="sd-fuse_rk3566" remote="origin" revision="refs/heads/kernel-6.1.y">
+  <!-- img tools for rk3576 -->
+  <project path="scripts/sd-fuse" name="sd-fuse_rk3576" remote="origin" revision="refs/heads/kernel-6.1.y">
     <linkfile dest="out" src="out"/>
   </project>
 
@@ -23,7 +23,7 @@
 
   <!-- friendlyelec device configs -->
   <project path="device/friendlyelec" name="buildroot_device_friendlyelec" remote="origin" revision="refs/heads/kernel-5.10" >
-      <linkfile dest=".current" src="rk3566"/>
+      <linkfile dest=".current" src="rk3576"/>
   </project>
   <project path="device/rockchip" name="buildroot_device_rockchip" remote="origin" revision="refs/heads/kernel-5.10" />
 
